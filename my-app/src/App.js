@@ -5,7 +5,7 @@ import './App.css';
 import HelloPage from './HelloPage';
 import ErrorPage from './ErrorPage';
 
-import {Route, Switch } from 'react-router-dom'
+import {Router, Route, Link, IndexRoute,  browserHistory, Switch } from 'react-router'
 
 class App extends Component {
   render() {
