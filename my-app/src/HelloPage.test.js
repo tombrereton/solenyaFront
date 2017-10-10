@@ -11,10 +11,6 @@ configure({ adapter: new Adapter() });
 
 describe('<HelloPage/>', () => {
 
-	it('renders without crashing', () => {
-	  const div = document.createElement('div');
-	  ReactDOM.render(<HelloPage />, div);  
-	});
 
 	it('the main page says hello', () => {
 
