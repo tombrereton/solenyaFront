@@ -4,7 +4,7 @@ import './index.css';
 
 import App from './App';
 import Root from './Root';
-import ErrorPage from './ErrorPage';
+// import ErrorPage from './ErrorPage';
 // import {Router, Route, Link, IndexRoute,  browserHistory, Switch } from 'react-router'
 
 // import {Router, Route, Switch } from 'react-router'
