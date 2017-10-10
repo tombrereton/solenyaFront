@@ -1,0 +1,19 @@
+PRODUCT 1
+Link: http://www.asos.com/warehouse/warehouse-side-split-roll-neck-jumper/prd/8542004?clr=olivemarl&cid=20061&pgesize=36&pge=0&totalstyles=737&gridsize=4&gridrow=2&gridcolumn=1
+
+Name: Warehouse Side Split Roll Neck Jumper
+Gender: women
+Price: £46.00
+Colour: Olive marl
+Size: UK6, UK8, UK10, UK12, UK14, UK16,
+Brand:  Warehouse
+Brand description: Delivering seasonal trends for the high street, Warehouse offer a collection of directional pieces, with vibrant prints and clean cut tailoring channelling the brand's signature style. Statement party dresses sit alongside classic wardrobe staples, all complemented by a key range of jewellery and accessories, including an exclusive edit of three satchel bags.
+Description: Jumper by Warehouse
+?	Textured knit
+?	Cowl neck
+?	Raglan sleeves
+?	Ribbed trims
+?	Split hem
+?	Regular fit - true to size
+Stock: tbd
+Materials: 55% Polyamide, 40% Acrylic, 5% Wool

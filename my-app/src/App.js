@@ -4,6 +4,7 @@ import './App.css';
 
 import HelloPage from './HelloPage';
 import ErrorPage from './ErrorPage';
+import ProductPage from './ProductPage';
 
 import {Route, Switch } from 'react-router-dom'
 
@@ -14,7 +15,7 @@ class App extends Component {
       <div className="App">
     
         <Switch>
-         <Route exact path="/" component={HelloPage} />
+         <Route exact path="/" component={ProductPage} />
          <Route path ="*" component={ErrorPage} />
         </Switch>
       </div>
