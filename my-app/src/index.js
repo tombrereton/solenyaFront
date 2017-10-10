@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 import App from './App';
 import Root from './Root';
 import ErrorPage from './ErrorPage';
@@ -30,3 +31,10 @@ import ErrorPage from './ErrorPage';
 ReactDOM.render(<Root />, document.getElementById('root'))
 
 // ReactDOM.render(<ErrorPage />, document.getElementById('root'))
+
+
+
+
+
+
+
