@@ -3,8 +3,8 @@ import './App.css';
 
 import ErrorPage from './ErrorPage';
 import ProductPage from './ProductPage';
-
-import {Route, Switch } from 'react-router'
+import HelloPage from './HelloPage';
+import {Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -12,6 +12,7 @@ class App extends Component {
       <div className="App">
         <Switch>
          <Route exact path="/" component={ProductPage} />
+         <Route exact path="/HelloPage" component={HelloPage} />
          <Route path ="/*" component={ErrorPage} />
         </Switch>
       </div>
