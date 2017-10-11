@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import ErrorPage from './ErrorPage';
 import ProductPage from './ProductPage';
 
-import {Router, Route, Link, IndexRoute,  browserHistory, Switch } from 'react-router'
+import {Route, Switch } from 'react-router'
 
 class App extends Component {
   render() {

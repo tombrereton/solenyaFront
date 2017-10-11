@@ -3,7 +3,7 @@ import React from 'react';
 const ProductCard = (props) => {
 	return (
   	<div style={{margin: '1em'}}>
-  	  <img width="150" src={props.splash_img_url} />
+  	  <img width="150" src={props.splash_img_url} alt={props.product_name}/>
       <div>
         <div style={{fontWeight: 'bold'}}>
         	{props.product_name}

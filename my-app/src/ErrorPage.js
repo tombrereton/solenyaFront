@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './ErrorPage.css';
-import {Router, Route, Link, IndexRoute,  browserHistory, Switch } from 'react-router'
 
 
 class ErrorPage extends Component {
