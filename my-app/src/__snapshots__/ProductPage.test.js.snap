@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a label 1`] = `
+exports[`ProductCard It should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProductPage />,
+  Symbol(enzyme.__unrendered__): <ProductCard />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -15,77 +15,201 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": null,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "cards": Array [
-        Object {
-          "price": "£46.00",
-          "product_name": "Warehouse Side Split Roll Neck Jumper",
-          "splash_img_url": "prod1-img1.jpg",
-        },
-        Object {
-          "price": "£60.00",
-          "product_name": "French Connection Checked Lined Harrington Jacket with Borg Collar",
-          "splash_img_url": "prod2-img1.jpg",
-        },
-        Object {
-          "price": "£50.00",
-          "product_name": "Adidas Originals Trefoil Hoodie In Grey",
-          "splash_img_url": "prod3-img1.jpg",
-        },
-        Object {
-          "price": "£10.50",
-          "product_name": "ASOS Body With Plunge Neck Long Sleeve And Thong",
-          "splash_img_url": "prod4-img1.jpg",
-        },
-        Object {
-          "price": "£420.00",
-          "product_name": "All Saints Oversized Zip Biker Jacket in Leather",
-          "splash_img_url": "prod5-img1.jpg",
-        },
+      "children": Array [
+        <img
+          alt={undefined}
+          src={undefined}
+          width="150"
+/>,
+        <div>
+          <div
+                    className="productName"
+                    style={
+                              Object {
+                                        "fontWeight": "bold",
+                                      }
+                    }
+          />
+          <div
+                    className="productPrice"
+          />
+</div>,
       ],
+      "className": "productCard",
+      "style": Object {
+        "margin": "1em",
+      },
     },
     "ref": null,
-    "rendered": null,
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "alt": undefined,
+          "src": undefined,
+          "width": "150",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="productName"
+              style={
+                            Object {
+                                          "fontWeight": "bold",
+                                        }
+              }
+/>,
+            <div
+              className="productPrice"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "productName",
+              "style": Object {
+                "fontWeight": "bold",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "productPrice",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": null,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "cards": Array [
-          Object {
-            "price": "£46.00",
-            "product_name": "Warehouse Side Split Roll Neck Jumper",
-            "splash_img_url": "prod1-img1.jpg",
-          },
-          Object {
-            "price": "£60.00",
-            "product_name": "French Connection Checked Lined Harrington Jacket with Borg Collar",
-            "splash_img_url": "prod2-img1.jpg",
-          },
-          Object {
-            "price": "£50.00",
-            "product_name": "Adidas Originals Trefoil Hoodie In Grey",
-            "splash_img_url": "prod3-img1.jpg",
-          },
-          Object {
-            "price": "£10.50",
-            "product_name": "ASOS Body With Plunge Neck Long Sleeve And Thong",
-            "splash_img_url": "prod4-img1.jpg",
-          },
-          Object {
-            "price": "£420.00",
-            "product_name": "All Saints Oversized Zip Biker Jacket in Leather",
-            "splash_img_url": "prod5-img1.jpg",
-          },
+        "children": Array [
+          <img
+            alt={undefined}
+            src={undefined}
+            width="150"
+/>,
+          <div>
+            <div
+                        className="productName"
+                        style={
+                                    Object {
+                                                "fontWeight": "bold",
+                                              }
+                        }
+            />
+            <div
+                        className="productPrice"
+            />
+</div>,
         ],
+        "className": "productCard",
+        "style": Object {
+          "margin": "1em",
+        },
       },
       "ref": null,
-      "rendered": null,
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "alt": undefined,
+            "src": undefined,
+            "width": "150",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="productName"
+                style={
+                                Object {
+                                                "fontWeight": "bold",
+                                              }
+                }
+/>,
+              <div
+                className="productPrice"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "productName",
+                "style": Object {
+                  "fontWeight": "bold",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "productPrice",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
