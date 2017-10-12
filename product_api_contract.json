@@ -1,67 +1,35 @@
-{
-  "1234": {
+"Product API contract, listings page: "
+[ 
+  {
+    "productID": "1234",
     "productName":"Product1",
-    "images":{},
+    "image":"url",
+    "price":"£20.00"
+  }
+]
+
+"Product API contract, description page: "
+[
+   {
+    "productID": "1234",
+    "productName":"Product1",
+    "images":
+    [
+      "image0":"image0",
+      "image1":"image1",
+      "image2":"image2",
+      "image3":"image3"
+    ],
     "price":"£20.00",
+    "discountPrice": "",
     "productDescription":"some text here",
     "productBrand":"some text here",
     "materials":"some text here",
     "brandDescription":"some text here",
-    "size":{},
-    "colour": {},
-    "gender" : "male"
   }
-}
+]
 
-{
-  "1234": {
-    "productname":"Product1",
-    "images":{
-      "image0":"image0",
-      "image1":"image1",
-      "image2":"image2",
-      "image3":"image3"
-    },
-    "price":"£20.00",
-    "productdescription":"some text here",
-    "productbrand":"some text here",
-    "materials":"some text here",
-    "branddescription":"some text here",
-    "size":{
-        "size0":"small",
-        "size1":"medium",
-        "size2":"large",
-        "size3":"extra large"
-    },
-    "colour": {
-        "colour0":"black",
-        "colour1":"grey"
-    },
-    "gender" : "male"
-  },
-  "5678": {
-    "productname":"Product1",
-    "images":{
-      "image0":"image0",
-      "image1":"image1",
-      "image2":"image2",
-      "image3":"image3"
-    },
-    "price":"£20.00",
-    "productdescription":"some text here",
-    "productbrand":"some text here",
-    "materials":"some text here",
-    "branddescription":"some text here",
-    "size":{
-        "size0":"small",
-        "size1":"medium",
-        "size2":"large",
-        "size3":"extra large"
-    },
-    "colour": {
-        "colour0":"black",
-        "colour1":"grey"
-    },
-    "gender" : "male"
-  }
-}
+"Stock API contract: "
+[
+  {"id": 1123, "size": m, "colour": red, "stock": 2}
+]
