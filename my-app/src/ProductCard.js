@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 const ProductCard = (props) => {
 	return (
   	<div  className="productCard" style={{margin: '1em'}}>
-  	  <img width="150" src={props.splash_img_url} alt={props.product_name}/>
+  	  <img width="150" src={props.splashImgUrl} alt={props.productName}/>
       <div>
         <div className="productName" style={{fontWeight: 'bold'}}>
-        	{props.product_name}
+        	{props.productName}
         </div>
         <div className="productPrice">
         	{props.price}
@@ -18,9 +18,9 @@ const ProductCard = (props) => {
 };
 
 ProductCard.propTypes ={
-  splash_img_url: PropTypes.string.isRequired,
+  splashImgUrl: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  product_name: PropTypes.string.isRequired,
+  productName: PropTypes.string.isRequired,
 }
 
 export default ProductCard;
