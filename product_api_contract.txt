@@ -1,0 +1,162 @@
+Data required from product API
+- Product Name
+- Images (all of the different images)
+- Price (original, Discounted)
+- Product Description
+- Product Brand
+- Materials used in product
+- Brand description
+- Size of products
+- Colour of products
+- Gender
+
+Stock API – will provide the stock of an item
+
+Data required from the front end
+- When user enters URL
+- Client should send GET request for product api
+- Backend should PUSH data in the form of json object
+- Front end should manipulate the object
+
+JSON:
+
+{
+  "0": {
+    "productname":"Product1",
+    "images":{
+      "image1":"image1",
+      "image2":"image2",
+      "image3":"image3",
+      "image4":"image4"
+    },
+    "price":"£20.00",
+    "productdescription":"some text here",
+    "productbrand":"some text here",
+    "materials":"some text here",
+    "branddescription":"some text here",
+    "size":{
+        "size1":"small",
+        "size2":"medium",
+        "size3":"large",
+        "size4":"extra large"
+    },
+    "colour": {
+        "colour1":"black",
+        "colour2":"grey"
+    },
+    "gender" : {
+        "male"
+    }
+  },
+  "1": {
+    "productname":"Product2",
+    "images":{
+      "image1":"image1",
+      "image2":"image2",
+      "image3":"image3",
+      "image4":"image4"
+    },
+    "price":"£20.00",
+    "productdescription":"some text here",
+    "productbrand":"some text here",
+    "materials":"some text here",
+    "branddescription":"some text here",
+    "size":{
+        "size1":"small",
+        "size2":"medium",
+        "size3":"large",
+        "size4":"extra large"
+    },
+    "colour": {
+        "colour1":"black",
+        "colour2":"grey"
+
+    },
+    "gender" : {
+        "male"
+    }
+  },
+  "2": {
+    "productname":"Product3",
+    "images":{
+      "image1":"image1",
+      "image2":"image2",
+      "image3":"image3",
+      "image4":"image4"
+    },
+    "price":"£20.00",
+    "productdescription":"some text here",
+    "productbrand":"some text here",
+    "materials":"some text here",
+    "branddescription":"some text here",
+    "size":{
+        "size1":"small",
+        "size2":"medium",
+        "size3":"large",
+        "size4":"extra large"
+    },
+    "colour": {
+        "colour1":"black",
+        "colour2":"grey"
+
+    },
+    "gender" : {
+        "male"
+    }
+  },
+  "3": {
+    "productname":"Product4",
+    "images":{
+      "image1":"image1",
+      "image2":"image2",
+      "image3":"image3",
+      "image4":"image4"
+    },
+    "price":"£20.00",
+    "productdescription":"some text here",
+    "productbrand":"some text here",
+    "materials":"some text here",
+    "branddescription":"some text here",
+    "size":{
+        "size1":"small",
+        "size2":"medium",
+        "size3":"large",
+        "size4":"extra large"
+    },
+    "colour": {
+        "colour1":"black",
+        "colour2":"grey"
+    },
+    "gender" : {
+        "male"
+    }
+  },
+  "4": {
+    "productname":"Product5",
+    "images":{
+      "image1":"image1",
+      "image2":"image2",
+      "image3":"image3",
+      "image4":"image4"
+    },
+    "price":"£20.00",
+    "productdescription":"some text here",
+    "productbrand":"some text here",
+    "materials":"some text here",
+    "branddescription":"some text here",
+    "size":{
+        "size1":"small",
+        "size2":"medium",
+        "size3":"large",
+        "size4":"extra large"
+    },
+    "colour": {
+        "colour1":"black",
+        "colour2":"grey"
+    },
+    "gender" : {
+        "male"
+    }
+  }
+}
+
