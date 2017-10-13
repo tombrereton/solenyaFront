@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Enzyme, { shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
-import ProductPage from './ProductPage';
 import ProductCard from './ProductCard';
 import productData from './ProductData';
 
