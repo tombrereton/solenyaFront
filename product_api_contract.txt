@@ -1,0 +1,51 @@
+Data required from product API
+- Product Name
+- Images (all of the different images)
+- Price (original, Discounted)
+- Product Description
+- Product Brand
+- Materials used in product
+- Brand description
+- Size of products
+- Colour of products
+- Gender
+
+Data required from the front end
+- When user enters URL
+- Client should send GET request for product api
+- Backend should PUSH data in the form of json object
+- Front end should manipulate the object
+
+JSON:
+
+"Product API contract, listings page: "
+[ 
+  {
+    "productID": "1234",
+    "productName":"Product1",
+    "image":"url",
+    "price":"£20.00"
+  }
+]
+
+"Product API contract, description page: "
+[
+   {
+    "productID": "1234",
+    "productName":"Product1",
+    "images":
+    [
+      "image0":"image0",
+      "image1":"image1",
+      "image2":"image2",
+      "image3":"image3"
+    ],
+    "price":"£20.00",
+    "discountPrice": "",
+    "productDescription":"some text here",
+    "productBrand":"some text here",
+    "materials":"some text here",
+    "brandDescription":"some text here",
+  }
+]
+
