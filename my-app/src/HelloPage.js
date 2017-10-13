@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './HelloPage.css';
 
 class HelloPage extends Component {
