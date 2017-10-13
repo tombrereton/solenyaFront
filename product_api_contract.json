@@ -4,7 +4,8 @@
     "productID": 1234,
     "productName":"Product1",
     "image":"url",
-    "price":"£20.00"
+    "price":"£20.00",
+    "discountPrice": "",
   }
 ]
 
