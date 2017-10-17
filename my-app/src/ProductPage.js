@@ -5,6 +5,8 @@ import CardList from './CardList';
 import fetchDataToJSON from './dataFetcher';
 
 const testUrl = 'http://localhost:3000/Products';
+const productServiceEndpoint = 'http://team-solenya-product-dev.azurewebsites.net/';
+const testProductServiceEndpoint = 'http://localhost:56669/';
 
 class ProductPage extends Component {
   constructor() {
@@ -16,7 +18,7 @@ class ProductPage extends Component {
   }
 
   componentDidMount() {
-    fetchDataToJSON(testUrl).then(cards => this.setState({cards}));
+    fetchDataToJSON(testProductServiceEndpoint).then(cards => this.setState({cards}));
   }
 
   render() {
