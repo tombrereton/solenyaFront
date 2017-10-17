@@ -3,7 +3,7 @@
   {
     "productID": 1234,
     "productName":"Product1",
-    "image":"url",
+    "splashImgUrl":"url",
     "price":"£20.00",
     "discountPrice": "",
   }
