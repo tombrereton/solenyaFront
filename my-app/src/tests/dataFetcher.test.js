@@ -1,11 +1,11 @@
-import { fetchDataToJSON } from "../dataFetcher";
+import  fetchDataToJSON  from "../dataFetcher";
 import fetchMock from "fetch-mock";
 import { render } from "react-dom";
 import db from "../db.json";
 import React from "react";
 import Root from '../Root';
 
-
+const productServiceEndpoint = 'http://team-solenya-product-dev.azurewebsites.net/';
 jest.mock("react-dom");
 
 const fetchData = { some: "result" };
@@ -16,9 +16,9 @@ afterEach(() => {
 })
 describe("fetch and render", () => {
     it("calls fetch with the data URL", (done) => {
-        fetchDataToJSON()
+        fetchDataToJSON(productServiceEndpoint)
             .then(() => {
-                expect(fetchMock.lastUrl()).toEqual('http://localhost:3000/Products');
+                expect(fetchMock.lastUrl()).toEqual('http://team-solenya-product-dev.azurewebsites.net/');
                 done();
             });
     })

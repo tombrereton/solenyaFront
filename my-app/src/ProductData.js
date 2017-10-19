@@ -1,25 +1,42 @@
 let productData = [
-	{ productName: "Warehouse Side Split Roll Neck Jumper",
-		splashImgUrl: require("./products/product1/prod1-img1.jpg"),
-		price: "£46.00",
-		id: 1 },
-  { productName: "French Connection Checked Lined Harrington Jacket with Borg Collar",
-		splashImgUrl: require("./products/product2/prod2-img1.jpg"),
-		price: "£60.00",
-		id: 2 },
-  { productName: "Adidas Originals Trefoil Hoodie In Grey",
-		splashImgUrl: require("./products/product3/prod3-img1.jpg"),
-		price: "£50.00",
-		id: 3 },
-  { productName: "ASOS Body With Plunge Neck Long Sleeve And Thong",
-		splashImgUrl: require("./products/product4/prod4-img1.jpg"),
-		price: "£10.50",
-		id: 4 },
-  { productName: "All Saints Oversized Zip Biker Jacket in Leather",
-		splashImgUrl: require("./products/product5/prod5-img1.jpg"),
-		price: "£420.00",
-		id: 5
-	 }
+	{
+		ProductId: 1,
+		ProductName: "Warehouse Side Split Roll Neck Jumper",
+		SplashImgUrl: require("./products/product1/prod1-img1.jpg"),
+		Price: 4600,
+	    DiscountPrice: 0
+	
+	},
+	{
+		ProductId: 2,
+		ProductName: "French Connection Checked Lined Harrington Jacket with Borg Collar",
+		SplashImgUrl: require("./products/product2/prod2-img1.jpg"),
+		Price: 6000,
+		DiscountPrice: 0
+	},
+	{
+		ProductId: 3,
+		ProductName: "Adidas Originals Trefoil Hoodie In Grey",
+		SplashImgUrl: require("./products/product3/prod3-img1.jpg"),
+		Price: 5000,
+		DiscountPrice: 0
+	},
+	{
+		ProductId: 4,
+		ProductName: "ASOS Body With Plunge Neck Long Sleeve And Thong",
+		SplashImgUrl: require("./products/product4/prod4-img1.jpg"),
+		Price: 1800,
+		DiscountPrice: 1050
+
+	},
+	{
+		ProductId: 5,
+		ProductName: "All Saints Oversized Zip Biker Jacket in Leather",
+		SplashImgUrl: require("./products/product5/prod5-img1.jpg"),
+		Price: 42000,
+		DiscountPrice: 0
+
+	}
 ]
 
 export default productData;

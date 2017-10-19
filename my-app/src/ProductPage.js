@@ -18,7 +18,8 @@ class ProductPage extends Component {
   }
 
   componentDidMount() {
-    fetchDataToJSON(productServiceEndpoint).then(cards => this.setState({cards}));
+    fetchDataToJSON(productServiceEndpoint)
+      .then(cards => this.setState({cards}));
   }
 
   render() {
