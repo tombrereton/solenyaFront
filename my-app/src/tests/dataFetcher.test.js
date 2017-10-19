@@ -1,7 +1,6 @@
 import  fetchDataToJSON  from "../dataFetcher";
 import fetchMock from "fetch-mock";
 import { render } from "react-dom";
-import db from "../db.json";
 import React from "react";
 import Root from '../Root';
 
