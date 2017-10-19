@@ -13,8 +13,9 @@ const ProductCard = (props) => {
           £{(props.Price/100).toFixed(2)}
         </div>
         <div className="productDiscount">
-        {props.DiscountPrice}
-          </div>
+             {props.DiscountPrice != null &&
+             <div id = "discount">£{(props.DiscountPrice/100).toFixed(2)}</div>}
+        </div>
       </div>
   	</div>	
   );
@@ -25,7 +26,6 @@ ProductCard.propTypes ={
   SplashImgUrl: PropTypes.string.isRequired,
   Price: PropTypes.number.isRequired,
   ProductName: PropTypes.string.isRequired,
-  DiscountPrice: PropTypes.number.isRequired,
 }
 
 export default ProductCard;

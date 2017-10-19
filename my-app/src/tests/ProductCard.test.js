@@ -13,11 +13,11 @@ global.shallow = shallow;
 global.render = render;
 global.mount = mount;
 
-const productServiceEndpoint = 'http://team-solenya-product-dev.azurewebsites.net/';
-jest.mock("../dataFetcher");
-fetchDataToJSON.mockImplementation(() => {
-    return productData;
-});
+//const productServiceEndpoint = 'http://team-solenya-product-dev.azurewebsites.net/';
+//jest.mock("../dataFetcher");
+// fetchDataToJSON.mockImplementation(() => {
+//     return productData;
+// });
 // Fail tests on any warning
 console.error = message => {
    throw new Error(message);
@@ -82,9 +82,21 @@ describe('ProductCard', () => {
     it('requires discount price not to be empty when not null', ()=> {
         const card = <ProductCard ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={dataElem.SplashImgUrl} DiscountPrice = {dataElem.DiscountPrice} />;
         const wrapper = shallow(card);
-        const DiscountPrice = wrapper.find('.productDiscount');
-        const discountString = dataElem.DiscountPrice.toString();
-        expect(DiscountPrice.text()).toEqual(discountString);
+        const discountPrice = wrapper.find('.productDiscount');
+        if(discountPrice.text() !=""){
+            const discountString = "£"+((dataElem.DiscountPrice.toString())/100).toFixed(2);
+            expect(discountPrice.text()).toEqual(discountString);
+        }
     });
+
+    it('requires discount price to not show if null', ()=> {
+        const card = <ProductCard ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={dataElem.SplashImgUrl} DiscountPrice = {dataElem.DiscountPrice} />;
+        const wrapper = shallow(card);
+        const discountPrice = wrapper.find('.productDiscount');
+        if(discountPrice.text() == ""){
+            expect(discountPrice.text()).toEqual("");
+        }
+    });
+    
 });
 //if discout is not null should not be empty
