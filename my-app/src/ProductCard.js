@@ -20,8 +20,7 @@ const ProductCard = (props) => {
   	</div>	
   );
 };
-//Discount price needs too be added above in div.
-//conversion to to decimal does not match the value in Product data so test cannot succeeded
+
 ProductCard.propTypes ={
   SplashImgUrl: PropTypes.string.isRequired,
   Price: PropTypes.number.isRequired,
