@@ -30,30 +30,4 @@ class ProductPage extends Component {
 }
 
 
-
-// const ProductPage = (props) => (
-//       fetchDataToJSON(testUrl)
-//         .then(jsonData => {
-//           console.log("jsondata",jsonData);
-//           <CardList cards={jsonData}/> 
-//         })
-//     )
-
-
-    // console.log(fetchDataToJSON()));
-    // fetchDataToJSON().then((myListOfProducts) => { // fetching your array of products with fetchDataToJSON(). Then with the array myListOfProducts
-    //   myListOfProducts.forEach((product) => { // for each of the products in your products array, apply the arrow function to the individual product.
-    //     // put the product on the page. Ollie dunno how to do this in your code ;)
-    //     console.log(product);
-
-// console.log(fetchDataToJSON().then(
-//   (mylist) => {
-//     mylist.forEach(
-//       (item) => {
-//         console.log(item);
-//       }
-//     )
-//   }
-// ));
-
 export default ProductPage;
