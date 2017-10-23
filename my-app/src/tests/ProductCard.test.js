@@ -18,7 +18,7 @@ global.mount = mount;
 // fetchDataToJSON.mockImplementation(() => {
 //     return productData;
 // });
-// Fail tests on any warning
+
 console.error = message => {
    throw new Error(message);
 };
@@ -99,4 +99,4 @@ describe('ProductCard', () => {
     });
     
 });
-//if discout is not null should not be empty
+

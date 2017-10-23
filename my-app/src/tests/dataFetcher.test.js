@@ -14,7 +14,7 @@ fetchMock.get(productServiceEndpoint, fetchData);
 afterEach(() => {
     jest.resetAllMocks();
 })
-describe("fetch and render", () => {
+describe("fetch", () => {
     it("calls fetch with the data URL", (done) => {
         fetchDataToJSON(productServiceEndpoint)
             .then(data => {
@@ -32,8 +32,3 @@ describe("fetch and render", () => {
     })
 })
 
-//shows the data is displayed correctly
-//fetches prodcut data
-//fetches product name
-//fetches image
-//displays the above as well a test for each 
