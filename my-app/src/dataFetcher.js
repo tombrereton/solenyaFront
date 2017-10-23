@@ -7,7 +7,7 @@ const fetchDataToJSON = (url) => {
          return fetch(url)
         .then((resp) =>{
            resp = resp.json();
-           //console.log(resp);
+           
            return resp;
         })
         .catch(error => {
@@ -20,9 +20,4 @@ const fetchDataToJSON = (url) => {
 }
 
 
-// fetchDataToJSON(localUrl).then(d=>console.log("datafetcher",d));
-
 export default fetchDataToJSON;
-
-
-//need to get a function that returns just the json array by itself 
