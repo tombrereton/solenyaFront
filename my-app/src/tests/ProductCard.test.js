@@ -38,7 +38,7 @@ describe('ProductCard', () => {
     });
 
 	it('the name of the product is not empty', () => {
-        console.log("what is this", dataElem.ProductName);
+        console.log("what is this", dataElem.ProductName); //delete this after
         const card = <ProductCard ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={dataElem.SplashImgUrl} DiscountPrice = {dataElem.DiscountPrice}/>;
         const wrapper = shallow(card);
         const name = wrapper.find('.productName');
@@ -60,11 +60,11 @@ describe('ProductCard', () => {
         expect(img.prop("src")).toEqual('foo');
     });
 
-    it('requires a price prop', () => {
+    it('requires a name prop', () => {
         expect(() => shallow(<ProductCard Price={dataElem.Price} SplashImgUrl={dataElem.SplashImgUrl} />)).toThrow();
     });
 
-    it('requires a name prop', () => {
+    it('requires a price prop', () => {
         expect(() => shallow(<ProductCard ProductName={dataElem.ProductName} SplashImgUrl={dataElem.SplashImgUrl} />)).toThrow();
     });
 
