@@ -38,7 +38,7 @@ describe('ProductCard', () => {
     });
 
 	it('the name of the product is not empty', () => {
-        console.log("what is this", dataElem.ProductName); //delete this after
+      
         const card = <ProductCard ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={dataElem.SplashImgUrl} DiscountPrice = {dataElem.DiscountPrice}/>;
         const wrapper = shallow(card);
         const name = wrapper.find('.productName');
