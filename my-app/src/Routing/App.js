@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import ErrorPage from './ErrorPage';
-import ProductPage from './ProductPage';
-import HelloPage from './HelloPage';
+import ErrorPage from '../ResponsePages/ErrorPage';
+import ProductPage from '../Plp/ProductPage';
 import {Route, Switch } from 'react-router-dom';
 
 class App extends Component {
@@ -12,7 +11,6 @@ class App extends Component {
       <div className="App">
         <Switch>
          <Route exact path="/" component={ProductPage} />
-         <Route exact path="/HelloPage" component={HelloPage} />
          <Route path ="/*" component={ErrorPage} />
         </Switch>
       </div>

@@ -7,7 +7,7 @@ class ErrorPage extends Component {
     return (
       <div className="ErrorPage">
         <header className="EP-header">
-          Sorry, Something Went Wrong!
+          Sorry, Something Went Wrong
         </header>
         <p className="EP-intro">  
         </p>

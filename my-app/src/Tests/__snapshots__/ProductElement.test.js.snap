@@ -1,0 +1,296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductElement It should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductElement
+    DiscountPrice={null}
+    Price={4600}
+    ProductName="Warehouse Side Split Roll Neck Jumper"
+    SplashImgUrl="./static/media/prod1-img1.jpg"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="Warehouse Side Split Roll Neck Jumper"
+          src="./static/media/prod1-img1.jpg"
+          width="150"
+/>,
+        <div>
+          <div
+                    className="productName"
+                    style={
+                              Object {
+                                        "fontWeight": "bold",
+                                      }
+                    }
+          >
+                    Warehouse Side Split Roll Neck Jumper
+          </div>
+          <div
+                    className="productPrice"
+          >
+                    £
+                    46.00
+          </div>
+          <div
+                    className="productDiscount"
+          />
+</div>,
+      ],
+      "className": "ProductElement",
+      "style": Object {
+        "margin": "1em",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "Warehouse Side Split Roll Neck Jumper",
+          "src": "./static/media/prod1-img1.jpg",
+          "width": "150",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="productName"
+              style={
+                            Object {
+                                          "fontWeight": "bold",
+                                        }
+              }
+>
+              Warehouse Side Split Roll Neck Jumper
+</div>,
+            <div
+              className="productPrice"
+>
+              £
+              46.00
+</div>,
+            <div
+              className="productDiscount"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Warehouse Side Split Roll Neck Jumper",
+              "className": "productName",
+              "style": Object {
+                "fontWeight": "bold",
+              },
+            },
+            "ref": null,
+            "rendered": "Warehouse Side Split Roll Neck Jumper",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "£",
+                "46.00",
+              ],
+              "className": "productPrice",
+            },
+            "ref": null,
+            "rendered": Array [
+              "£",
+              "46.00",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": false,
+              "className": "productDiscount",
+            },
+            "ref": null,
+            "rendered": false,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="Warehouse Side Split Roll Neck Jumper"
+            src="./static/media/prod1-img1.jpg"
+            width="150"
+/>,
+          <div>
+            <div
+                        className="productName"
+                        style={
+                                    Object {
+                                                "fontWeight": "bold",
+                                              }
+                        }
+            >
+                        Warehouse Side Split Roll Neck Jumper
+            </div>
+            <div
+                        className="productPrice"
+            >
+                        £
+                        46.00
+            </div>
+            <div
+                        className="productDiscount"
+            />
+</div>,
+        ],
+        "className": "ProductElement",
+        "style": Object {
+          "margin": "1em",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Warehouse Side Split Roll Neck Jumper",
+            "src": "./static/media/prod1-img1.jpg",
+            "width": "150",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="productName"
+                style={
+                                Object {
+                                                "fontWeight": "bold",
+                                              }
+                }
+>
+                Warehouse Side Split Roll Neck Jumper
+</div>,
+              <div
+                className="productPrice"
+>
+                £
+                46.00
+</div>,
+              <div
+                className="productDiscount"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Warehouse Side Split Roll Neck Jumper",
+                "className": "productName",
+                "style": Object {
+                  "fontWeight": "bold",
+                },
+              },
+              "ref": null,
+              "rendered": "Warehouse Side Split Roll Neck Jumper",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "£",
+                  "46.00",
+                ],
+                "className": "productPrice",
+              },
+              "ref": null,
+              "rendered": Array [
+                "£",
+                "46.00",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": false,
+                "className": "productDiscount",
+              },
+              "ref": null,
+              "rendered": false,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;

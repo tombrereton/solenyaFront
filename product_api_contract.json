@@ -1,0 +1,54 @@
+"Product API contract, listings page: "
+[ 
+  {
+    "productID": 1234,
+    "productName":"Product1",
+    "splashImgUrl":"url",
+    "price":"£20.00",
+    "discountPrice": "",
+  }
+]
+
+"Product API contract, description page: "
+[
+   {
+    "productID": 1234,
+    "variants":
+      [
+        {
+          "variantID": 123, 
+          "images":
+            [
+              "image0":"image0",
+              "image1":"image1",
+              "image2":"image2",
+              "image3":"image3"
+            ],
+        },
+        {
+          "variantID": 456, 
+          "images":
+            [
+              "image0":"image0",
+              "image1":"image1",
+              "image2":"image2",
+              "image3":"image3"
+            ],
+        },
+      ]
+    "productName":"Product1",
+    "price":"£20.00",
+    "discountPrice": "",
+    "productDescription":"some text here",
+    "productBrand":"some text here",
+    "materials":"some text here",
+    "brandDescription":"some text here",
+  }
+]
+
+"Stock API contract: "
+[
+  {"variantID": 123, "size": "s", "colour" : "red", "quantity": 1},
+  {"variantID": 456, "size": "m", "colour" : "black", "quantity": 3},
+  {"variantID": 789, "size": "l", "colour" : "black", "quantity": 3},
+]
