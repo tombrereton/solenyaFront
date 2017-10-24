@@ -13,10 +13,8 @@ class ProductPage extends Component {
   }
 
   componentDidMount() {
-    fetch(ProductServiceEndpoint)
-      .then(resp => resp.json())
+    fetchDataToJSON(ProductServiceEndpoint)
       .then(productElements => this.setState({productElements}))
-      .catch(error => console.log("Error fetching in product page:",error));
   }
 
   render() {
