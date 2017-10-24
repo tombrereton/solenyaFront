@@ -1,22 +1,22 @@
-import  fetchDataToJSON  from "../dataFetcher";
+import  fetchDataToJSON  from "../DataAccess/dataFetcher";
 import fetchMock from "fetch-mock";
 import { render } from "react-dom";
 import React from "react";
-import Root from '../Root';
-import testData from '../product_api_data_test.json';
-const productServiceEndpoint = 'http://team-solenya-product-dev.azurewebsites.net/';
+import Root from '../Routing/Root';
+import TestData from "../DataAccess/ProductApiDataTest.json";
+import {ProductServiceEndpoint} from '../config';
 jest.mock("react-dom");
 
 
-const fetchData = testData[0];
-fetchMock.get(productServiceEndpoint, fetchData);
+const fetchData = TestData[0];
+fetchMock.get(ProductServiceEndpoint, fetchData);
 
 afterEach(() => {
     jest.resetAllMocks();
 })
 describe("fetch", () => {
     it("calls fetch with the data URL", (done) => {
-        fetchDataToJSON(productServiceEndpoint)
+        fetchDataToJSON(ProductServiceEndpoint)
             .then(data => {
                 expect(data).toEqual(fetchData);
                 done();
@@ -24,9 +24,9 @@ describe("fetch", () => {
     })
 
     it("calls fetch with the right endpoint", (done) => {
-        fetchDataToJSON(productServiceEndpoint)
+        fetchDataToJSON(ProductServiceEndpoint)
         .then(() => {
-            expect(fetchMock.lastUrl()).toEqual(productServiceEndpoint);
+            expect(fetchMock.lastUrl()).toEqual(ProductServiceEndpoint);
             done();
         })
     })

@@ -1,7 +1,3 @@
-import Root from './Root';
-const localUrl = 'http://localhost:3000/Products';
-
-const productServiceEndpoint = 'http://team-solenya-product-dev.azurewebsites.net/';
 
 const fetchDataToJSON = (url) => {
          return fetch(url)
@@ -11,8 +7,7 @@ const fetchDataToJSON = (url) => {
            return resp;
         })
         .catch(error => {
-            return "foo";
-            throw new Error("error message:" + error);
+            console.log("Fetching Data from Json Error:" + error);
         });
 
 

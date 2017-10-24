@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ProductCard = (props) => {
+const ProductElement = (props) => {
 	return (
-  	<div  className="productCard" style={{margin: '1em'}}>
+  	<div  className="ProductElement" style={{margin: '1em'}}>
   	  <img width="150" src={props.SplashImgUrl} alt={props.ProductName}/>
       <div>
         <div className="productName" style={{fontWeight: 'bold'}}>
@@ -21,10 +21,10 @@ const ProductCard = (props) => {
   );
 };
 
-ProductCard.propTypes ={
+ProductElement.propTypes ={
   SplashImgUrl: PropTypes.string.isRequired,
   Price: PropTypes.number.isRequired,
   ProductName: PropTypes.string.isRequired,
 }
 
-export default ProductCard;
+export default ProductElement;

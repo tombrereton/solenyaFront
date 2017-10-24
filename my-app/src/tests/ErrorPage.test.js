@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ErrorPage from '../ErrorPage';
+import ErrorPage from '../ResponsePages/ErrorPage';
 import Enzyme, { shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
 
