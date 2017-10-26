@@ -25,5 +25,15 @@
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.0.0",
     "react-test-renderer": "^15.6.2"
+  },
+  "jest":{
+    "collectCoverageFrom":[
+      "**/*.js",
+      "!src/registerServiceWorker.js",
+      "!src/index.js",
+      "!src/Plp/ProductPage.js",
+      "!src/Routing/App.js",
+      "!coverage/lcov-report/prettify.js",
+      "!coverage/lcov-report/sorter.js"]
   }
 }
