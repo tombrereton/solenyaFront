@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Enzyme, { shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
-import ProductPage from '../Plp/ProductPage';
+import ProductPage from '../Plp/Plp';
 import ProductData from '../Plp/ProductData';
 import Products from '../Plp/Products';
 import ProductElement from '../Plp/ProductElement';
@@ -13,7 +13,7 @@ import ProductElement from '../Plp/ProductElement';
 Enzyme.configure({ adapter: new Adapter() });
 
 
-describe('ProductPage', () => {
+describe('Plp', () => {
 
   it('renders all products', () => {
     const wrapper = shallow(<Products productElements = {ProductData} />);
