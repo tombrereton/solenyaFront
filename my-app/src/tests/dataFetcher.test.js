@@ -5,12 +5,10 @@ import React from "react";
 import Root from '../Routing/Root';
 import TestData from "../DataAccess/ProductApiDataTest.json";
 import {ProductServiceEndpoint} from '../config';
-import ProductDescriptionTestData from '../DataAccess/ProductApiPdpDataTest.json';
 jest.mock("react-dom");
 
-const pdpTestUrl = 'http://localhost:3000/products';
-const fetchData = TestData[0];
 
+const fetchData = TestData[0];
 fetchMock.get(ProductServiceEndpoint, fetchData);
 
 afterEach(() => {
@@ -32,6 +30,5 @@ describe("fetch", () => {
             done();
         })
     })
-
 })
 
