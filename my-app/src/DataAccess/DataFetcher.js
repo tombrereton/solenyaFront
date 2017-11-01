@@ -13,5 +13,9 @@ const fetchDataToJSON = (url) => {
    
 }
 
+// const fetchDescriptionToJSON = (productId) =>{
+//     const url =
+// }
+
 
 export default fetchDataToJSON;
