@@ -1,5 +1,4 @@
-{
-  "products": [
+[
     {
       "id": 1,
       "ProductName": "Warehouse Side Split Roll Neck Jumper",
@@ -44,4 +43,3 @@
       "Gender": "Women"
     }
   ]
-}
