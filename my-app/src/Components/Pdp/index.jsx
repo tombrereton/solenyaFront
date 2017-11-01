@@ -2,35 +2,37 @@ import React, {Component} from 'react';
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
 import {PdpTestUrl} from "../../Config.js";
 import PdpElement from "../PdpElement"
-
+import Preloader from "../Preloader";
 
 
 class Pdp extends Component {
-    constructor() {
-        super();
+  constructor() {
+    super();
 
-        this.state = {
-            productElement: null
-        };
+    this.state = {
+      productElement: null
+    };
+  }
+
+  componentDidMount() {
+    const url = PdpTestUrl + '/' + this.props.match.params.id;
+    fetchDataToJSON(url)
+      .then(productElement => this.setState({productElement}))
+  }
+
+  render() {
+    console.log(this.state.productElement)
+    if (this.state.productElement !== null) {
+      return (
+        <PdpElement {...this.state.productElement}/>
+      )
     }
 
-    componentDidMount() {
-        const url = PdpTestUrl+'/'+this.props.match.params.id;
-        fetchDataToJSON(url)
-            .then(productElement => this.setState({productElement}))
-    }
-
-    render() {
-        return (
-            <PdpElement {...this.state.productElement}/>
-        )
-    }
+    return (
+      // TODO: Fix this
+      <Preloader/>
+    )
+  }
 }
-
-// const Pdp = ({match}) => (
-//     <div>
-//         <h3>Product ID: {match.params.productId}</h3>
-//     </div>
-// );
 
 export default Pdp;
