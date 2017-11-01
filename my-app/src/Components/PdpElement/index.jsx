@@ -36,9 +36,9 @@ const PdpElement = (props) => {
         </div>
         <div className="productColour">
           <h4>Colour:</h4>
-          <div className ="productColourValue">
-          {colours}
-          </div>
+            {colours.length === 1 &&
+            <div className ="productColourValue">{colours}</div>}
+        </div>
         </div>
         <div className="productDescription">
           <h4>Product Description:</h4>
@@ -65,7 +65,6 @@ const PdpElement = (props) => {
           </div>
         </div>
       </div>
-    </div>
 
   );
 };

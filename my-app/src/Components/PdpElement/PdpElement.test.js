@@ -68,11 +68,11 @@ console.error = message => {
     });
 
     it('requires a name prop', () => {
-        expect(() => shallow(<PdpElement Price={dataElem.Price} SplashImgUrl={'foo'} DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={dataElem.ImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>)).toThrow();
+        expect(() => shallow(<PdpElement Price={dataElem.Price} DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={dataElem.ImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>)).toThrow();
     });
 
     it('requires a price prop', () => {
-        expect(() => shallow(<PdpElement ProductName={dataElem.ProductName} SplashImgUrl={'foo'} DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={dataElem.ImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>)).toThrow();
+        expect(() => shallow(<PdpElement ProductName={dataElem.ProductName}  DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={dataElem.ImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>)).toThrow();
     });
 
     it('requires a product description prop', () => {
@@ -92,11 +92,11 @@ console.error = message => {
     });
 
     it('requires an image options props', () => {
-        expect(() => shallow(<PdpElement ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={'foo'} DiscountPrice = {dataElem.DiscountPrice} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>)).toThrow();
+        expect(() => shallow(<PdpElement ProductName={dataElem.ProductName} Price={dataElem.Price} DiscountPrice = {dataElem.DiscountPrice} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>)).toThrow();
     });
 
     it('renders image carousel', () => {
-        const card = <PdpElement ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={'foo'} DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={dataElem.ImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>;
+        const card = <PdpElement ProductName={dataElem.ProductName} Price={dataElem.Price} DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={dataElem.ImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>;
         const wrapper = shallow(card);
         const carousel = wrapper.find('.imageCarousel');
         expect(carousel.find('img').exists()).toBe(true);
