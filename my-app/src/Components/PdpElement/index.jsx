@@ -11,36 +11,52 @@ const PdpElement = (props) => {
       <div>
         <div className="productName">
           <h4>Product Name:</h4>
+          <div className ="productNameValue">
           {props.ProductName}
+          </div>
         </div>
         <div className="productPrice">
           <h4>Price:</h4>
+          <div className ="priceValue">
           £{(props.Price / 100).toFixed(2)}
+          </div>
         </div>
         <div className="productDiscount">
           <h4>Discount Price:</h4>
+          <div className ="productDiscountValue">
           {props.DiscountPrice !== null &&
           <div id="discount">£{(props.DiscountPrice / 100).toFixed(2)}</div>}
+          </div>
         </div>
         <div className="productColour">
           <h4>Colour:</h4>
+          <div className ="productColourValue">
           {colours}
+          </div>
         </div>
         <div className="productDescription">
           <h4>Product Description:</h4>
+          <div className ="productDescriptionValue">
           {props.ProductDescription}
+          </div>
         </div>
         <div className="productBrand">
           <h4>Product Brand:</h4>
+          <div className ="productBrandValue">
           {props.ProductBrand}
+          </div>
         </div>
         <div className="brandDescription">
           <h4>Brand Description:</h4>
+          <div className ="brandDescriptionValue">
           {props.BrandDescription}
+          </div>
         </div>
         <div className="materials">
           <h4>Materials:</h4>
+          <div className ="materialsValue">
           {props.Materials}
+          </div>
         </div>
       </div>
     </div>
