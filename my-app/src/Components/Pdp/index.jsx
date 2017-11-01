@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
-import {PdpTestUrl} from "../../Config.js";
 import PdpElement from "../PdpElement"
 import Preloader from "../Preloader";
+import {ProductServiceEndpoint} from "../../Config";
 
 
 class Pdp extends Component {
@@ -15,13 +15,12 @@ class Pdp extends Component {
   }
 
   componentDidMount() {
-    const url = PdpTestUrl + '/' + this.props.match.params.id;
+    const url = ProductServiceEndpoint + 'products/' + this.props.match.params.id;
     fetchDataToJSON(url)
       .then(productElement => this.setState({productElement}))
   }
 
   render() {
-    console.log(this.state.productElement)
     if (this.state.productElement !== null) {
       return (
         <PdpElement {...this.state.productElement}/>
