@@ -3,7 +3,7 @@ import Products from './Products';
 import fetchDataToJSON from '../DataAccess/DataFetcher';
 import {ProductServiceEndpoint} from '../Config';
 
-class ProductPage extends Component {
+class Plp extends Component {
   constructor() {
     super();
 
@@ -25,4 +25,4 @@ class ProductPage extends Component {
 }
 
 
-export default ProductPage;
+export default Plp;

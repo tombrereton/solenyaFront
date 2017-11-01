@@ -1,20 +1,22 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 
 import ErrorPage from '../ResponsePages/ErrorPage';
-import ProductPage from '../Plp/ProductPage';
-import {Route, Switch } from 'react-router-dom';
+import Plp from '../Plp/Plp';
+import Pdp from '../Components/Pdp'
+import {Route, Switch} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Switch>
-         <Route exact path="/" component={ProductPage} />
-         <Route path ="/*" component={ErrorPage} />
+          <Route exact path="/" component={Plp}/>
+          <Route path="/products/:id" component={Pdp}/>
+          <Route path="/*" component={ErrorPage}/>
         </Switch>
       </div>
-     );
+    );
   }
 }
 
