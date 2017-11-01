@@ -7,7 +7,7 @@ const PdpElement = (props) => {
 
   return (
     <div className="PdpElement" style={{margin: '1em'}}>
-      <img width="150" src={props.SplashImgUrl} alt={props.ProductName}/>
+      <img width="150" src={'.' + props.SplashImgUrl} alt={props.ProductName}/>
       <div>
         <div className="productName">
           <h4>Product Name:</h4>

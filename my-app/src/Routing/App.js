@@ -1,23 +1,26 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import ErrorPage from '../ResponsePages/ErrorPage';
 import Plp from '../Plp/Plp';
 import Pdp from '../Components/Pdp'
-import {Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Switch>
-          <Route exact path="/" component={Plp}/>
-          <Route path="/products/:id" component={Pdp}/>
-          <Route path="/*" component={ErrorPage}/>
-        </Switch>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <div>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/products/1">Product 1</Link></li>
+        <li><Link to="/products/2">Product 2</Link></li>
+        <li><Link to="/products/3">Product 3</Link></li>
+        <li><Link to="/products/4">Product 4</Link></li>
+        <li><Link to="/products/5">Product 5</Link></li>
+      </ul>
+      <hr/>
+      <Route exact path="/" component={Plp}/>
+      <Route path="/products/:id" component={Pdp}/>
+    </div>
+  </Router>
+);
 
 export default App;
