@@ -1,8 +1,6 @@
 import  fetchDataToJSON  from "../DataAccess/dataFetcher";
 import fetchMock from "fetch-mock";
-import { render } from "react-dom";
 import React from "react";
-import Root from '../Routing/Root';
 import TestData from "../DataAccess/ProductApiDataTest.json";
 import {ProductServiceEndpoint} from '../config';
 jest.mock("react-dom");
