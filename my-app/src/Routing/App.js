@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 
 import Plp from '../Plp/Plp';
 import Pdp from '../Components/Pdp'
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 const App = () => (
   <Router>
