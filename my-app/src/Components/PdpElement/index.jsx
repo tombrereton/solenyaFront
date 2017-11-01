@@ -4,10 +4,16 @@ import PropTypes from 'prop-types';
 const PdpElement = (props) => {
 
   let colours = getColours(props.ImageOptions);
+  let imagePaths = getImages(props.ImageOptions);
 
   return (
     <div className="PdpElement" style={{margin: '1em'}}>
-      <img width="150" src={props.SplashImgUrl} alt={props.ProductName}/>
+      <div className="imageCarousel">
+          <img id = "img1" width="150" src={imagePaths[0]} alt={props.ProductName}/>
+          <img id = "img2" width="150" src={imagePaths[1]} alt={props.ProductName}/>
+          <img id = "img3" width="150" src={imagePaths[2]} alt={props.ProductName}/>
+          <img id = "img4" width="150" src={imagePaths[3]} alt={props.ProductName}/>
+      </div>
       <div>
         <div className="productName">
           <h4>Product Name:</h4>
@@ -74,8 +80,18 @@ function getColours(imageOptions) {
   return colours
 }
 
+function getImages(imageOptions) {
+    let images = [];
+
+    for (let i = 0; i < imageOptions.length; i++) {
+        for(let j = 0; j< imageOptions[i]["ImageList"].length; j++){
+            images.push(imageOptions[i]["ImageList"][j]);
+        }
+    }
+    return images;
+}
+
 PdpElement.propTypes = {
-  SplashImgUrl: PropTypes.string.isRequired,
   Price: PropTypes.number.isRequired,
   ProductName: PropTypes.string.isRequired,
   ProductDescription: PropTypes.string.isRequired,
