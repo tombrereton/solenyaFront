@@ -2,7 +2,7 @@
 
 exports[`<Preloader /> renders as expected 1`] = `
 <div
-  className="preloader Mimban"
+  className="undefined Mimban"
 >
   Max Rebo
 </div>
