@@ -1,9 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Enzyme, { shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
 import PdpElement from '../PdpElement';
-import fetchDataToJSON from "../../DataAccess/DataFetcher";
 import TestData from "../../DataAccess/ProductApiPdpDataTest.json";
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -118,12 +116,18 @@ console.error = message => {
         const card = <PdpElement ProductName={dataElem.ProductName} Price={dataElem.Price}  DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={multipleImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>;
         const wrapper = shallow(card);
         let colours = getColours(dataElem.ImageOptions);
-        console.log(colours);
         if(colours.length > 1){
             const multiColours = wrapper.find(".colourSelector");
             expect(multiColours.exists()).toBe(true);
         }
    });
+
+    it('has add to bag button', () =>
+    {
+      const card = <PdpElement ProductName={dataElem.ProductName} Price={dataElem.Price}  DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={dataElem.ImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>;
+      const wrapper = shallow(card);
+      expect(wrapper.find('button').exists()).toBe(true);
+    });
 
      function getColours(imageOptions) {
          let colours = [];
