@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Dropdown from 'react-dropdown'
+import Dropdown from 'react-dropdown';
+import './style.css';
 
 
 const PdpElement = (props) => {
@@ -68,9 +69,11 @@ const PdpElement = (props) => {
           <div className ="materialsValue">
           {props.Materials}
           </div>
+          <div className="button">
+            <button type ="button">Add To Bag</button>
+          </div>
         </div>
       </div>
-
   );
 };
 
