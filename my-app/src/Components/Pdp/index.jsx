@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import fetchDataToJSON from "../../DataAccess/DataFetcher";
+import fetchDataToJSON from "../../DataAccess/DataFetcher/DataFetcher";
 import PdpElement from "../PdpElement"
 import Preloader from "../Preloader";
 import {ProductServiceEndpoint} from "../../Config";

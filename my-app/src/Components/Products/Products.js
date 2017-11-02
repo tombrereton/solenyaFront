@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductElement from './ProductElement';
+import ProductElement from '../ProductElement/ProductElement';
 
 const Products = props => (
 	<div>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Products from './Products';
-import fetchDataToJSON from '../DataAccess/DataFetcher';
-import {ProductServiceEndpoint} from '../Config';
+import Products from '../Products/Products';
+import fetchDataToJSON from '../../DataAccess/DataFetcher/DataFetcher';
+import {ProductServiceEndpoint} from '../../Config';
 
 class Plp extends Component {
   constructor() {

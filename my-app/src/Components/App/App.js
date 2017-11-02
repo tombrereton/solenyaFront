@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Plp from '../Plp/Plp';
-import Pdp from '../Components/Pdp'
+import Pdp from '../Pdp/index'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 const App = () => (

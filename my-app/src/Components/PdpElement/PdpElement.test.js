@@ -2,7 +2,7 @@ import React from 'react';
 import Enzyme, { shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
 import PdpElement from '../PdpElement';
-import TestData from "../../DataAccess/ProductApiPdpDataTest.json";
+import TestData from "../../TestData/ProductApiPdpDataTest.json";
 
 Enzyme.configure({ adapter: new Adapter() });
 

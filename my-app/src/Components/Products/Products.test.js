@@ -1,9 +1,9 @@
 import React from 'react';
 import Enzyme, { shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
-import ProductData from '../Plp/ProductData';
-import Products from '../Plp/Products';
-import ProductElement from '../Plp/ProductElement';
+import ProductData from '../../TestData/ProductData';
+import Products from './Products';
+import ProductElement from '../ProductElement/ProductElement';
 
 
 

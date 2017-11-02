@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Enzyme, { shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
-import ProductElement from '../Plp/ProductElement';
-import fetchDataToJSON from "../DataAccess/DataFetcher";
-import TestData from "../DataAccess/ProductApiDataTest.json";
+import ProductElement from './ProductElement';
+import fetchDataToJSON from "../../DataAccess/DataFetcher/DataFetcher";
+import TestData from "../../TestData/ProductApiDataTest.json";
 
 Enzyme.configure({ adapter: new Adapter() });
 
