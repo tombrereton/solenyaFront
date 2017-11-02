@@ -32,12 +32,16 @@
   "jest": {
     "collectCoverageFrom": [
       "**/*.js",
+      "**/*.jsx",
       "!src/registerServiceWorker.js",
       "!src/index.js",
       "!src/Plp/ProductPage.js",
       "!src/Routing/App.js",
       "!coverage/lcov-report/prettify.js",
-      "!coverage/lcov-report/sorter.js"
+      "!coverage/lcov-report/sorter.js",
+      "!src/Config.js",
+      "!src/Components/Pdp/index.jsx",
+      "!src/Plp/Plp.js"
     ]
   }
 }
