@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Dropdown from 'react-dropdown'
+
 
 const PdpElement = (props) => {
 
   let colours = getColours(props.ImageOptions);
   let imagePaths = getImages(props.ImageOptions);
+  const defaultOption = colours[0];
 
   return (
     <div className="PdpElement" style={{margin: '1em'}}>
@@ -36,8 +39,10 @@ const PdpElement = (props) => {
         </div>
         <div className="productColour">
           <h4>Colour:</h4>
-            {colours.length === 1 &&
-            <div className ="productColourValue">{colours}</div>}
+            {colours.length === 1 ?
+            <div className ="productColourValue">{colours}</div> :
+            <Dropdown className = "colourSelector" options={colours} value={defaultOption} placeholder={"Select colour"}/>
+          }
         </div>
         </div>
         <div className="productDescription">
@@ -89,6 +94,7 @@ function getImages(imageOptions) {
     }
     return images;
 }
+
 
 PdpElement.propTypes = {
   Price: PropTypes.number.isRequired,

@@ -106,19 +106,24 @@ console.error = message => {
         const card = <PdpElement ProductName={dataElem.ProductName} Price={dataElem.Price}  DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={dataElem.ImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>;
         const wrapper = shallow(card);
         let colours = getColours(dataElem.ImageOptions);
-        const colourOptions = wrapper.find(".productColourValue");
-        expect(colours[0]).toEqual(colourOptions.text());
-
+        if(colours.length == 1) {
+            const singleColour = wrapper.find(".productColourValue");
+            expect(colours[0]).toEqual(singleColour.text());
+        }
     });
 
     it('has multiple colour options', ()=> {
         let multipleImageOptions = dataElem.ImageOptions;
         multipleImageOptions.push(dataElem.ImageOptions[0]);
-        const card = <PdpElement ProductName={dataElem.ProductName} Price={dataElem.Price}  DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={dataElem.ImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>;
+        const card = <PdpElement ProductName={dataElem.ProductName} Price={dataElem.Price}  DiscountPrice = {dataElem.DiscountPrice} ImageOptions ={multipleImageOptions} ProductDescription={dataElem.ProductDescription} ProductBrand={dataElem.ProductBrand} BrandDescription={dataElem.BrandDescription} Materials={dataElem.Materials}/>;
         const wrapper = shallow(card);
-
-
-    });
+        let colours = getColours(dataElem.ImageOptions);
+        console.log(colours);
+        if(colours.length > 1){
+            const multiColours = wrapper.find(".colourSelector");
+            expect(multiColours.exists()).toBe(true);
+        }
+   });
 
      function getColours(imageOptions) {
          let colours = [];
