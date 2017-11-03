@@ -2,8 +2,6 @@
 
 exports[`<Preloader /> renders as expected 1`] = `
 <div
-  className="undefined Mimban"
->
-  Max Rebo
-</div>
+  className="preloader"
+/>
 `;
