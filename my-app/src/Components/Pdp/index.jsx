@@ -29,7 +29,8 @@ class Pdp extends Component {
 
     return (
       // TODO: Fix this
-      <Preloader/>
+      <Preloader />
+
     )
   }
 }
