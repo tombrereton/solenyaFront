@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import style from './Preloader.css';
+// import style from './Preloader.css';
 
-const Preloader = ({
-}) => (
+const Preloader = () => (
   <div className={'preloader'} >
   </div>
 );

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dropdown from 'react-dropdown';
-import './style.css';
+// import './style.css';
 
 
 const PdpElement = (props) => {
