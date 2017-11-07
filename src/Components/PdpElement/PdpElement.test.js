@@ -13,7 +13,6 @@ console.error = message => {
   throw new Error(message);
 };
 
-log
 describe("PdpElement", () => {
   it("the name of the product is not empty", () => {
     const card = (
