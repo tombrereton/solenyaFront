@@ -3,6 +3,7 @@ import PdpElement from "../PdpElement";
 import Preloader from "../Preloader";
 import { ProductServiceEndpoint } from "../../Config";
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
+import PropTypes from 'prop-types';
 
 class Pdp extends Component {
   constructor() {
@@ -28,6 +29,14 @@ class Pdp extends Component {
 
     return <Preloader />;
   }
+}
+
+Pdp.propTypes = {
+	match: PropTypes.shape({
+    params:PropTypes.shape({
+      id: PropTypes.node
+    })
+  })
 }
 
 export default Pdp;
