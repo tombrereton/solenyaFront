@@ -9,7 +9,7 @@ const Products = props => (
 )
 
 Products.propTypes = {
-
+	productElements: PropTypes.productElements
 }
 
 export default Products;
