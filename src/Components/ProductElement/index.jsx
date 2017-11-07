@@ -25,6 +25,7 @@ ProductElement.propTypes ={
     SplashImgUrl: PropTypes.string.isRequired,
     Price: PropTypes.number.isRequired,
     ProductName: PropTypes.string.isRequired,
+    DiscountPrice: PropTypes.number
 }
 
 export default ProductElement;
