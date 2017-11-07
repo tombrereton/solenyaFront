@@ -10,18 +10,18 @@ const ProductElement = (props) => {
                     {props.ProductName}
                 </div>
                 <div className="productPrice">
-                    £{(props.Price/100).toFixed(2)}
+                    £{(props.Price / 100).toFixed(2)}
                 </div>
                 <div className="productDiscount">
                     {props.DiscountPrice !== null &&
-                    <div id = "discount">£{(props.DiscountPrice/100).toFixed(2)}</div>}
+                    <div id = "discount">£{(props.DiscountPrice / 100).toFixed(2)}</div>}
                 </div>
             </div>
         </div>
     );
 };
 
-ProductElement.propTypes ={
+ProductElement.propTypes = {
     SplashImgUrl: PropTypes.string.isRequired,
     Price: PropTypes.number.isRequired,
     ProductName: PropTypes.string.isRequired,

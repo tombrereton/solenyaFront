@@ -33,7 +33,7 @@ describe('ProductElement', () => {
         const card = <ProductElement ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={dataElem.SplashImgUrl} DiscountPrice={dataElem.DiscountPrice} />;
         const wrapper = shallow(card);
         const price = wrapper.find('.productPrice');
-        const priceString = "£"+((dataElem.Price.toString())/100).toFixed(2);
+        const priceString = "£" + ((dataElem.Price.toString()) / 100).toFixed(2);
         expect(price.text()).toEqual(priceString);
     });
 
@@ -67,8 +67,8 @@ describe('ProductElement', () => {
         const card = <ProductElement ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={dataElem.SplashImgUrl} DiscountPrice = {dataElem.DiscountPrice} />;
         const wrapper = shallow(card);
         const discountPrice = wrapper.find('.productDiscount');
-        if(discountPrice.text() !==""){
-            const discountString = "£"+((dataElem.DiscountPrice.toString())/100).toFixed(2);
+        if(discountPrice.text() !== ""){
+            const discountString = "£" + ((dataElem.DiscountPrice.toString()) / 100).toFixed(2);
             expect(discountPrice.text()).toEqual(discountString);
         }
     });
