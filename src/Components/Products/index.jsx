@@ -3,7 +3,7 @@ import ProductElement from '../ProductElement';
 
 const Products = props => (
 	<div>
-		{props.productElements.map((productElements,index) => <ProductElement {...productElements} key={index} />)}
+		{props.productElements.map((productElements, index) => <ProductElement {...productElements} key={index} />)}
 	</div>
 )
 

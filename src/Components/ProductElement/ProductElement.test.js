@@ -14,8 +14,6 @@ console.error = message => {
 
 describe('ProductElement', () => {
 
-
-
     it('It should match snapshot', () => {
         const wrapper = shallow(
             <ProductElement ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={dataElem.SplashImgUrl} DiscountPrice = {dataElem.DiscountPrice}/>
@@ -69,7 +67,7 @@ describe('ProductElement', () => {
         const card = <ProductElement ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={dataElem.SplashImgUrl} DiscountPrice = {dataElem.DiscountPrice} />;
         const wrapper = shallow(card);
         const discountPrice = wrapper.find('.productDiscount');
-        if(discountPrice.text() !=""){
+        if(discountPrice.text() !==""){
             const discountString = "£"+((dataElem.DiscountPrice.toString())/100).toFixed(2);
             expect(discountPrice.text()).toEqual(discountString);
         }
@@ -79,7 +77,7 @@ describe('ProductElement', () => {
         const card = <ProductElement ProductName={dataElem.ProductName} Price={dataElem.Price} SplashImgUrl={dataElem.SplashImgUrl} DiscountPrice = {dataElem.DiscountPrice} />;
         const wrapper = shallow(card);
         const discountPrice = wrapper.find('.productDiscount');
-        if(discountPrice.text() == ""){
+        if(discountPrice.text() === ""){
             expect(discountPrice.text()).toEqual("");
         }
     });
