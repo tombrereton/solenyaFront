@@ -69,7 +69,7 @@ describe("PdpElement", () => {
     );
     const wrapper = shallow(card);
     const discountPrice = wrapper.find(".productDiscountValue");
-    if (discountPrice.text() != "") {
+    if (discountPrice.text() !== "") {
       const discountString =
         "£" + (dataElem.DiscountPrice.toString() / 100).toFixed(2);
       expect(discountPrice.text()).toEqual(discountString);
@@ -92,7 +92,7 @@ describe("PdpElement", () => {
     );
     const wrapper = shallow(card);
     const discountPrice = wrapper.find(".productDiscountValue");
-    if (discountPrice.text() == "") {
+    if (discountPrice.text() === "") {
       expect(discountPrice.text()).toEqual("");
     }
   });
@@ -263,7 +263,7 @@ describe("PdpElement", () => {
     );
     const wrapper = shallow(card);
     let colours = getColours(dataElem.ImageOptions);
-    if (colours.length == 1) {
+    if (colours.length === 1) {
       const singleColour = wrapper.find(".productColourValue");
       expect(colours[0]).toEqual(singleColour.text());
     }

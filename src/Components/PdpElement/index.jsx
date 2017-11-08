@@ -100,7 +100,8 @@ PdpElement.propTypes = {
   ProductBrand: PropTypes.string.isRequired,
   BrandDescription: PropTypes.string.isRequired,
   Materials: PropTypes.string.isRequired,
-  ImageOptions: PropTypes.array.isRequired
+  ImageOptions: PropTypes.array.isRequired,
+  DiscountPrice: PropTypes.number
 };
 
 export default PdpElement;
