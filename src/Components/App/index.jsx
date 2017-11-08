@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  browserHistory
+} from "react-router-dom";
 import Plp from "../Plp";
 import Pdp from "../Pdp";
 import "./style.scss";
@@ -28,7 +33,7 @@ const App = () => (
         </li>
       </ul>
       <hr />
-      <Route exact path="/" component={Plp} />
+      <Route exact path="/" component={Plp} history={browserHistory} />
       <Route path="/products/:id" component={Pdp} />
     </div>
   </Router>
