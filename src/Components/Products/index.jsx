@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import ProductElement from '../ProductElement';
 
 const Products = props => (
@@ -8,8 +8,8 @@ const Products = props => (
 	</div>
 )
 
-Products.propTypes = {
-	productElements: PropTypes.productElements
-}
+// Products.propTypes = {
+// 	productElements: PropTypes.productElements
+// }
 
 export default Products;
