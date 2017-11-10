@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "ProductId": 1,
       "ProductName": "Warehouse Side Split Roll Neck Jumper",
       "SplashImgUrl": "./static/media/prod1-img1.jpg",
       "Price": 4600,
