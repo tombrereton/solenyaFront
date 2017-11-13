@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { AppContainer } from "react-hot-loader";
 import App from "./Components/App";
-
+import LogClicks from "./Components/App/logging";
 ReactDOM.render(
   <AppContainer>
     <App />
@@ -22,3 +22,4 @@ if (module.hot) {
     );
   });
 }
+//LogClicks("productImageId-1");

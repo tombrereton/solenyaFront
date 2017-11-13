@@ -33,7 +33,7 @@ describe("ProductElement", () => {
         Price={dataElem.Price}
         SplashImgUrl={dataElem.SplashImgUrl}
         DiscountPrice={dataElem.DiscountPrice}
-      />
+      /> 
     );
     const wrapper = shallow(card);
     const price = wrapper.find(".productPrice");

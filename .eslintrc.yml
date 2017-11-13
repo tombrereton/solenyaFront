@@ -11,8 +11,6 @@
   parserOptions:
    ecmaVersion: 6
    sourceType: "module"
-   ecmaFeatures:
-    jsx: true
 
   globals:
     __DEV__: true
@@ -66,9 +64,7 @@
     use-isnan: 2
     valid-jsdoc: 2
     valid-typeof: 2
-
     no-redeclare: 2
-
     init-declarations: 2
     no-catch-shadow: 2
     no-delete-var: 2
