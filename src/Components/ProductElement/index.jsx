@@ -24,10 +24,6 @@ const ProductElement = props => {
     </div>
   );
 };
-// onClick  = (clickableElementId) => {
-//  var homeClick = document.getElementById(clickableElementId)
-//   console.log("What is this",homeClick);
-// }
 
 
 ProductElement.propTypes = {
