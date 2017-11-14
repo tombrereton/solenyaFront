@@ -14,7 +14,9 @@ const App = () => (
     <div>
       <ul>
         <li>
-          <Link to="/" onClick= { () =>newrelic.addPageAction('clickedTryMe')} >Home </Link >
+          <Link to="/" onClick={() => newrelic.addPageAction("clickToHome")}>
+            Home{" "}
+          </Link>
         </li>
       </ul>
       <hr />

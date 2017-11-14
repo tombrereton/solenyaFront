@@ -29,11 +29,12 @@ describe("ProductElement", () => {
   it("the price of the product is not empty", () => {
     const card = (
       <ProductElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         SplashImgUrl={dataElem.SplashImgUrl}
         DiscountPrice={dataElem.DiscountPrice}
-      /> 
+      />
     );
     const wrapper = shallow(card);
     const price = wrapper.find(".productPrice");
@@ -44,6 +45,7 @@ describe("ProductElement", () => {
   it("the img url of the product is not empty", () => {
     const card = (
       <ProductElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         SplashImgUrl="foo"
