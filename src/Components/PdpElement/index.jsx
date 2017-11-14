@@ -3,11 +3,23 @@ import PropTypes from "prop-types";
 import Dropdown from "react-dropdown";
 import { getColours, getImages } from "./functions.js";
 import "./style.css";
+import getDeviceWidth from "../../GlobalFunctions/GetDeviceWidth";
+import logToNewRelic from "../../GlobalFunctions/LogToNewRelic";
 
 const PdpElement = props => {
   let colours = getColours(props.ImageOptions);
   let imagePaths = getImages(props.ImageOptions);
   const defaultOption = colours[0];
+
+  let deviceWidth = getDeviceWidth();
+  logToNewRelic(
+    "Pdp-" +
+      props.ProductName +
+      "-" +
+      props.ProductId +
+      "-LoadedWithDeviceWidth-" +
+      deviceWidth
+  );
 
   return (
     <div className="PdpElement" style={{ margin: "1em" }}>
@@ -94,6 +106,7 @@ const PdpElement = props => {
 };
 
 PdpElement.propTypes = {
+  ProductId: PropTypes.number.isRequired,
   Price: PropTypes.number.isRequired,
   ProductName: PropTypes.string.isRequired,
   ProductDescription: PropTypes.string.isRequired,
