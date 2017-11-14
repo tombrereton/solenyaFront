@@ -1,16 +1,40 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import LogClicks from '../App/logging';
+import { Link } from "react-router-dom";
+
 const ProductElement = props => {
   return (
     <div className="ProductElement" style={{ margin: "1em" }}>
-      <Link id = {"productImageId-"+ props.ProductId} className="productLink" to={"products/" + props.ProductId} onClick= { () =>newrelic.addPageAction('clickedTryMe')}>
+      <Link
+        id={"productImageId-" + props.ProductId}
+        className="productLink"
+        to={"products/" + props.ProductId}
+        onClick={() =>
+          newrelic.addPageAction(
+            "clickToProduct-" +
+              props.ProductName +
+              "-" +
+              props.ProductId +
+              "-WithImage"
+          )}
+      >
         <img width="150" src={props.SplashImgUrl} alt={props.ProductName} />
       </Link>
       <div>
         <div className="productName" style={{ fontWeight: "bold" }}>
-          <Link id = {"productNameId-"+ props.ProductId} className="productLink" to={"products/" + props.ProductId} onClick= { () =>newrelic.addPageAction('clickedTryMe')}>
+          <Link
+            id={"productNameId-" + props.ProductId}
+            className="productLink"
+            to={"products/" + props.ProductId}
+            onClick={() =>
+              newrelic.addPageAction(
+                "clickToProduct-" +
+                  props.ProductName +
+                  "-" +
+                  props.ProductId +
+                  "-WithName"
+              )}
+          >
             {props.ProductName}
           </Link>
         </div>
@@ -25,8 +49,8 @@ const ProductElement = props => {
   );
 };
 
-
 ProductElement.propTypes = {
+  ProductId: PropTypes.number.isRequired,
   SplashImgUrl: PropTypes.string.isRequired,
   Price: PropTypes.number.isRequired,
   ProductName: PropTypes.string.isRequired,
