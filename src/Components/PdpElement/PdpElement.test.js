@@ -14,9 +14,15 @@ console.error = message => {
 };
 
 describe("PdpElement", () => {
+  beforeEach(() => {
+    global.newrelic = {
+      addPageAction: jest.fn()
+    };
+  });
   it("the name of the product is not empty", () => {
     const card = (
       <PdpElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         DiscountPrice={dataElem.DiscountPrice}
@@ -35,6 +41,7 @@ describe("PdpElement", () => {
   it("the price of the product is not empty", () => {
     const card = (
       <PdpElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         SplashImgUrl={dataElem.SplashImgUrl}
@@ -56,6 +63,7 @@ describe("PdpElement", () => {
   it("requires discount price not to be empty when not null", () => {
     const card = (
       <PdpElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         SplashImgUrl={dataElem.SplashImgUrl}
@@ -79,6 +87,7 @@ describe("PdpElement", () => {
   it("requires discount price to not show if null", () => {
     const card = (
       <PdpElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         SplashImgUrl={dataElem.SplashImgUrl}
@@ -100,6 +109,7 @@ describe("PdpElement", () => {
   it("each img url of the products is not empty", () => {
     const card = (
       <PdpElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         SplashImgUrl={"foo"}
@@ -127,6 +137,7 @@ describe("PdpElement", () => {
     expect(() =>
       shallow(
         <PdpElement
+          ProductId={dataElem.ProductId}
           Price={dataElem.Price}
           DiscountPrice={dataElem.DiscountPrice}
           ImageOptions={dataElem.ImageOptions}
@@ -143,6 +154,7 @@ describe("PdpElement", () => {
     expect(() =>
       shallow(
         <PdpElement
+          ProductId={dataElem.ProductId}
           ProductName={dataElem.ProductName}
           DiscountPrice={dataElem.DiscountPrice}
           ImageOptions={dataElem.ImageOptions}
@@ -159,6 +171,7 @@ describe("PdpElement", () => {
     expect(() =>
       shallow(
         <PdpElement
+          ProductId={dataElem.ProductId}
           ProductName={dataElem.ProductName}
           Price={dataElem.Price}
           DiscountPrice={dataElem.DiscountPrice}
@@ -175,6 +188,7 @@ describe("PdpElement", () => {
     expect(() =>
       shallow(
         <PdpElement
+          ProductId={dataElem.ProductId}
           ProductName={dataElem.ProductName}
           Price={dataElem.Price}
           DiscountPrice={dataElem.DiscountPrice}
@@ -190,6 +204,7 @@ describe("PdpElement", () => {
     expect(() =>
       shallow(
         <PdpElement
+          ProductId={dataElem.ProductId}
           ProductName={dataElem.ProductName}
           Price={dataElem.Price}
           DiscountPrice={dataElem.DiscountPrice}
@@ -204,6 +219,7 @@ describe("PdpElement", () => {
     expect(() =>
       shallow(
         <PdpElement
+          ProductId={dataElem.ProductId}
           ProductName={dataElem.ProductName}
           Price={dataElem.Price}
           DiscountPrice={dataElem.DiscountPrice}
@@ -218,6 +234,7 @@ describe("PdpElement", () => {
     expect(() =>
       shallow(
         <PdpElement
+          ProductId={dataElem.ProductId}
           ProductName={dataElem.ProductName}
           Price={dataElem.Price}
           DiscountPrice={dataElem.DiscountPrice}
@@ -233,6 +250,7 @@ describe("PdpElement", () => {
   it("renders image carousel", () => {
     const card = (
       <PdpElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         DiscountPrice={dataElem.DiscountPrice}
@@ -251,6 +269,7 @@ describe("PdpElement", () => {
   it("has one colour options", () => {
     const card = (
       <PdpElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         DiscountPrice={dataElem.DiscountPrice}
@@ -274,6 +293,7 @@ describe("PdpElement", () => {
     multipleImageOptions.push(dataElem.ImageOptions[0]);
     const card = (
       <PdpElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         DiscountPrice={dataElem.DiscountPrice}
@@ -295,6 +315,7 @@ describe("PdpElement", () => {
   it("has add to bag button", () => {
     const card = (
       <PdpElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         DiscountPrice={dataElem.DiscountPrice}
