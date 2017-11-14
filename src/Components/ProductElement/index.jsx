@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-
+import LogClicks from '../App/logging';
 const ProductElement = props => {
   return (
     <div className="ProductElement" style={{ margin: "1em" }}>
-      <Link className="productLink" to={"products/" + props.ProductId}>
+      <Link id = {"productImageId-"+ props.ProductId} className="productLink" to={"products/" + props.ProductId} onClick= { () =>newrelic.addPageAction('clickedTryMe')}>
         <img width="150" src={props.SplashImgUrl} alt={props.ProductName} />
       </Link>
       <div>
         <div className="productName" style={{ fontWeight: "bold" }}>
-          <Link className="productLink" to={"products/" + props.ProductId}>
+          <Link id = {"productNameId-"+ props.ProductId} className="productLink" to={"products/" + props.ProductId} onClick= { () =>newrelic.addPageAction('clickedTryMe')}>
             {props.ProductName}
           </Link>
         </div>
@@ -24,6 +24,7 @@ const ProductElement = props => {
     </div>
   );
 };
+
 
 ProductElement.propTypes = {
   SplashImgUrl: PropTypes.string.isRequired,
