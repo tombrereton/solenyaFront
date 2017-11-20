@@ -4,7 +4,8 @@ import getDeviceWidth from "../../GlobalFunctions/GetDeviceWidth";
 import logToNewRelic from "../../GlobalFunctions/LogToNewRelic";
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
 import { ProductServiceEndpoint } from "../../Config";
-import "./index.css";
+import "./style.css";
+
 
 class Plp extends Component {
   constructor() {
@@ -26,6 +27,7 @@ class Plp extends Component {
 
   render() {
     return <Products productElements={this.state.productElements} />;
+   
   }
 }
 

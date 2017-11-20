@@ -20,8 +20,13 @@ const ProductElement = props => {
       >
         <img width="150" src={props.SplashImgUrl} alt={props.ProductName} />
       </Link>
-      <div>
-        <div className="productName" style={{ fontWeight: "bold" }}>
+     
+      
+    <div >
+
+    <div className = "card">
+
+      <div className="productName" style={{ fontWeight: "bold" }}>
           <Link
             id={"productNameId-" + props.ProductId}
             className="productLink"
@@ -43,9 +48,10 @@ const ProductElement = props => {
           {props.DiscountPrice !== null && (
             <div id="discount">£{(props.DiscountPrice / 100).toFixed(2)}</div>
           )}
-        </div>
+        </div>        
       </div>
     </div>
+  </div>
   );
 };
 
