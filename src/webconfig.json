@@ -1,0 +1,6 @@
+{
+    "ProductServiceEndpoint": "http://team-solenya-rg-dev-product.azurewebsites.net/",
+    "TestUrl": "http://localhost:3000/Products",
+    "PdpTestUrl": "http://localhost:3000/products",
+    "TestProductServiceEndpoint": "http://localhost:56669/"
+}

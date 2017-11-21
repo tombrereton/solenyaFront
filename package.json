@@ -81,7 +81,8 @@
       "!**/prettify.js",
       "!**/sorter.js",
       "!**/3764d345cb049707d5cf.js",
-      "!src/index.jsx"
+      "!src/index.jsx",
+      "!public"
     ],
     "coverageDirectory": "coverage",
     "moduleNameMapper": {

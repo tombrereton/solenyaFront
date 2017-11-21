@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import PdpElement from "../PdpElement";
 import Preloader from "../Preloader";
-import { ProductServiceEndpoint } from "../../Config";
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+let ProductServiceEndpoint = require("../../webconfig.json")['ProductServiceEndpoint'];
 
 class Pdp extends Component {
   constructor() {
@@ -35,6 +35,6 @@ Pdp.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.object
   })
-}
+};
 
 export default Pdp;
