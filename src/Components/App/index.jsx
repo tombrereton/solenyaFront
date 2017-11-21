@@ -3,30 +3,30 @@ import {BrowserRouter as Router, Route, Link, browserHistory} from "react-router
 import Plp from "../Plp";
 import Pdp from "../Pdp";
 import "./style.css";
-import {slide as Menu} from "react-burger-menu";
+import Header from "../Header/index.jsx";
+import Footer from "../Footer/index.jsx";
 
 const App = () => (
 
   <Router>
   
     <div>
-      <header>        
-        </header >          
-          
-        <Menu right width={'50%'}>      
-        <Link  className = "home-link" to="/" onClick={() => newrelic.addPageAction("clickToHome")}>
-            Home{" "}
-          </Link>               
-          <a className = "menu-item--small" href=""></a>
-          </Menu>  
-        <div className = "Title"> 
-        <a> SOLENYA PRODUCTS</a>
-        </div>
+      
+      <Header />
+    
+        {/* <Link  className = "home-link" to="/" onClick={() => newrelic.addPageAction("clickToHome")}>
+          Home{" "}
+        </Link>        */}
+   
       <hr/>
       
       <Route exact path="/" component={Plp} history={browserHistory} />
       <Route path="/products/:id" component={Pdp} />
+
+      <Footer />
     </div>
+
+  
   </Router>
 
 );

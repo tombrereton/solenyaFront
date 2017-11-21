@@ -2,10 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
+
 const ProductElement = props => {
   return (
-    
+   
+
+
     <div className="ProductElement" style={{ margin: "1em" }}>
+     
       <Link 
         id={"productImageId-" + props.ProductId}        
         className="productLink"
@@ -22,9 +26,9 @@ const ProductElement = props => {
         <img width="150" src={props.SplashImgUrl} alt={props.ProductName} />
       </Link>
      
-      <div>
+      <div className = "card">
       
-      <div className="productName" style={{ fontWeight: "bold" }}>
+        <div className="productName" style={{ fontWeight: "bold" }}>
       
           <Link
             id={"productNameId-" + props.ProductId}
@@ -42,7 +46,7 @@ const ProductElement = props => {
           
             {props.ProductName}
           </Link>
-        </div>     
+          
       
         <div className="productPrice">£{(props.Price / 100).toFixed(2)}</div>
         <div className="productDiscount">
@@ -51,10 +55,13 @@ const ProductElement = props => {
           )}
         
 
-          </div>
-       
         </div>
+       
       </div>
+
+    </div>
+
+    </div>
    
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import App from "../App";
+import Header from "../Header/index.jsx";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-15";
 
@@ -17,14 +17,14 @@ describe("App Logging", () => {
   });
 
   it("Should have a link tag", () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<Header />);
 
     const linkTag = wrapper.find("Link");
     expect(linkTag.exists()).toBe(true);
   });
 
   it("Should log a single click for one link", () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<Header />);
 
     const linkTag = wrapper.find("Link");
     linkTag.simulate("click");
@@ -33,7 +33,7 @@ describe("App Logging", () => {
   });
 
   it("Should log the home click", () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<Header />);
 
     const linkTag = wrapper.find("Link");
     linkTag.simulate("click");

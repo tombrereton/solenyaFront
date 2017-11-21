@@ -1,0 +1,103 @@
+/*above here goes default css for main webpage*/
+
+.wrapper{
+    text-align: center;
+  }
+  
+  header {
+      width: 100%;
+      height: 35px;
+      position: fixed;
+      top: 0;
+      background-color: #2d2d2d;
+      margin: 0px auto;  
+  }
+  
+  .home-link{
+    color: #121111;
+  }
+  
+  a{
+      text-decoration: none;
+      font-family:Verdana, Geneva, sans-serif;  
+  }
+  
+  a:hover{
+    color: #16BA42;
+  }
+  
+  hr{
+      margin-top: 0%;
+  }
+  
+  .Title{
+    text-align: center;
+    font: bold;
+  }
+  /*below is the mobile css*/
+  @media screen and (max-width: 520px) {
+    
+ 
+    .container {
+      display: inline-block;
+      cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+      width: 25px;
+      height: 2px;
+      background-color: #ffffff;
+      margin: 21% 15% 2% 1150%;
+      transition: 0.4s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 4px) ;
+    transform: rotate(-45deg) translate(-5px, 6px) ;
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -4px) ;
+    transform: rotate(45deg) translate(-5px, -5px) ;
+  }
+
+  .openMenu {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 35px;
+    left: 0;
+    background-color: #2d2d2d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.closedMenu{
+  width: 0;
+}
+
+.closedMenu a {
+  display: none;
+}
+
+.openMenu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+
+
+  }
+  
+
+  
+  
+  
