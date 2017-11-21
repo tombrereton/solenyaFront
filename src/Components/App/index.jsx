@@ -20,7 +20,7 @@ const App = () => (
           <a className = "menu-item--small" href=""></a>
           </Menu>  
         <div className = "Title"> 
-        <a> SOLENYA </a>
+        <a> SOLENYA PRODUCTS</a>
         </div>
       <hr/>
       

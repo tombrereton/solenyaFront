@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 
 const ProductElement = props => {
   return (
+    
     <div className="ProductElement" style={{ margin: "1em" }}>
-      <Link
-        id={"productImageId-" + props.ProductId}
+      <Link 
+        id={"productImageId-" + props.ProductId}        
         className="productLink"
         to={"products/" + props.ProductId}
         onClick={() =>
@@ -21,12 +22,10 @@ const ProductElement = props => {
         <img width="150" src={props.SplashImgUrl} alt={props.ProductName} />
       </Link>
      
+      <div>
       
-    <div >
-
-    <div className = "card">
-
       <div className="productName" style={{ fontWeight: "bold" }}>
+      
           <Link
             id={"productNameId-" + props.ProductId}
             className="productLink"
@@ -40,18 +39,23 @@ const ProductElement = props => {
                   "-WithName"
               )}
           >
+          
             {props.ProductName}
           </Link>
-        </div>
+        </div>     
+      
         <div className="productPrice">£{(props.Price / 100).toFixed(2)}</div>
         <div className="productDiscount">
           {props.DiscountPrice !== null && (
             <div id="discount">£{(props.DiscountPrice / 100).toFixed(2)}</div>
           )}
-        </div>        
+        
+
+          </div>
+       
+        </div>
       </div>
-    </div>
-  </div>
+   
   );
 };
 
