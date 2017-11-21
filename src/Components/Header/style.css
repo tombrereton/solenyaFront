@@ -1,5 +1,5 @@
 /*above here goes default css for main webpage*/
-
+import 
 .wrapper{
     text-align: center;
   }
@@ -71,8 +71,8 @@
     left: 0;
     background-color: #2d2d2d;
     overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+    transition: 0;
+    padding-top: 30px;
 }
 
 .closedMenu{
@@ -84,11 +84,13 @@
 }
 
 .openMenu a {
-  padding: 8px 8px 8px 32px;
+  padding-top: 0;
   text-decoration: none;
+  font-family: FuturaPT-Reg;
   font-size: 25px;
-  color: #818181;
-  display: block;
+  font-weight: 900;
+  color: #ffffff;
+  display: inline-block;
   transition: 0.3s;
 }
 
