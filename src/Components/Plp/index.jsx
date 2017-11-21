@@ -3,7 +3,6 @@ import Products from "../Products";
 import getDeviceWidth from "../../GlobalFunctions/GetDeviceWidth";
 import logToNewRelic from "../../GlobalFunctions/LogToNewRelic";
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
-import { ProductServiceEndpoint } from "../../Config";
 
 class Plp extends Component {
   constructor() {
@@ -15,6 +14,9 @@ class Plp extends Component {
   }
 
   componentDidMount() {
+    let ProductServiceEndpoint =
+      window.config[window.envName].ProductServiceEndpoint;
+
     let deviceWidth = getDeviceWidth();
     logToNewRelic("Plp-LoadedWithDeviceWidth-" + deviceWidth);
 

@@ -3,7 +3,6 @@ import PdpElement from "../PdpElement";
 import Preloader from "../Preloader";
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
 import PropTypes from "prop-types";
-let ProductServiceEndpoint = require("../../webconfig.json")['ProductServiceEndpoint'];
 
 class Pdp extends Component {
   constructor() {
@@ -15,6 +14,9 @@ class Pdp extends Component {
   }
 
   componentDidMount() {
+    let ProductServiceEndpoint =
+      window.config[window.envName].ProductServiceEndpoint;
+
     const url =
       ProductServiceEndpoint + "products/" + this.props.match.params.id;
     fetchDataToJSON(url).then(productElement =>

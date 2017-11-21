@@ -4,12 +4,14 @@
   "description": "React Webpack Babel Starter Kit",
   "main": "''",
   "scripts": {
-    "build": "webpack --config webpack.production.config.js --progress --profile --colors",
+    "build":
+      "webpack --config webpack.production.config.js --progress --profile --colors ",
     "start": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0",
     "dev": " webpack-dashboard -- webpack-dev-server",
     "test": "SET NODE_ENV=test && jest",
-    "ssr": "SET NODE_ENV=production && node ./server.js"
+    "ssr": "SET NODE_ENV=production && node ./server.js",
+    "copy": "node ./copyWebconfig.js"
   },
   "repository": {
     "type": "git",
@@ -19,13 +21,15 @@
   "license": "MIT",
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
+    "fs-extra": "^4.0.2",
     "node-sass": "^4.3.0",
     "prop-types": "^15.6.0",
     "react": "15.6.1",
     "react-dom": "^15.4.2",
     "react-dropdown": "^1.3.2",
     "react-router-dom": "^4.2.2",
-    "sass-loader": "^6.0.2"
+    "sass-loader": "^6.0.2",
+    "write-file-webpack-plugin": "^4.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -39,6 +43,7 @@
     "babel-preset-es2015": "6.22.0",
     "babel-preset-react": "^6.23.0",
     "babel-runtime": "^6.22.0",
+    "copy-webpack-plugin": "^4.2.1",
     "css-loader": "0.26.1",
     "enzyme": "^3.1.1",
     "enzyme-adapter-react-15": "^1.0.5",
@@ -86,15 +91,11 @@
     ],
     "coverageDirectory": "coverage",
     "moduleNameMapper": {
-      "\\.(jpe?g|png|gif|eot|otf|webp|svg|ttf|woff2?|mp[34]|webm|wav|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpe?g|png|gif|eot|otf|webp|svg|ttf|woff2?|mp[34]|webm|wav|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less|s[ac]ss|styl)$": "<rootDir>/__mocks__/styleMock.js"
     },
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ],
-    "moduleDirectories": [
-      "node_modules"
-    ]
+    "moduleFileExtensions": ["js", "jsx"],
+    "moduleDirectories": ["node_modules"]
   }
 }

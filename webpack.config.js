@@ -5,6 +5,8 @@ var loaders = require("./webpack.loaders");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 var DashboardPlugin = require("webpack-dashboard/plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+let CopyWebpackPlugin = require("copy-webpack-plugin");
+let WriteFilePlugin = require("write-file-webpack-plugin");
 let FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 const HOST = process.env.HOST || "127.0.0.1";
@@ -47,6 +49,10 @@ module.exports = {
     host: HOST
   },
   plugins: [
+    new CopyWebpackPlugin([
+      { from: "./src/config.js" },
+      { from: "./src/favicon.ico" }
+    ]),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
