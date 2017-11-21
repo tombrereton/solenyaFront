@@ -1,35 +1,42 @@
-var webpack = require('webpack');
-var path = require('path');
-var loaders = require('./webpack.loaders');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var webpack = require("webpack");
+var path = require("path");
+var loaders = require("./webpack.loaders");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
+var WebpackCleanupPlugin = require("webpack-cleanup-plugin");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+let CopyWebpackPlugin = require("copy-webpack-plugin");
 
 loaders.push({
   test: /\.scss$/,
-  loader: ExtractTextPlugin.extract({fallback: 'style-loader', use : 'css-loader?sourceMap&localIdentName=[local]___[hash:base64:5]!sass-loader?outputStyle=expanded'}),
-  exclude: ['node_modules']
+  loader: ExtractTextPlugin.extract({
+    fallback: "style-loader",
+    use:
+      "css-loader?sourceMap&localIdentName=[local]___[hash:base64:5]!sass-loader?outputStyle=expanded"
+  }),
+  exclude: ["node_modules"]
 });
 
 module.exports = {
-  entry: [
-    './src/index.jsx',
-  ],
+  entry: ["./src/index.jsx"],
   output: {
-    publicPath: './',
-    path: path.join(__dirname, 'public'),
-    filename: '[chunkhash].js'
+    publicPath: "./",
+    path: path.join(__dirname, "public"),
+    filename: "[chunkhash].js"
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: [".js", ".jsx"]
   },
   module: {
     loaders
   },
   plugins: [
+    new CopyWebpackPlugin([
+      { from: "./src/config.js" },
+      { from: "./src/favicon.ico" }
+    ]),
     new WebpackCleanupPlugin(),
     new webpack.DefinePlugin({
-      'process.env': {
+      "process.env": {
         NODE_ENV: '"production"'
       }
     }),
@@ -43,14 +50,14 @@ module.exports = {
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new ExtractTextPlugin({
-      filename: 'style.css',
+      filename: "style.css",
       allChunks: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/template.html',
+      template: "./src/template.html",
       files: {
-        css: ['style.css'],
-        js: ['bundle.js'],
+        css: ["style.css"],
+        js: ["bundle.js"]
       }
     })
   ]
