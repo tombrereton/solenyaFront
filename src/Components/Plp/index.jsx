@@ -14,6 +14,8 @@ class Plp extends Component {
   }
 
   componentDidMount() {
+    console.log("(Deleted in next pull request) Endpoint: ", process.env.ENDPOINT);
+
     let ProductServiceEndpoint =
       window.config[window.envName].ProductServiceEndpoint;
 
