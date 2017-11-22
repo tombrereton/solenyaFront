@@ -18,7 +18,6 @@ const App = () => (
           Home{" "}
         </Link>        */}
    
-      <hr/>
       
       <Route exact path="/" component={Plp} history={browserHistory} />
       <Route path="/products/:id" component={Pdp} />
