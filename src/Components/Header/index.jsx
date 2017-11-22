@@ -25,6 +25,16 @@ class Header extends React.Component  {
         newrelic.addPageAction("clickToHome")
     }
 
+    onPdpLinkClicked(productName, productId, linkType){
+    
+        newrelic.addPageAction(
+            "clickToProduct-" +
+              productName +
+              "-" +
+              productId +
+              linkType)
+    }
+
     render (){ 
         const toggled = this.state.toggled;
         const toggledClass = "container" + (toggled ? " change" : "");
@@ -38,11 +48,15 @@ class Header extends React.Component  {
                         <div className="bar3"></div>          
                     </div> 
                     <div className={menuClass}>                        
-                        <div>
+                        <div style={{display: "inline-block"}}>
                                     <Link  className = "home-link" to="/" onClick={() => this.onLinkClicked()}>
                                         Home
                                     </Link> 
                         </div>
+                        <div id = "bag" style={{display: "inline-block"}}>
+                            <a>Bag</a>
+                        </div>   
+
                     </div>  
 
             </header > 

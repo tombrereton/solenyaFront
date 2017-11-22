@@ -8,8 +8,9 @@
       height: 40px;
       position: fixed;
       top: 0;
-      background-color: #2d2d2d;
+      background-color: rgb(45, 45, 45);
       margin: 0px auto;  
+      z-index: 1;
   }
   
   .home-link{
@@ -88,13 +89,17 @@
     text-decoration: none;
     font-family: FuturaPT-Reg;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 400;
     color: #ffffff;
-    display: inline-block;
     transition: 0.3s;
+    margin-left: 200%;
   }
 
-  
+
+  #bag {
+    margin-left: 30%; 
+  }
+
   }
   
   

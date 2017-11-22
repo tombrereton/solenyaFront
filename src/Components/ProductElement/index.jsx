@@ -1,28 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import Header from "../Header/index.jsx";
 
 
 const ProductElement = props => {
+
+  
   return (
-   
-
-
+ 
     <div className="ProductElement" style={{ margin: "1em" }}>
      
       <Link 
         id={"productImageId-" + props.ProductId}        
         className="productLink"
         to={"products/" + props.ProductId}
-        onClick={() =>
-          newrelic.addPageAction(
-            "clickToProduct-" +
-              props.ProductName +
-              "-" +
-              props.ProductId +
-              "-WithImage"
-          )}
-      >
+        onClick={() => Header.onPdpLinkClicked(props.ProductName, props.ProductId,"-WithImage")}>
         <img width="150" src={props.SplashImgUrl} alt={props.ProductName} />
       </Link>
      
@@ -34,15 +27,7 @@ const ProductElement = props => {
             id={"productNameId-" + props.ProductId}
             className="productLink"
             to={"products/" + props.ProductId}
-            onClick={() =>
-              newrelic.addPageAction(
-                "clickToProduct-" +
-                  props.ProductName +
-                  "-" +
-                  props.ProductId +
-                  "-WithName"
-              )}
-          >
+            onClick={() => Header.onPdpLinkClicked(props.ProductName, props.ProductId,"-WithName")}>
           
             {props.ProductName}
           </Link>
@@ -54,7 +39,6 @@ const ProductElement = props => {
             <div id="discount">£{(props.DiscountPrice / 100).toFixed(2)}</div>
           )}
         
-
         </div>
        
       </div>
