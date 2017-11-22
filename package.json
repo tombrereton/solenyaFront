@@ -20,6 +20,7 @@
   "license": "MIT",
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "dotenv-safe": "^4.0.4",
     "dotenv-webpack": "^1.5.4",
     "file-system": "^2.2.2",

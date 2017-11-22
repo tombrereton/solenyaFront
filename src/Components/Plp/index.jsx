@@ -14,15 +14,14 @@ class Plp extends Component {
   }
 
   componentDidMount() {
-    console.log("(Deleted in next pull request) Endpoint: ", process.env.ENDPOINT);
-
-    let ProductServiceEndpoint =
-      window.config[window.envName].ProductServiceEndpoint;
+    // let ProductServiceEndpoint =
+    //   window.config[window.envName].ProductServiceEndpoint;
 
     let deviceWidth = getDeviceWidth();
     logToNewRelic("Plp-LoadedWithDeviceWidth-" + deviceWidth);
 
-    fetchDataToJSON(ProductServiceEndpoint).then(productElements =>
+    const point = process.env.ENDPOINT
+    fetchDataToJSON(point).then(productElements =>
       this.setState({ productElements })
     );
   }
