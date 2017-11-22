@@ -35,7 +35,6 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: "./src/config.js" },
       { from: "./src/favicon.ico" },
-      { from: "./src/webconfig.json" }
     ]),
     new WebpackCleanupPlugin(),
     new webpack.DefinePlugin({
