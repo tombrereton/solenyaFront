@@ -10,6 +10,7 @@
       top: 0;
       background-color: #2d2d2d;
       margin: 0px auto;  
+      z-index: 50;
   }
   
   .home-link{

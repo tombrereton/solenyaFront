@@ -6,10 +6,13 @@ import "./style.css";
 import getDeviceWidth from "../../GlobalFunctions/GetDeviceWidth";
 import logToNewRelic from "../../GlobalFunctions/LogToNewRelic";
 
+var Carousel = require('nuka-carousel');
+
 const PdpElement = props => {
   let colours = getColours(props.ImageOptions);
   let imagePaths = getImages(props.ImageOptions);
   const defaultOption = colours[0];
+  
 
   let deviceWidth = getDeviceWidth();
   logToNewRelic(
@@ -22,8 +25,9 @@ const PdpElement = props => {
   );
 
   return (
-    <div className="PdpElement" style={{ margin: "1em" }}>
+    <div className="PdpElement">
       <div className="imageCarousel">
+      <Carousel>
         <img
           id="img1"
           width="150"
@@ -48,8 +52,12 @@ const PdpElement = props => {
           src={imagePaths[3]}
           alt={props.ProductName}
         />
+        </Carousel>
       </div>
-      <div>
+
+      <div className = "productMainInfo">
+        
+      <div className = "productMainInfoText">
         <div className="productName">
           <h4>Product Name:</h4>
           <div className="productNameValue">{props.ProductName}</div>
@@ -65,8 +73,8 @@ const PdpElement = props => {
               <div id="discount">£{(props.DiscountPrice / 100).toFixed(2)}</div>
             )}
           </div>
-        </div>
-        <div className="productColour">
+          </div>
+          <div className="productColour">
           <h4>Colour:</h4>
           {colours.length === 1 ? (
             <div className="productColourValue">{colours}</div>
@@ -79,7 +87,12 @@ const PdpElement = props => {
             />
           )}
         </div>
+        </div>
+        <div  className = "bagButton">
+        <button className = "bagButton" type="button">Add To Bag</button>
+        </div>
       </div>
+      <div className = "productExtraInfo">
       <div className="productDescription">
         <h4>Product Description:</h4>
         <div className="productDescriptionValue">
@@ -98,7 +111,8 @@ const PdpElement = props => {
         <h4>Materials:</h4>
         <div className="materialsValue">{props.Materials}</div>
         <div className="button">
-          <button type="button">Add To Bag</button>
+         
+        </div>
         </div>
       </div>
     </div>
