@@ -1,3 +1,20 @@
-.card{
-    background-color: #5730CC;
+@media screen and (max-width: 520px) {
+.imageCard
+{
+    margin-top: 20%;
+    position: relative;
+    /* background: #fff; */
+    display: block;
+    z-index: -2;
+}
+
+.infoCard{
+    position: absolute;
+    /* bottom:40%; */
+    /* background: #fff; */
+    left:40%;
+    /* height: 40%; */
+    width: 60%;
+    z-index: -1;
+  }
 }
