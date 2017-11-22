@@ -1,5 +1,4 @@
 /*above here goes default css for main webpage*/
-import 
 .wrapper{
     text-align: center;
   }
@@ -38,16 +37,18 @@ import
   @media screen and (max-width: 520px) {
     
  
-    .container {
+    header .container {
       display: inline-block;
       cursor: pointer;
+      margin-left: 88%;
   }
   
   .bar1, .bar2, .bar3 {
       width: 25px;
       height: 2px;
       background-color: #ffffff;
-      margin: 21% 15% 2% 1150%;
+      margin: 21% 15% 2% 0%;
+      /* margin: 4px 2px 4px 340px; */
       transition: 0.4s;
   }
   .change .bar1 {
@@ -72,34 +73,30 @@ import
     background-color: #2d2d2d;
     overflow-x: hidden;
     transition: 0;
-    padding-top: 30px;
-}
-
-.closedMenu{
-  width: 0;
-}
-
-.closedMenu a {
-  display: none;
-}
-
-.openMenu a {
-  padding-top: 0;
-  text-decoration: none;
-  font-family: FuturaPT-Reg;
-  font-size: 25px;
-  font-weight: 900;
-  color: #ffffff;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-
-
-
+    padding-top: 25px;
   }
-  
 
+  .closedMenu{
+    width: 0;
+  }
+
+  .closedMenu a {
+    display: none;
+  }
+
+  .openMenu a {
+    padding-top: 0;
+    text-decoration: none;
+    font-family: FuturaPT-Reg;
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+    display: inline-block;
+    transition: 0.3s;
+  }
+
+  
+  }
   
   
   
