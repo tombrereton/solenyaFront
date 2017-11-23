@@ -88,7 +88,7 @@ const PdpElement = props => {
           )}
         </div>
         </div>
-        <div  className = "bagButton">
+        <div  className = "bagButtonContainer">
         <button className = "bagButton" type="button">Add To Bag</button>
         </div>
       </div>

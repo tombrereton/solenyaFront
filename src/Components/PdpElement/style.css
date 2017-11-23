@@ -29,15 +29,28 @@
         margin-right: 17px;
         margin-top: -50px;
     }
-    
+
+    .bagButtonContainer{
+        width: 250px;
+        margin: auto;      
+    }
     .bagButton {
         width: 250px;
         height: 40px;
         background-color: #00aa5b;
-        margin: auto;
         border: none;
-    }
+     }
+
+     .productName{
+         position: relative;
+         margin-right: 50%;
+         background-color: red;
+     }
    
+    .productColour{
+        position: relative;
+    } 
+
     .productColour h4{
     margin-bottom: 0px;
     }
