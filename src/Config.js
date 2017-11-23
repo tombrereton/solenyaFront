@@ -1,10 +1,20 @@
-const ProductServiceEndpoint = 'http://team-solenya-rg-dev-product.azurewebsites.net/';
-const TestUrl = 'http://localhost:3000/Products';
-const PdpTestUrl = 'http://localhost:3000/products';
-const TestProductServiceEndpoint = 'http://localhost:56669/';
+var envName = "dev";
 
-
-export {ProductServiceEndpoint,
-     TestUrl, 
-     TestProductServiceEndpoint,
-     PdpTestUrl};
+var config = {
+  dev: {
+    ProductServiceEndpoint:
+      "http://team-solenya-rg-dev-product.azurewebsites.net/"
+  },
+  test: {
+    ProductServiceEndpoint:
+      "http://team-solenya-rg-test-product.azurewebsites.net/"
+  },
+  preProd: {
+    ProductServiceEndpoint:
+      "http://team-solenya-rg-pre-prod-product.azurewebsites.net/"
+  },
+  prod: {
+    ProductServiceEndpoint:
+      "http://team-solenya-rg-prod-product.azurewebsites.net/"
+  }
+};

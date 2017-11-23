@@ -4,12 +4,13 @@
   "description": "React Webpack Babel Starter Kit",
   "main": "''",
   "scripts": {
-    "build": "webpack --config webpack.production.config.js --progress --profile --colors",
+    "build": "webpack --config webpack.production.config.js --progress --profile --colors ",
     "start": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0",
     "dev": " webpack-dashboard -- webpack-dev-server",
     "test": "SET NODE_ENV=test && jest",
-    "ssr": "SET NODE_ENV=production && node ./server.js"
+    "ssr": "SET NODE_ENV=production && node ./server.js",
+    "copy": "node ./copyWebconfig.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,11 @@
   "license": "MIT",
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
+    "dotenv": "^4.0.0",
+    "dotenv-safe": "^4.0.4",
+    "dotenv-webpack": "^1.5.4",
+    "file-system": "^2.2.2",
+    "fs-extra": "^4.0.2",
     "node-sass": "^4.3.0",
     "prop-types": "^15.6.0",
     "react": "15.6.1",
@@ -26,7 +32,8 @@
     "react-dom": "^15.4.2",
     "react-dropdown": "^1.3.2",
     "react-router-dom": "^4.2.2",
-    "sass-loader": "^6.0.2"
+    "sass-loader": "^6.0.2",
+    "write-file-webpack-plugin": "^4.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -40,7 +47,9 @@
     "babel-preset-es2015": "6.22.0",
     "babel-preset-react": "^6.23.0",
     "babel-runtime": "^6.22.0",
+    "copy-webpack-plugin": "^4.2.1",
     "css-loader": "0.26.1",
+    "dotenv": "^4.0.0",
     "enzyme": "^3.1.1",
     "enzyme-adapter-react-15": "^1.0.5",
     "eslint": "^4.3.0",
@@ -63,7 +72,8 @@
     "webpack": "^3.3.0",
     "webpack-cleanup-plugin": "^0.4.2",
     "webpack-dashboard": "^0.3.0",
-    "webpack-dev-server": "^2.4.1"
+    "webpack-dev-server": "^2.4.1",
+    "xmlhttprequest": "^1.8.0"
   },
   "jest": {
     "verbose": true,
@@ -82,7 +92,8 @@
       "!**/prettify.js",
       "!**/sorter.js",
       "!**/3764d345cb049707d5cf.js",
-      "!src/index.jsx"
+      "!src/index.jsx",
+      "!public"
     ],
     "coverageDirectory": "coverage",
     "moduleNameMapper": {
