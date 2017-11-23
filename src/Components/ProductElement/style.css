@@ -1,20 +1,20 @@
 @media screen and (max-width: 520px) {
-.imageCard
-{
-    margin-top: 20%;
-    position: relative;
-    /* background: #fff; */
-    display: block;
-    z-index: -2;
-}
+  .ProductElement {
+      display: flex;
+      position: relative;
+  }
 
-.infoCard{
-    position: absolute;
-    /* bottom:40%; */
-    /* background: #fff; */
-    left:40%;
-    /* height: 40%; */
-    width: 60%;
-    z-index: -1;
+  .imageCard {
+  }
+
+  .productName {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      height: 80%;
+      background: #ffffff;
   }
 }
