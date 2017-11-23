@@ -18,7 +18,7 @@ const ProductElement = props => {
             logToNewRelic(props.ProductName + props.ProductId + "-WithImage");
           }}
         >
-          <img width="150" src={props.SplashImgUrl} alt={props.ProductName} />
+          <img width="53%" src={props.SplashImgUrl} alt={props.ProductName} />
         </Link>
       </div>
 
