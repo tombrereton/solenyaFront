@@ -1,10 +1,14 @@
 import React from "react";
-import Header from "../Header/index.jsx";
-import Enzyme, { shallow } from "enzyme";
-import ProductElement from "../ProductElement";
-import Adapter from "enzyme-adapter-react-15";
-import TestData from "../../TestData/ProductApiDataTest.json";
 
+import Header from "../Header/index.jsx";
+
+import Enzyme, { shallow } from "enzyme";
+
+import ProductElement from "../ProductElement";
+
+import Adapter from "enzyme-adapter-react-15";
+
+import TestData from "../../TestData/ProductApiDataTest.json";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -25,6 +29,7 @@ describe("Link Logging", () => {
     const wrapper = shallow(<Header />);
 
     const linkTag = wrapper.find("Link");
+
     expect(linkTag.exists()).toBe(true);
   });
 
@@ -32,6 +37,7 @@ describe("Link Logging", () => {
     const wrapper = shallow(<Header />);
 
     const linkTag = wrapper.find("Link");
+
     linkTag.simulate("click");
 
     expect(global.newrelic.addPageAction).toHaveBeenCalledTimes(1);
@@ -41,6 +47,7 @@ describe("Link Logging", () => {
     const wrapper = shallow(<Header />);
 
     const linkTag = wrapper.find("Link");
+
     linkTag.simulate("click");
 
     expect(global.newrelic.addPageAction).toHaveBeenCalledWith("clickToHome");
@@ -82,6 +89,7 @@ describe("Link Logging", () => {
     );
 
     const linkTag = wrapper.find("Link").last();
+
     linkTag.simulate("click");
 
     expect(global.newrelic.addPageAction).toHaveBeenCalledWith(
@@ -91,9 +99,9 @@ describe("Link Logging", () => {
         dataElem.ProductId +
         "-WithName"
     );
-});
+  });
 
-it("Should log a single click for one link", () => {
+  it("Should log a single click for one link", () => {
     const wrapper = shallow(
       <ProductElement
         ProductId={dataElem.ProductId}
@@ -105,6 +113,7 @@ it("Should log a single click for one link", () => {
     );
 
     const linkTag = wrapper.find("Link").first();
+
     linkTag.simulate("click");
 
     expect(global.newrelic.addPageAction).toHaveBeenCalledTimes(1);

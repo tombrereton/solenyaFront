@@ -23,25 +23,34 @@ const ProductElement = props => {
         </Link>
       </div>
 
-      <div className="productName" >
-        <Link
-          id={"productNameId-" + props.ProductId}
-          className="productLink"
-          to={"products/" + props.ProductId}
-          onClick={() =>
-            Header.onPdpLinkClicked(
-              props.ProductName,
-              props.ProductId,
-              "-WithName"
-            )}
-        >
-          {props.ProductName}
-        </Link>
-
-        <div className="productPrice">£{(props.Price / 100).toFixed(2)}</div>
-        <div className="productDiscount">
-          {props.DiscountPrice !== null && (
-            <div id="discount">£{(props.DiscountPrice / 100).toFixed(2)}</div>
+      <div className="productLabelContainer">
+        <div className="productLabel">
+          <Link
+            id={"productNameId-" + props.ProductId}
+            className="productLink"
+            to={"products/" + props.ProductId}
+            onClick={() =>
+              Header.onPdpLinkClicked(
+                props.ProductName,
+                props.ProductId,
+                "-WithName"
+              )}
+          >
+            {props.ProductName}
+          </Link>
+          {props.DiscountPrice === null ? (
+            <div className="productPrice">
+              £{(props.Price / 100).toFixed(2)}
+            </div>
+          ) : (
+            <div>
+              <div className="productPriceSlashed">
+                £{(props.Price / 100).toFixed(2)}
+              </div>
+              <div className="productDiscount">
+                £{(props.DiscountPrice / 100).toFixed(2)}
+              </div>
+            </div>
           )}
         </div>
       </div>

@@ -1,71 +1,66 @@
 /*above here goes default css for main webpage*/
-.wrapper{
-    text-align: center;
+
+.wrapper {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  background-color: rgb(45, 45, 45);
+  margin: 0px auto;
+  z-index: 1;
+}
+
+.home-link {
+  color: #121111;
+}
+
+
+.Title {
+  text-align: center;
+  font: bold;
+}
+
+/*below is the mobile css*/
+
+@media screen and (max-width: 520px) {
+  header .container {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 88%;
+    margin-top: 2%;
   }
-  
-  header {
-      width: 100%;
-      height: 40px;
-      position: fixed;
-      top: 0;
-      background-color: rgb(45, 45, 45);
-      margin: 0px auto;  
-      z-index: 1;
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 21% 15% 2% 0%;
+    /* margin: 4px 2px 4px 340px; */
+    transition: 0.4s;
   }
-  
-  .home-link{
-    color: #121111;
-  }
-  
-  a{
-      text-decoration: none;
-      font-family:Verdana, Geneva, sans-serif;  
-  }
-  
-  a:hover{
-    color: #16BA42;
-  }
-  
-  hr{
-      margin-top: 0%;
-  }
-  
-  .Title{
-    text-align: center;
-    font: bold;
-  }
-  /*below is the mobile css*/
-  @media screen and (max-width: 520px) {
-    
- 
-    header .container {
-      display: inline-block;
-      cursor: pointer;
-      margin-left: 88%;
-  }
-  
-  .bar1, .bar2, .bar3 {
-      width: 25px;
-      height: 2px;
-      background-color: #ffffff;
-      margin: 21% 15% 2% 0%;
-      /* margin: 4px 2px 4px 340px; */
-      transition: 0.4s;
-  }
+
   .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 4px) ;
-    transform: rotate(-45deg) translate(-5px, 6px) ;
+    -webkit-transform: rotate(-45deg) translate(-9px, 4px);
+    transform: rotate(-45deg) translate(-5px, 6px);
   }
-  
-  .change .bar2 {opacity: 0;}
-  
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
   .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-5px, -4px) ;
-    transform: rotate(45deg) translate(-5px, -5px) ;
+    -webkit-transform: rotate(45deg) translate(-5px, -4px);
+    transform: rotate(45deg) translate(-5px, -5px);
   }
 
   .openMenu {
-    height: 28px; 
+    height: 28px;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -76,7 +71,7 @@
     transition: 0;
   }
 
-  .closedMenu{
+  .closedMenu {
     width: 0;
   }
 
@@ -87,7 +82,7 @@
   .openMenu a {
     padding-top: 0;
     text-decoration: none;
-    font-family: FuturaPT-Reg;
+    font-family: "futura-pt";
     font-size: 18px;
     font-weight: 400;
     color: #ffffff;
@@ -95,12 +90,7 @@
     margin-left: 200%;
   }
 
-
   #bag {
-    margin-left: 30%; 
+    margin-left: 30%;
   }
-
-  }
-  
-  
-  
+}
