@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Header from "../Header/index.jsx";
+import logToNewRelic from "../../GlobalFunctions/LogToNewRelic";
 import "./style.css";
 
 const ProductElement = props => {
@@ -12,12 +13,10 @@ const ProductElement = props => {
           id={"productImageId-" + props.ProductId}
           className="productLink"
           to={"products/" + props.ProductId}
-          onClick={() =>
-            (
-              props.ProductName,
-              props.ProductId,
-              "-WithImage"
-            )}
+          onClick={() => {
+            Header.toggleMenu();
+            logToNewRelic(props.ProductName + props.ProductId + "-WithImage");
+          }}
         >
           <img width="150" src={props.SplashImgUrl} alt={props.ProductName} />
         </Link>
@@ -29,12 +28,10 @@ const ProductElement = props => {
             id={"productNameId-" + props.ProductId}
             className="productLink"
             to={"products/" + props.ProductId}
-            onClick={() =>
-              Header.onPdpLinkClicked(
-                props.ProductName,
-                props.ProductId,
-                "-WithName"
-              )}
+            onClick={() => {
+              Header.toggleMenu();
+              logToNewRelic(props.ProductName + props.ProductId + "-WithName");
+            }}
           >
             {props.ProductName}
           </Link>

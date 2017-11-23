@@ -170,4 +170,5 @@ describe("ProductElement", () => {
         DiscountPrice={dataElem.DiscountPrice}
       />
     );
+  });
 });

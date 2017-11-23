@@ -10,23 +10,10 @@ class Header extends React.Component {
     };
   }
 
-  onButtonClicked() {
+  toggleMenu() {
     this.setState({
       toggled: !this.state.toggled
     });
-  }
-
-  onLinkClicked() {
-    this.setState({
-      toggled: !this.state.toggled
-    });
-    newrelic.addPageAction("clickToHome");
-  }
-
-  onPdpLinkClicked(productName, productId, linkType) {
-    newrelic.addPageAction(
-      "clickToProduct-" + productName + "-" + productId + linkType
-    );
   }
 
   render() {
@@ -36,7 +23,7 @@ class Header extends React.Component {
 
     return (
       <header>
-        <div className={toggledClass} onClick={() => this.onButtonClicked()}>
+        <div className={toggledClass} onClick={() => this.toggleMenu()}>
           <div className="bar1" />
           <div className="bar2" />
           <div className="bar3" />
@@ -46,7 +33,7 @@ class Header extends React.Component {
             <Link
               className="home-link"
               to="/"
-              onClick={() => this.onLinkClicked()}
+              onClick={() => this.toggleMenu()}
             >
               Home
             </Link>
