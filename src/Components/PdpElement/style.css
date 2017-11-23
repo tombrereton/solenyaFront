@@ -1,6 +1,7 @@
 body {
-    margin: 20px auto;
-    width: 60%;
+    margin:0px auto;
+    width: 100%;
+    background-color: #eeeeee;
 }
 
 header h2 {

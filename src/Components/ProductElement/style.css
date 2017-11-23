@@ -1,0 +1,49 @@
+@media screen and (max-width: 520px) {
+  .ProductElement {
+    display: flex;
+    position: relative;
+  }
+
+  .imageCard {
+  }
+
+  .productLabelContainer {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: 50%;
+    top: 10%;
+    height: 80%;
+    background: #ffffff;
+  }
+
+  .productLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 15px;
+    font-family: "futura-pt";
+  }
+
+  .productLink {
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .productLabel > a {
+    color: black;
+  }
+
+  .productDiscount,
+  .productPrice,
+  .productPriceSlashed {
+    font-weight: 700;
+  }
+
+  .productPriceSlashed {
+    color: #d0021b;
+    text-decoration: line-through;
+  }
+}

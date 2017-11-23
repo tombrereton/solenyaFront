@@ -104,37 +104,31 @@ describe("ProductElement", () => {
     expect(img.prop("alt")).toEqual(dataElem.ProductName);
   });
 
-  it("requires discount price not to be empty when not null", () => {
+  it("requires discount price displayed when not discount price null", () => {
+    let discountPriceValue = 1200;
     const card = (
       <ProductElement
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         SplashImgUrl={dataElem.SplashImgUrl}
-        DiscountPrice={dataElem.DiscountPrice}
+        DiscountPrice={discountPriceValue}
       />
     );
     const wrapper = shallow(card);
     const discountPrice = wrapper.find(".productDiscount");
-    if (discountPrice.text() !== "") {
-      const discountString =
-        "£" + (dataElem.DiscountPrice.toString() / 100).toFixed(2);
-      expect(discountPrice.text()).toEqual(discountString);
-    }
+    expect(discountPrice.text()).toEqual("£12.00");
   });
 
-  it("requires discount price to not show if null", () => {
-    const card = (
+
+  it("Should log the correct name click", () => {
+    const wrapper = shallow(
       <ProductElement
+        ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         SplashImgUrl={dataElem.SplashImgUrl}
         DiscountPrice={dataElem.DiscountPrice}
       />
     );
-    const wrapper = shallow(card);
-    const discountPrice = wrapper.find(".productDiscount");
-    if (discountPrice.text() === "") {
-      expect(discountPrice.text()).toEqual("");
-    }
   });
 });

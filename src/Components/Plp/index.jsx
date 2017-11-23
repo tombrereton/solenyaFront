@@ -4,6 +4,7 @@ import getDeviceWidth from "../../GlobalFunctions/GetDeviceWidth";
 import logToNewRelic from "../../GlobalFunctions/LogToNewRelic";
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
 
+
 class Plp extends Component {
   constructor() {
     super();
@@ -14,20 +15,20 @@ class Plp extends Component {
   }
 
   componentDidMount() {
-    // let ProductServiceEndpoint =
-    //   window.config[window.envName].ProductServiceEndpoint;
+    let ProductServiceEndpoint =
+      window.config[window.envName].ProductServiceEndpoint;
 
     let deviceWidth = getDeviceWidth();
     logToNewRelic("Plp-LoadedWithDeviceWidth-" + deviceWidth);
 
-    const point = process.env.ENDPOINT
-    fetchDataToJSON(point).then(productElements =>
+    fetchDataToJSON(ProductServiceEndpoint).then(productElements =>
       this.setState({ productElements })
     );
   }
 
   render() {
     return <Products productElements={this.state.productElements} />;
+
   }
 }
 

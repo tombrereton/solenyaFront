@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 // import PropTypes from 'prop-types';
-import ProductElement from '../ProductElement';
+import ProductElement from "../ProductElement";
+import "./style.css";
 
 const Products = props => (
-	<div>
-		{props.productElements.map((productElements, index) => <ProductElement {...productElements} key={index} />)}
-	</div>
-)
+  <div className="productContainer">
+    {props.productElements.map((productElements, index) => (
+      <ProductElement {...productElements} key={index} />
+    ))}
+  </div>
+);
 
 // Products.propTypes = {
 // 	productElements: PropTypes.productElements
