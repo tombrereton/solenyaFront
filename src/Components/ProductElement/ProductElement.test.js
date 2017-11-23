@@ -137,4 +137,37 @@ describe("ProductElement", () => {
       expect(discountPrice.text()).toEqual("");
     }
   });
+
+  it("Should log the correct image click", () => {
+    const wrapper = shallow(
+      <ProductElement
+        ProductId={dataElem.ProductId}
+        ProductName={dataElem.ProductName}
+        Price={dataElem.Price}
+        SplashImgUrl={dataElem.SplashImgUrl}
+        DiscountPrice={dataElem.DiscountPrice}
+      />
+    );
+
+    const linkTag = wrapper.find("Link").first();
+    linkTag.simulate("click");
+    expect(global.newrelic.addPageAction).toHaveBeenCalledWith(
+      "clickToProduct-" +
+        dataElem.ProductName +
+        "-" +
+        dataElem.ProductId +
+        "-WithImage"
+    );
+  });
+
+  it("Should log the correct name click", () => {
+    const wrapper = shallow(
+      <ProductElement
+        ProductId={dataElem.ProductId}
+        ProductName={dataElem.ProductName}
+        Price={dataElem.Price}
+        SplashImgUrl={dataElem.SplashImgUrl}
+        DiscountPrice={dataElem.DiscountPrice}
+      />
+    );
 });

@@ -36,17 +36,14 @@
     color: black;
   }
 
-  .productDiscount {
-    font-weight: 700;
-  }
-
-  .productPrice {
+  .productDiscount,
+  .productPrice,
+  .productPriceSlashed {
     font-weight: 700;
   }
 
   .productPriceSlashed {
     color: #d0021b;
     text-decoration: line-through;
-    font-weight: 700;
   }
 }

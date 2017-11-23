@@ -1,9 +1,4 @@
-/*above here goes default css for main webpage*/
-
-.wrapper {
-  text-align: center;
-}
-
+/*below here goes default css for main webpage*/
 header {
   width: 100%;
   height: 40px;
@@ -14,18 +9,7 @@ header {
   z-index: 1;
 }
 
-.home-link {
-  color: #121111;
-}
-
-
-.Title {
-  text-align: center;
-  font: bold;
-}
-
 /*below is the mobile css*/
-
 @media screen and (max-width: 520px) {
   header .container {
     display: inline-block;
@@ -41,7 +25,6 @@ header {
     height: 2px;
     background-color: #ffffff;
     margin: 21% 15% 2% 0%;
-    /* margin: 4px 2px 4px 340px; */
     transition: 0.4s;
   }
 
@@ -90,7 +73,7 @@ header {
     margin-left: 200%;
   }
 
-  #bag {
+  .bag {
     margin-left: 30%;
   }
 }

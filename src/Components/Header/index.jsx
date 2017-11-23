@@ -1,73 +1,63 @@
 import React from "react";
-import {BrowserRouter as Router, Link} from "react-router-dom";
-import Plp from "../Plp";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import "./style.css";
 
-class Header extends React.Component  {
-    constructor(props){      
-        super(props)
-        this.state = {
-            toggled: false
-        }
-    }
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggled: false
+    };
+  }
 
-    onButtonClicked(){
-        this.setState({
-            toggled: !this.state.toggled
-        })
-        console.log("click happened");
-    }
+  onButtonClicked() {
+    this.setState({
+      toggled: !this.state.toggled
+    });
+  }
 
-    onLinkClicked(){
-        this.setState({
-            toggled: !this.state.toggled
-        })
-        newrelic.addPageAction("clickToHome")
-    }
+  onLinkClicked() {
+    this.setState({
+      toggled: !this.state.toggled
+    });
+    newrelic.addPageAction("clickToHome");
+  }
 
-    onPdpLinkClicked(productName, productId, linkType){
-    
-        newrelic.addPageAction(
-            "clickToProduct-" +
-              productName +
-              "-" +
-              productId +
-              linkType)
-    }
+  onPdpLinkClicked(productName, productId, linkType) {
+    newrelic.addPageAction(
+      "clickToProduct-" + productName + "-" + productId + linkType
+    );
+  }
 
-    render (){ 
-        const toggled = this.state.toggled;
-        const toggledClass = "container" + (toggled ? " change" : "");
-        const menuClass = (toggled ? "openMenu" : "closedMenu");
+  render() {
+    const toggled = this.state.toggled;
+    const toggledClass = "container" + (toggled ? " change" : "");
+    const menuClass = toggled ? "openMenu" : "closedMenu";
 
-        return(
-            <header>     
-                    <div className={toggledClass}  onClick={() => this.onButtonClicked()}>
-                        <div className="bar1"></div>
-                        <div className="bar2"></div>
-                        <div className="bar3"></div>          
-                    </div> 
-                    <div className={menuClass}>                        
-                        <div style={{display: "inline-block"}}>
-                                    <Link  className = "home-link" to="/" onClick={() => this.onLinkClicked()}>
-                                        Home
-                                    </Link> 
-                        </div>
-                        <div id = "bag" style={{display: "inline-block"}}>
-                            <a>Bag</a>
-                        </div>   
-
-                    </div>  
-
-            </header > 
-            );
-            
-        }
-
-    
-
+    return (
+      <header>
+        <div className={toggledClass} onClick={() => this.onButtonClicked()}>
+          <div className="bar1" />
+          <div className="bar2" />
+          <div className="bar3" />
+        </div>
+        <div className={menuClass}>
+          <div style={{ display: "inline-block" }}>
+            <Link
+              className="home-link"
+              to="/"
+              onClick={() => this.onLinkClicked()}
+            >
+              Home
+            </Link>
+          </div>
+          <div className="bag" style={{ display: "inline-block" }}>
+            <a>Bag</a>
+          </div>
+        </div>
+      </header>
+    );
+  }
 }
 
-
-    export default Header;
-
+export default Header;

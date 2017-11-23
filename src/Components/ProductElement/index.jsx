@@ -13,7 +13,7 @@ const ProductElement = props => {
           className="productLink"
           to={"products/" + props.ProductId}
           onClick={() =>
-            Header.onPdpLinkClicked(
+            (
               props.ProductName,
               props.ProductId,
               "-WithImage"
