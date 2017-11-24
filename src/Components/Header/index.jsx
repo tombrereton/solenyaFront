@@ -23,10 +23,17 @@ class Header extends React.Component {
 
     return (
       <header>
-        <div className={toggledClass} onClick={() => this.toggleMenu()}>
-          <div className="bar1" />
-          <div className="bar2" />
-          <div className="bar3" />
+        <div className="headerHolder">
+          <div className="logo" style={{ display: "inline-block" }}>
+            <img src = "" alt = "logo"/>
+          </div>  
+          <div className = "burgerMenu" style={{ display: "inline-block" }}>
+            <div className={toggledClass} onClick={() => this.toggleMenu()}>
+              <div className="bar1" />
+              <div className="bar2" />
+              <div className="bar3" />
+            </div>
+           </div>
         </div>
         <div className={menuClass}>
           <div className = "homeLink" style={{ display: "inline-block" }}>
