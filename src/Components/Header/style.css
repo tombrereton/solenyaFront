@@ -70,10 +70,19 @@ header {
     font-weight: 400;
     color: #ffffff;
     transition: 0.3s;
-    margin-left: 200%;
+
   }
 
-  .bag {
-    margin-left: 30%;
+  .homeLink {
+    width:49.88%;
+    text-align: center;
+    border-right-style: solid;
+    border-color: #ffffff;
+    border-width: thin;
+  }
+
+  .bagLink {
+    width:49.88%;
+    text-align: center;
   }
 }

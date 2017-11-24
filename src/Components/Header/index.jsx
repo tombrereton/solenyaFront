@@ -29,16 +29,15 @@ class Header extends React.Component {
           <div className="bar3" />
         </div>
         <div className={menuClass}>
-          <div style={{ display: "inline-block" }}>
+          <div className = "homeLink" style={{ display: "inline-block" }}>
             <Link
               className="home-link"
               to="/"
-              onClick={() => this.toggleMenu()}
-            >
+              onClick={() => this.toggleMenu()}>
               Home
             </Link>
           </div>
-          <div className="bag" style={{ display: "inline-block" }}>
+          <div className="bagLink" style={{ display: "inline-block" }}>
             <a>Bag</a>
           </div>
         </div>
