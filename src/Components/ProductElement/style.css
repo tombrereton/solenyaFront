@@ -4,7 +4,16 @@
     position: relative;
   }
 
+  img {
+    width: 100%;
+  }
+
   .imageCard {
+    position: relative;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    
+    width: 53%; 
   }
 
   .productLabelContainer {
@@ -16,6 +25,26 @@
     height: 80%;
     background: #ffffff;
   }
+
+
+  .ProductElement:nth-child(even) {
+    display: flex;
+    /* flex-direction: row-reverse; */
+  }
+
+
+  .ProductElement:nth-child(even) > .productLabelContainer {
+    background: red; 
+    padding-right:100%;
+  } 
+
+  .ProductElement:nth-child(even) > .imageCard {
+    left: 50%;
+  }
+
+
+
+
 
   .productLabel {
     display: flex;
