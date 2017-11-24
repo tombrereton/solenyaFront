@@ -58,14 +58,16 @@ const PdpElement = props => {
       <div className = "productMainInfo">
         
       <div className = "productMainInfoText">
-        <div className="productName">
-          <h4>Product Name:</h4>
+        <div>
+      <h4>Product Name:</h4>
+      </div>
+        <div className="pdpProductName">
           <div className="productNameValue">{props.ProductName}</div>
         </div>
-        <div className="productPrice">
+        <div className="pdpProductPrice">
           <div className="priceValue">£{(props.Price / 100).toFixed(2)}</div>
         </div>
-        <div className="productDiscount">
+        <div className="pdpProductDiscount">
           <div className="productDiscountValue">
             {props.DiscountPrice !== null && (
               <div id="discount">£{(props.DiscountPrice / 100).toFixed(2)}</div>
