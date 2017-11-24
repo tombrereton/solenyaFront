@@ -20,6 +20,7 @@
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
     "node-sass": "^4.3.0",
+    "nuka-carousel": "^3.0.0",
     "prop-types": "^15.6.0",
     "react": "15.6.1",
     "react-burger-menu": "^2.1.11",
