@@ -11,6 +11,7 @@ header {
 
 /*below is the mobile css*/
 @media screen and (max-width: 520px) {
+
   header .container {
     display: inline-block;
     cursor: pointer;
@@ -42,7 +43,10 @@ header {
     transform: rotate(45deg) translate(-5px, -5px);
   }
 
+
   .openMenu {
+    display: flex;
+    position: relative;
     height: 28px;
     width: 100%;
     position: fixed;
@@ -55,11 +59,24 @@ header {
   }
 
   .closedMenu {
+    display: flex;
+    position: relative;
     width: 0;
+  }
+
+  .home-link {
+    position: absolute;
+    left: 10px;
+  }
+
+  .bag {
+    position: absolute;
+    right: 30px;
   }
 
   .closedMenu a {
     display: none;
+    position: relative;
   }
 
   .openMenu a {
