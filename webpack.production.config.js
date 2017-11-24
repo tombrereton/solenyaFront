@@ -21,7 +21,7 @@ module.exports = {
   entry: ["./src/index.jsx"],
   output: {
     publicPath: "./",
-    path: path.join(__dirname, "public"),
+    path: path.join(__dirname, "public", "public"),
     filename: "[chunkhash].js"
   },
   resolve: {
@@ -34,7 +34,8 @@ module.exports = {
     new Dotenv(),
     new CopyWebpackPlugin([
       { from: "./src/Config.js", to: "config.js" },
-      { from: "./src/favicon.ico" }
+      { from: "./src/favicon.ico" },
+      { from: "./server.js", to: "../" }
     ]),
     new WebpackCleanupPlugin(),
     new webpack.DefinePlugin({
