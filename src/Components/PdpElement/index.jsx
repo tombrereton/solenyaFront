@@ -58,23 +58,31 @@ const PdpElement = props => {
       <div className = "productMainInfo">
         
       <div className = "productMainInfoText">
-        <div>
+        {/* <div>
       <h4>Product Name:</h4>
-      </div>
+      </div> */}
         <div className="pdpProductName">
           <div className="productNameValue">{props.ProductName}</div>
         </div>
-        <div className="pdpProductPrice">
-          <div className="priceValue">£{(props.Price / 100).toFixed(2)}</div>
-        </div>
-        <div className="pdpProductDiscount">
+        <div className="pdpPrice">
           <div className="productDiscountValue">
-            {props.DiscountPrice !== null && (
-              <div id="discount">£{(props.DiscountPrice / 100).toFixed(2)}</div>
-            )}
+            {props.DiscountPrice === null ? (
+            <div className="pdpProductPrice">
+              £{(props.Price / 100).toFixed(2)}
+            </div>
+          ) : (
+            <div>
+              <div className="pdpProductPriceSlashed">
+                £{(props.Price / 100).toFixed(2)}
+              </div>
+              <div className="pdpProductDiscount">
+                £{(props.DiscountPrice / 100).toFixed(2)}
+              </div>
+            </div>
+          )}
           </div>
           </div>
-          <div className="productColour">
+        </div><div className="productColour">
           <h4>Colour:</h4>
           {colours.length === 1 ? (
             <div className="productColourValue">{colours}</div>
@@ -87,32 +95,28 @@ const PdpElement = props => {
             />
           )}
         </div>
-        </div>
         <div  className = "bagButtonContainer">
-        <button className = "bagButton" type="button">Add To Bag</button>
+        <button className = "bagButton" type="button">ADD TO BAG</button>
         </div>
       </div>
       <div className = "productExtraInfo">
       <div className="productDescription">
-        <h4>Product Description:</h4>
+        <h4 className="prodDescHeader">PRODUCT DESCRIPTION</h4>
         <div className="productDescriptionValue">
           {props.ProductDescription}
         </div>
       </div>
       <div className="productBrand">
-        <h4>Product Brand:</h4>
+        <h4 className="prodBrandHeader">PRODUCT BRAND</h4>
         <div className="productBrandValue">{props.ProductBrand}</div>
       </div>
       <div className="brandDescription">
-        <h4>Brand Description:</h4>
+        <h4 className="brandDescHeader">BRAND DESCRIPTION</h4>
         <div className="brandDescriptionValue">{props.BrandDescription}</div>
       </div>
       <div className="materials">
-        <h4>Materials:</h4>
+        <h4 className="materialsHeader">MATERIALS</h4>
         <div className="materialsValue">{props.Materials}</div>
-        <div className="button">
-         
-        </div>
         </div>
       </div>
     </div>

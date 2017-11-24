@@ -1,4 +1,4 @@
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 520px) {
     body {
         margin:0px auto;
         width: 100%;
@@ -8,7 +8,6 @@
         margin: 0
     }
     .PdpElement{
-        /* margin: 1em; */
         margin-top: 35px;
     }
     .slider-list {
@@ -23,16 +22,13 @@
     .slider-decorator-2{
         bottom:10px !important;
     }
-    .productMainInfoText{
-        height: 140px;
-    }
+
     .productMainInfo{
         background-color: #FFFFFF;
         position: relative;
-        z-index: 1;
         margin-left: 17px;
-        margin-right: 17px;
-        margin-top: -50px;
+        margin-top: -25px;
+        width: 90%;
        
     }
 
@@ -40,60 +36,93 @@
         width: 250px;
         margin: auto;    
         top: 20px;
-        position: inherit;  
+        position: inherit; 
+      
     }
     .bagButton {
         width: 250px;
         height: 40px;
         background-color: #00aa5b;
         border: none;
+        font-family: "futura-pt"; 
+        font-weight: 600;
+        font-size: 94%;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+
      }
-    
+    .productMainInfoText{
+        width: 37%;
+        padding-top: 5%;
+        display: inline-block;
+        flex-direction: column;
+    }
+
     .pdpProductName{
         position: relative;
         margin-right: 50%;
         margin-bottom: 0px;
-        /* background-color: red; */
      }
      
     .pdpProductPrice{
         position: relative;
         width: 25%;
-        /* background-color: rgb(214, 238, 0); */
+       
     }
     .pdpProductDiscount{
         position: relative;
         width: 25%;
-        background-color: rgb(214, 238, 0);
     }
 
-    .productColour{   
-        
-        left: 150px;
-        bottom: 175px;
-    
-    } 
-    .productColour h4{
-        margin-bottom: 0px;
+    .pdpProductPriceSlashed {
+        color: #d0021b;
+        text-decoration: line-through;
+      }
+
+    .productColour {
+        display: inline-block;
+        vertical-align: top;
+        width: 36%;
+        padding-right: 5%;
+        padding-top: 5%;
     }
-    
+
+    .productMainInfoText, .productExtraInfo, .productColour{
+        justify-content: center;
+        padding-left: 5%;
+        font-size: 15px;
+        font-family: "futura-pt";
+    }
+
     .productExtraInfo{
         background-color: #FFFFFF;
-        padding: 10px;
         margin-top: 40px;
-    
+        display: flex;
+        flex-direction: column;
+        padding-right: 5%;   
+        font-weight: 400;
+    }   
+
+    .productDescriptionValue, .productBrandValue, .brandDescriptionValue, .materialsValue{
+        padding-bottom: 3%;
+    }
+    .pdpProductPrice, .pdpProductDiscount{
+        font-weight: 700;
+    }
+    .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
+        padding-bottom: 2%;
+        letter-spacing: 0.5PX;
     }
     header h2 {
         text-align: center;
         margin: 30px auto;
-    }
-    
+    }  
     pre {
         background: #f7f7f7;
         padding: 10px 20px;
         border-radius: 2px;
         border: 1px solid #ccc;
-    }
+    } 
     
     pre code {
         line-height: 20px;
@@ -197,15 +226,5 @@
         cursor: default;
         display: block;
         padding: 8px 10px;
-    }
-    
-    .button {
-        border: none;
-        color: black;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
     }
 }
