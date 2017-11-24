@@ -21,9 +21,6 @@
   .copyright {
     position: absolute;
     right: 10px;
-    border-right-style: solid;
-    border-color: #2d2d2d;
-    border-width: thin;
   }
 
   .teamName {
