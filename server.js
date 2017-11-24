@@ -24,8 +24,4 @@ var server = http.createServer(app);
 
 server.listen(port, function() {
   console.log("Listening on port: ", port);
-  console.log(
-    "(Deleted in next pull request) Endpoint: ",
-    process.env.ENDPOINT
-  );
 });

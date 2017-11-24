@@ -21,7 +21,7 @@ module.exports = {
   entry: ["./src/index.jsx"],
   output: {
     publicPath: "./",
-    path: path.join(__dirname, "public", "public"),
+    path: path.join(__dirname, "public"),
     filename: "[chunkhash].js"
   },
   resolve: {
@@ -35,8 +35,6 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: "./src/Config.js", to: "config.js" },
       { from: "./src/favicon.ico" },
-      { from: "./server.js", to: "../" },
-      { from: "./npmInstallOnAzure.ps1", to: "../" }
     ]),
     new WebpackCleanupPlugin(),
     new webpack.DefinePlugin({
