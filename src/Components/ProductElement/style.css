@@ -29,28 +29,23 @@
 
   .ProductElement:nth-child(even) {
     display: flex;
-    /* flex-direction: row-reverse; */
-  }
+    flex-direction: row-reverse;
+    }
 
 
   .ProductElement:nth-child(even) > .productLabelContainer {
-    background: red; 
-    padding-right:100%;
+      left: 0%;
+      right: 50%;
   } 
 
   .ProductElement:nth-child(even) > .imageCard {
-    left: 50%;
   }
-
-
-
-
 
   .productLabel {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 5%;
+    padding-left: 15%;
     padding-right: 5%;
     font-size: 15px;
     font-family: "futura-pt";
