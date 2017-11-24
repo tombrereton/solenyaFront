@@ -6,7 +6,6 @@ var http = require("http");
 var express = require("express");
 var path = require("path");
 var fs = require("fs");
-require("dotenv").config();
 
 fs.existsSync = fs.existsSync || require("path").existsSync;
 
