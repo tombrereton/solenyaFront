@@ -6,7 +6,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var DashboardPlugin = require("webpack-dashboard/plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 let CopyWebpackPlugin = require("copy-webpack-plugin");
-const Dotenv = require('dotenv-webpack');
+const Dotenv = require("dotenv-webpack");
 
 const HOST = process.env.HOST || "127.0.0.1";
 const PORT = process.env.PORT || "8888";
@@ -52,6 +52,7 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: "./src/config.js" },
       { from: "./src/favicon.ico" },
+      { from: "./src/Config.js", to: "config.js" }
     ]),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.NamedModulesPlugin(),

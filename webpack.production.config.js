@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var WebpackCleanupPlugin = require("webpack-cleanup-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 let CopyWebpackPlugin = require("copy-webpack-plugin");
-const Dotenv = require('dotenv-webpack');
+const Dotenv = require("dotenv-webpack");
 
 loaders.push({
   test: /\.scss$/,
@@ -33,8 +33,8 @@ module.exports = {
   plugins: [
     new Dotenv(),
     new CopyWebpackPlugin([
-      { from: "./src/config.js" },
-      { from: "./src/favicon.ico" },
+      { from: "./src/Config.js", to: "config.js" },
+      { from: "./src/favicon.ico" }
     ]),
     new WebpackCleanupPlugin(),
     new webpack.DefinePlugin({
