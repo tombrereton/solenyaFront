@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import PdpElement from "../PdpElement";
 import Preloader from "../Preloader";
-import { ProductServiceEndpoint } from "../../Config";
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 class Pdp extends Component {
   constructor() {
@@ -15,6 +14,9 @@ class Pdp extends Component {
   }
 
   componentDidMount() {
+    let ProductServiceEndpoint =
+      window.config[window.envName].ProductServiceEndpoint;
+
     const url =
       ProductServiceEndpoint + "products/" + this.props.match.params.id;
     fetchDataToJSON(url).then(productElement =>
@@ -35,6 +37,6 @@ Pdp.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.object
   })
-}
+};
 
 export default Pdp;

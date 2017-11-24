@@ -1,0 +1,8 @@
+@media screen and (max-width: 520px) {
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    background: #eeeeee;
+  }
+}

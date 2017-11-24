@@ -1,68 +1,57 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-
+import Header from "../Header/index.jsx";
+import logToNewRelic from "../../GlobalFunctions/LogToNewRelic";
+import "./style.css";
 
 const ProductElement = props => {
   return (
-   
-
-
     <div className="ProductElement" style={{ margin: "1em" }}>
-     
-      <Link 
-        id={"productImageId-" + props.ProductId}        
-        className="productLink"
-        to={"products/" + props.ProductId}
-        onClick={() =>
-          newrelic.addPageAction(
-            "clickToProduct-" +
-              props.ProductName +
-              "-" +
-              props.ProductId +
-              "-WithImage"
-          )}
-      >
-        <img width="150" src={props.SplashImgUrl} alt={props.ProductName} />
-      </Link>
-     
-      <div className = "card">
-      
-        <div className="productName" style={{ fontWeight: "bold" }}>
-      
+      <div className="imageCard">
+        <Link
+          id={"productImageId-" + props.ProductId}
+          className="productLink"
+          to={"products/" + props.ProductId}
+          onClick={() => {
+            Header.toggleMenu();
+            logToNewRelic(props.ProductName + props.ProductId + "-WithImage");
+          }}
+        >
+          <img src={props.SplashImgUrl} alt={props.ProductName} />
+        </Link>
+      </div>
+
+      <div className="productLabelContainer">
+        <div className="productLabel">
           <Link
             id={"productNameId-" + props.ProductId}
             className="productLink"
             to={"products/" + props.ProductId}
-            onClick={() =>
-              newrelic.addPageAction(
-                "clickToProduct-" +
-                  props.ProductName +
-                  "-" +
-                  props.ProductId +
-                  "-WithName"
-              )}
+            onClick={() => {
+              Header.toggleMenu();
+              logToNewRelic(props.ProductName + props.ProductId + "-WithName");
+            }}
           >
-          
             {props.ProductName}
           </Link>
-          
-      
-        <div className="productPrice">£{(props.Price / 100).toFixed(2)}</div>
-        <div className="productDiscount">
-          {props.DiscountPrice !== null && (
-            <div id="discount">£{(props.DiscountPrice / 100).toFixed(2)}</div>
+          {props.DiscountPrice === null ? (
+            <div className="productPrice">
+              £{(props.Price / 100).toFixed(2)}
+            </div>
+          ) : (
+            <div>
+              <div className="productPriceSlashed">
+                £{(props.Price / 100).toFixed(2)}
+              </div>
+              <div className="productDiscount">
+                £{(props.DiscountPrice / 100).toFixed(2)}
+              </div>
+            </div>
           )}
-        
-
         </div>
-       
       </div>
-
     </div>
-
-    </div>
-   
   );
 };
 
