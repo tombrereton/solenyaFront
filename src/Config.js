@@ -1,4 +1,4 @@
-var envName = "dev";
+var envName = 'dev';
 
 var config = {
   dev: {
