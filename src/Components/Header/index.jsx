@@ -25,7 +25,7 @@ class Header extends React.Component {
       <header>
         <div className="headerHolder">
           <div className="logo" style={{ display: "inline-block" }}>
-            <img src = "" alt = "logo"/>
+            <img src = "https://i.imgur.com/zkkUfhc.png" alt = "logo"/>
           </div>  
           <div className = "burgerMenu" style={{ display: "inline-block" }}>
             <div className={toggledClass} onClick={() => this.toggleMenu()}>
