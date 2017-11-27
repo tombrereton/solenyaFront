@@ -12,10 +12,11 @@ header {
 
 /*below is the mobile css*/
 @media screen and (max-width: 520px) {
-  header .container {
-    display: inline-block;
+  header .burgerMenu {
     cursor: pointer;
-    margin-bottom: 30%;
+    position: absolute;
+    top: 20%;
+    right: 1em;
   }
 
 .logo > img {
