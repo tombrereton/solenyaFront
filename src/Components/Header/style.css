@@ -1,3 +1,4 @@
+
 /*below here goes default css for main webpage*/
 header {
   width:100%;
@@ -15,7 +16,9 @@ header {
   header .container {
     display: inline-block;
     cursor: pointer;
-    margin-bottom: 30%;
+    margin-left: 88%;
+    margin-top: 2%;
+
   }
 
 .logo > img {
@@ -23,7 +26,6 @@ header {
   width: 25px;
   margin: 5px;
 }
-
 
   .bar1,
   .bar2,

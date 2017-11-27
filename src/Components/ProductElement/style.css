@@ -14,9 +14,7 @@ img {
 
   .imageCard {
     position: relative;
-    display: flex;
-    /* flex-direction: row-reverse; */
-    
+    display: flex;    
     width: 53%; 
   }
 
@@ -30,12 +28,10 @@ img {
     background: #ffffff;
   }
 
-
   .ProductElement:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
     }
-
 
   .ProductElement:nth-child(even) > .productLabelContainer {
       left: 0%;
