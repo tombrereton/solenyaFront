@@ -20,7 +20,7 @@ module.exports = {
   entry: ["./src/index.jsx"],
   output: {
     publicPath: "./",
-    path: path.join(__dirname, "public", "public"),
+    path: path.join(__dirname, "public"),
     filename: "[chunkhash].js"
   },
   resolve: {
