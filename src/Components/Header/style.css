@@ -12,13 +12,10 @@ header {
 
 /*below is the mobile css*/
 @media screen and (max-width: 520px) {
-
   header .container {
     display: inline-block;
     cursor: pointer;
-    margin-left: 88%;
-    margin-top: 2%;
-
+    margin-bottom: 30%;
   }
 
 .logo > img {
@@ -26,6 +23,7 @@ header {
   width: 25px;
   margin: 5px;
 }
+
 
   .bar1,
   .bar2,
@@ -51,10 +49,7 @@ header {
     transform: rotate(45deg) translate(-5px, -5px);
   }
 
-
   .openMenu {
-    display: flex;
-    position: relative;
     height: 35px;
     width: 100%;
     position: fixed;
@@ -67,24 +62,11 @@ header {
   }
 
   .closedMenu {
-    display: flex;
-    position: relative;
     width: 0;
-  }
-
-  .home-link {
-    position: absolute;
-    left: 10px;
-  }
-
-  .bag {
-    position: absolute;
-    right: 30px;
   }
 
   .closedMenu a {
     display: none;
-    position: relative;
   }
 
   .openMenu a {
