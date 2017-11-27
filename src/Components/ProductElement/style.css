@@ -1,3 +1,7 @@
+img {
+  width: 150px;
+}
+
 @media screen and (max-width: 520px) {
   .ProductElement {
     display: flex;
@@ -10,9 +14,7 @@
 
   .imageCard {
     position: relative;
-    display: flex;
-    /* flex-direction: row-reverse; */
-    
+    display: flex;    
     width: 53%; 
   }
 
@@ -26,12 +28,10 @@
     background: #ffffff;
   }
 
-
   .ProductElement:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
     }
-
 
   .ProductElement:nth-child(even) > .productLabelContainer {
       left: 0%;
@@ -41,7 +41,7 @@
   .ProductElement:nth-child(even) > .imageCard {
   }
 
-  .productLabel {
+  .divLink {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,6 +49,9 @@
     padding-right: 5%;
     font-size: 15px;
     font-family: "futura-pt";
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
   }
 
   .productLink {
