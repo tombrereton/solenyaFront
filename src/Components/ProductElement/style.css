@@ -41,7 +41,7 @@ img {
   .ProductElement:nth-child(even) > .imageCard {
   }
 
-  .productLabel {
+  .divLink {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,6 +49,9 @@ img {
     padding-right: 5%;
     font-size: 15px;
     font-family: "futura-pt";
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
   }
 
   .productLink {
