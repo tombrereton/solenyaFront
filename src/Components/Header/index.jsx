@@ -25,7 +25,11 @@ class Header extends React.Component {
       <header>
         <div className="headerHolder">
           <div className="logo" style={{ display: "inline-block" }}>
-            <img src = "https://i.imgur.com/zkkUfhc.png" alt = "logo"/>
+              <Link className = "logoLink"
+              to="/" onClick={() => newrelic.addPageAction("clickToHome")}
+               >
+                <img src = "https://i.imgur.com/zkkUfhc.png" alt = "logo"/>
+              </Link>
           </div>  
           <div className = "burgerMenu" style={{ display: "inline-block" }}>
             <div className={toggledClass} onClick={() => this.toggleMenu()}>
