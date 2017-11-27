@@ -1,0 +1,7 @@
+# add to `.git/config`
+# [include]
+#	path = ../.gitalias
+
+[alias]
+ co = checkout
+ upd = !git checkout master && git pull && git checkout - && git merge master

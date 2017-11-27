@@ -6,7 +6,6 @@ var http = require("http");
 var express = require("express");
 var path = require("path");
 var fs = require("fs");
-require("dotenv").config();
 
 fs.existsSync = fs.existsSync || require("path").existsSync;
 
@@ -24,8 +23,4 @@ var server = http.createServer(app);
 
 server.listen(port, function() {
   console.log("Listening on port: ", port);
-  console.log(
-    "(Deleted in next pull request) Endpoint: ",
-    process.env.ENDPOINT
-  );
 });

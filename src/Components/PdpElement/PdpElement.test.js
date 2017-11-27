@@ -34,7 +34,7 @@ describe("PdpElement", () => {
       />
     );
     const wrapper = shallow(card);
-    const name = wrapper.find(".productName");
+    const name = wrapper.find(".pdpProductName");
     expect(name.contains(dataElem.ProductName)).toEqual(true);
   });
 
@@ -54,20 +54,21 @@ describe("PdpElement", () => {
       />
     );
     const wrapper = shallow(card);
-    const price = wrapper.find(".priceValue");
+    const price = wrapper.find(".pdpProductPrice");
     const priceString = "£" + (dataElem.Price.toString() / 100).toFixed(2);
 
     expect(price.text()).toEqual(priceString);
   });
 
   it("requires discount price not to be empty when not null", () => {
+    let discountPriceValue = 1200;
     const card = (
       <PdpElement
         ProductId={dataElem.ProductId}
         ProductName={dataElem.ProductName}
         Price={dataElem.Price}
         SplashImgUrl={dataElem.SplashImgUrl}
-        DiscountPrice={dataElem.DiscountPrice}
+        DiscountPrice={discountPriceValue}
         ImageOptions={dataElem.ImageOptions}
         ProductDescription={dataElem.ProductDescription}
         ProductBrand={dataElem.ProductBrand}
@@ -76,34 +77,10 @@ describe("PdpElement", () => {
       />
     );
     const wrapper = shallow(card);
-    const discountPrice = wrapper.find(".productDiscountValue");
-    if (discountPrice.text() !== "") {
-      const discountString =
-        "£" + (dataElem.DiscountPrice.toString() / 100).toFixed(2);
-      expect(discountPrice.text()).toEqual(discountString);
-    }
-  });
-
-  it("requires discount price to not show if null", () => {
-    const card = (
-      <PdpElement
-        ProductId={dataElem.ProductId}
-        ProductName={dataElem.ProductName}
-        Price={dataElem.Price}
-        SplashImgUrl={dataElem.SplashImgUrl}
-        DiscountPrice={dataElem.DiscountPrice}
-        ImageOptions={dataElem.ImageOptions}
-        ProductDescription={dataElem.ProductDescription}
-        ProductBrand={dataElem.ProductBrand}
-        BrandDescription={dataElem.BrandDescription}
-        Materials={dataElem.Materials}
-      />
-    );
-    const wrapper = shallow(card);
-    const discountPrice = wrapper.find(".productDiscountValue");
-    if (discountPrice.text() === "") {
-      expect(discountPrice.text()).toEqual("");
-    }
+    const discountPrice = wrapper.find(".pdpProductDiscount");
+   
+      expect(discountPrice.text()).toEqual("£12.00");
+    
   });
 
   it("each img url of the products is not empty", () => {

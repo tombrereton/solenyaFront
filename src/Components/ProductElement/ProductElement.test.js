@@ -104,7 +104,7 @@ describe("ProductElement", () => {
     expect(img.prop("alt")).toEqual(dataElem.ProductName);
   });
 
-  it("requires discount price displayed when not discount price null", () => {
+  it("requires discount price displayed when discount price is not null", () => {
     let discountPriceValue = 1200;
     const card = (
       <ProductElement
