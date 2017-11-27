@@ -4,11 +4,16 @@
         width: 100%;
         background-color: #eeeeee;
     }
-    h4{
+    h4 {
         margin: 0
     }
-    .PdpElement{
-        margin-top: 35px;
+    .PdpElement {
+        margin-top:35px;
+        /* margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        background-color: #eeeeee; */
     }
     .slider-list {
         min-height: calc(70vw + 10rem); 
@@ -26,8 +31,8 @@
     .productMainInfo{
         background-color: #FFFFFF;
         position: relative;
-        margin-left: 17px;
-        margin-top: -25px;
+        margin-left: 5%;
+        margin-top: -8%;
         width: 90%;       
     }
 
@@ -111,17 +116,10 @@
         font-weight: 400;
     }  
 
-    .prodDescHeader{
-        padding-top: 5%;
-    }
-
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-bottom: 2%;
         letter-spacing: 0.5PX;
-    }
-
-    .productDescriptionValue, .productBrandValue, .brandDescriptionValue, .materialsValue{
-        padding-bottom: 3%;
+        padding-top: 10%;
     }
 
     pre {
