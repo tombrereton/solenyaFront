@@ -1,19 +1,6 @@
 @media screen and (max-width: 520px) {
-    body {
-        margin:0px auto;
-        width: 100%;
-        background-color: #eeeeee;
-    }
-    h4 {
-        margin: 0
-    }
     .PdpElement {
         margin-top:35px;
-        /* margin-bottom: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 100%;
-        background-color: #eeeeee; */
     }
     .slider-list {
         min-height: calc(70vw + 10rem); 
