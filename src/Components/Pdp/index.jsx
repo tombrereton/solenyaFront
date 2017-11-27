@@ -14,8 +14,7 @@ class Pdp extends Component {
   }
 
   componentDidMount() {
-    let ProductServiceEndpoint =
-      window.config[window.envName].ProductServiceEndpoint;
+    let ProductServiceEndpoint = process.env.PRODUCT_API;
 
     const url =
       ProductServiceEndpoint + "products/" + this.props.match.params.id;

@@ -5,6 +5,9 @@
   "main": "''",
   "scripts": {
     "build": "webpack --config webpack.production.config.js --progress --profile --colors ",
+    "build:test": "webpack --config webpack.test.config.js --progress --profile --colors ",
+    "build:preprod": "webpack --config webpack.pre-prod.config.js --progress --profile --colors ",
+    "build:prod": "webpack --config webpack.prod.config.js --progress --profile --colors ",
     "start": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0",
     "dev": " webpack-dashboard -- webpack-dev-server",
@@ -71,6 +74,7 @@
     "webpack-cleanup-plugin": "^0.4.2",
     "webpack-dashboard": "^0.3.0",
     "webpack-dev-server": "^2.4.1",
+    "webpack-merge": "^4.1.1",
     "xmlhttprequest": "^1.8.0"
   },
   "jest": {
