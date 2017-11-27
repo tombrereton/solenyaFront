@@ -9,7 +9,19 @@ img {
   }
 
   img {
+<<<<<<< HEAD
     width: 53%;
+=======
+    width: 100%;
+  }
+
+  .imageCard {
+    position: relative;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    
+    width: 53%; 
+>>>>>>> master
   }
 
   .productLabelContainer {
@@ -22,11 +34,26 @@ img {
     background: #ffffff;
   }
 
+
+  .ProductElement:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    }
+
+
+  .ProductElement:nth-child(even) > .productLabelContainer {
+      left: 0%;
+      right: 50%;
+  } 
+
+  .ProductElement:nth-child(even) > .imageCard {
+  }
+
   .productLabel {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 5%;
+    padding-left: 15%;
     padding-right: 5%;
     font-size: 15px;
     font-family: "futura-pt";
@@ -51,4 +78,9 @@ img {
     color: #d0021b;
     text-decoration: line-through;
   }
+
+  .productContainer{
+    margin-bottom: 35px;
+  }
+
 }
