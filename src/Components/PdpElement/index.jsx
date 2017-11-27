@@ -82,18 +82,31 @@ const PdpElement = props => {
           )}
           </div>
           </div>
-        </div><div className="productColour">
-          <h4>Colour:</h4>
+        </div>
+        <div className="productVariants">
+          <h4 className="colourName">COLOUR:</h4>
+          <div className = "colourMenu">
           {colours.length === 1 ? (
             <div className="productColourValue">{colours}</div>
           ) : (
+            
             <Dropdown
               className="colourSelector"
               options={colours}
               value={defaultOption}
-              placeholder={"Select colour"}
+              /* placeholder={"Select colour"} */
             />
+           
           )}
+          </div>
+          <div className = "sizeMenu">
+          <h4 className= "sizeHeader">SIZE:</h4>
+          <Dropdown
+            className="sizeSelector"
+            options={["XS", "S", "M", "L", "XL"]}
+            value={"XS"}
+            />
+          </div>
         </div>
         <div  className = "bagButtonContainer">
         <button className = "bagButton" type="button">ADD TO BAG</button>

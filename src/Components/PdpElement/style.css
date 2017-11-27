@@ -28,17 +28,16 @@
         position: relative;
         margin-left: 17px;
         margin-top: -25px;
-        width: 90%;
-       
+        width: 90%;       
     }
 
     .bagButtonContainer{
         width: 250px;
         margin: auto;    
         top: 20px;
-        position: inherit; 
-      
+        position: inherit;      
     }
+
     .bagButton {
         width: 250px;
         height: 40px;
@@ -49,9 +48,9 @@
         font-size: 94%;
         color: #ffffff;
         letter-spacing: 0.5px;
-
      }
-    .productMainInfoText{
+
+    .productMainInfoText {
         width: 37%;
         padding-top: 5%;
         display: inline-block;
@@ -63,13 +62,16 @@
         position: relative;
         margin-bottom: 0px;
      }
+
      .productMainInfoText p{
          width: 100px;
      }
+
     .pdpProductPrice{
         position: relative;
         width: 25%;     
     }
+
     .pdpProductDiscount{
         position: relative;
         width: 25%;
@@ -82,17 +84,23 @@
         text-decoration: line-through;
         font-weight: 700;
         display: inline-block;
-      }
+    }
 
-    .productColour {
-        display: inline-block;
+    .productVariants {
+        display: inline-flex;
+        flex-direction: column;
         vertical-align: top;
         width: 36%;
         padding-right: 5%;
         padding-top: 5%;
+       
     }
 
-    .productMainInfoText, .productExtraInfo, .productColour{
+    .sizeHeader{
+         padding-top: 15%;
+    }    
+
+    .productMainInfoText, .productExtraInfo, .productVariants, .productSize{
         justify-content: center;
         padding-left: 5%;
         font-size: 15px;
@@ -107,24 +115,30 @@
         padding-right: 5%; 
         padding-bottom: 10%;  
         font-weight: 400;
-    }   
+    }  
+
     .prodDescHeader{
         padding-top: 1%;
     }
+
     .productDescriptionValue, .productBrandValue, .brandDescriptionValue, .materialsValue{
         padding-bottom: 3%;
     }
+
     .pdpProductPrice, .pdpProductDiscount{
         font-weight: 700;
     }
+
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-bottom: 2%;
         letter-spacing: 0.5PX;
     }
+
     header h2 {
         text-align: center;
         margin: 30px auto;
     }  
+
     pre {
         background: #f7f7f7;
         padding: 10px 20px;
