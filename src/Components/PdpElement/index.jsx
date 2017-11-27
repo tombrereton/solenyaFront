@@ -127,6 +127,7 @@ const PdpElement = props => {
   );
 };
 
+
 PdpElement.propTypes = {
   ProductId: PropTypes.number.isRequired,
   Price: PropTypes.number.isRequired,
