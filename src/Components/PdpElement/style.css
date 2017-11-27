@@ -122,13 +122,12 @@
     .Dropdown-root {
         position: relative;
         width: 130px;
-        border: solid 0.5px #000000;    
+        border: solid 1px #000000;    
     }    
     .Dropdown-control {
         position: relative;
         overflow: hidden;
         background-color: white;
-        border: 1px solid #ccc;
         border-radius: 2px;
         box-sizing: border-box;
         color: #333;
@@ -159,7 +158,7 @@
     }    
     .Dropdown-menu {
         background-color: white;
-        border: 1px solid #ccc;
+        border: 1px solid #000000;
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
         box-sizing: border-box;
         margin-top: -1px;
