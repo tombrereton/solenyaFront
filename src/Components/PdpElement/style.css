@@ -31,6 +31,57 @@
         width: 90%;       
     }
 
+    .productMainInfoText {
+        width: 37%;
+        padding-top: 5%;
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pdpProductName{
+        position: relative;
+        margin-bottom: 0px;
+     }
+
+    .pdpProductPrice, .pdpProductDiscount{
+        position: relative;
+        width: 25%;   
+        font-weight: 700;  
+    }
+
+    .pdpProductDiscount{
+        display: inline-block;
+        padding-left: 5%;
+    }
+
+    .pdpProductPriceSlashed {
+        display: inline-block;
+        color: #d0021b;
+        text-decoration: line-through;
+        font-weight: 700;      
+    }
+
+    .pdpVariants {
+        display: inline-flex;
+        flex-direction: column;
+        vertical-align: top;
+        width: 36%;
+        padding-right: 5%;
+        padding-top: 5%;      
+    }
+
+    .sizeHeader{
+         padding-top: 15%;
+    }    
+
+    .productMainInfoText, .productExtraInfo, .pdpVariants, .productSize{
+        justify-content: center;
+        padding-left: 5%;
+        font-size: 15px;
+        font-family: "futura-pt";
+    }
+
     .bagButtonContainer{
         width: 250px;
         margin: auto;    
@@ -50,63 +101,6 @@
         letter-spacing: 0.5px;
      }
 
-    .productMainInfoText {
-        width: 37%;
-        padding-top: 5%;
-        display: inline-block;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .pdpProductName{
-        position: relative;
-        margin-bottom: 0px;
-     }
-
-     .productMainInfoText p{
-         width: 100px;
-     }
-
-    .pdpProductPrice{
-        position: relative;
-        width: 25%;     
-    }
-
-    .pdpProductDiscount{
-        position: relative;
-        width: 25%;
-        display: inline-block;
-        padding-left: 5%;
-    }
-
-    .pdpProductPriceSlashed {
-        color: #d0021b;
-        text-decoration: line-through;
-        font-weight: 700;
-        display: inline-block;
-    }
-
-    .productVariants {
-        display: inline-flex;
-        flex-direction: column;
-        vertical-align: top;
-        width: 36%;
-        padding-right: 5%;
-        padding-top: 5%;
-       
-    }
-
-    .sizeHeader{
-         padding-top: 15%;
-    }    
-
-    .productMainInfoText, .productExtraInfo, .productVariants, .productSize{
-        justify-content: center;
-        padding-left: 5%;
-        font-size: 15px;
-        font-family: "futura-pt";
-    }
-
     .productExtraInfo{
         background-color: #FFFFFF;
         margin-top: 40px;
@@ -118,15 +112,7 @@
     }  
 
     .prodDescHeader{
-        padding-top: 1%;
-    }
-
-    .productDescriptionValue, .productBrandValue, .brandDescriptionValue, .materialsValue{
-        padding-bottom: 3%;
-    }
-
-    .pdpProductPrice, .pdpProductDiscount{
-        font-weight: 700;
+        padding-top: 5%;
     }
 
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
@@ -134,10 +120,9 @@
         letter-spacing: 0.5PX;
     }
 
-    header h2 {
-        text-align: center;
-        margin: 30px auto;
-    }  
+    .productDescriptionValue, .productBrandValue, .brandDescriptionValue, .materialsValue{
+        padding-bottom: 3%;
+    }
 
     pre {
         background: #f7f7f7;
@@ -232,12 +217,7 @@
         border-bottom-left-radius: 2px;
     }
     
-    .Dropdown-option:hover {
-        background-color: #f2f9fc;
-        color: #333;
-    }
-    
-    .Dropdown-option.is-selected {
+    .Dropdown-option:hover, .Dropdown-option.is-selected {
         background-color: #f2f9fc;
         color: #333;
     }
