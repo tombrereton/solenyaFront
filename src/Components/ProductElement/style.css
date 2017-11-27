@@ -9,19 +9,13 @@ img {
   }
 
   img {
-<<<<<<< HEAD
-    width: 53%;
-=======
     width: 100%;
   }
 
   .imageCard {
     position: relative;
-    display: flex;
-    /* flex-direction: row-reverse; */
-    
+    display: flex;    
     width: 53%; 
->>>>>>> master
   }
 
   .productLabelContainer {
