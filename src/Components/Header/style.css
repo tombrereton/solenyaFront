@@ -27,7 +27,7 @@ header {
   display: inline-block;
 }
 
-.headerHolder > .headerTeamName{
+.headerHolder > .headerTeamName > a{
   display: inline-block;
   font-family: "futura-pt";
   font-size: 25px;
