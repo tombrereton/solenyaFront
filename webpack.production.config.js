@@ -33,7 +33,6 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: "./src/Config.js", to: "config.js" },
       { from: "./src/favicon.ico" },
-      { from: "./server.js", to: "../" }
     ]),
     new WebpackCleanupPlugin(),
     new webpack.DefinePlugin({

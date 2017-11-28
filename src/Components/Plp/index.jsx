@@ -15,8 +15,7 @@ class Plp extends Component {
   }
 
   componentDidMount() {
-    let ProductServiceEndpoint =
-      window.config[window.envName].ProductServiceEndpoint;
+    let ProductServiceEndpoint = process.env.PRODUCT_API;
 
     let deviceWidth = getDeviceWidth();
     logToNewRelic("Plp-LoadedWithDeviceWidth-" + deviceWidth);
