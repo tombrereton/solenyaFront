@@ -1,8 +1,8 @@
-.preloadContainer {
+.productsUnavailable {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  text-align: center;
   height: 100vh;
   justify-content: center;
-  align-items: center;
+  font-family: "futura-pt";
 }

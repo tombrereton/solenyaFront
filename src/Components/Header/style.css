@@ -9,7 +9,70 @@ header {
   background-color: rgb(45, 45, 45);
   margin: 0px auto;
   z-index: 1;
+  display: flex;
 }
+
+.headerHolder{
+  height: 50px;
+}
+
+.closedMenu{
+  display: none;
+}
+
+.headerHolder > .logo > .logoLink > img {
+  height: 35px;
+  width: 35px;
+  margin: 20% 0% 0% 30%;
+  display: inline-block;
+}
+
+.headerHolder > .headerTeamName > a{
+  display: inline-block;
+  font-family: "futura-pt";
+  font-size: 25px;
+  text-decoration: none;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #ffffff;
+  position: absolute;
+  top: 20%;
+  left: 60px;
+
+}
+
+  .menuLinks{
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    font-family: "futura-pt";
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .menuLinks > .webHome > a{
+    display: inline-block;
+    position: absolute;
+    right: 90px;
+    font-family: "futura-pt";
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+
+  }
+
+  .menuLinks > .webBag{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+  }
 
 /*below is the mobile css*/
 @media screen and (max-width: 520px) {
@@ -20,9 +83,9 @@ header {
     right: 1em;
   }
 
- .logo > img {
-  height: 25px;
-  width: 25px;
+  .headerHolder > .logo > .logoLink > img  {
+  height: 30px;
+  width: 30px;
   margin: 5px;
 }
 
@@ -56,7 +119,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1;
-    top: 40px;
+    top: 50px;
     left: 0;
     background-color: #2d2d2d;
     overflow: hidden;
@@ -95,8 +158,16 @@ header {
     text-align: center;
   }
 
-  
   .logo{
-    margin: 10px;
+    margin: 2% 0% 0% 2%;
   }
+
+  .headerHolder > .headerTeamName{
+    display: none;
+  }
+  
+  .headerHolder > .menuLinks{
+    display: none;
+  }
+
 }
