@@ -1,0 +1,12 @@
+.productsUnavailable {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 80vh;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: "futura-pt";
+}
+
+.preloaderContainer {
+}
