@@ -27,7 +27,7 @@ const PdpElement = props => {
   return (
     <div className="PdpElement">
       <div className="imageCarousel">
-        <Carousel>
+        <Carousel edgeEasing="easeOutCirc" >
           <img
             id="img1"
             width="150"
@@ -136,7 +136,8 @@ PdpElement.propTypes = {
   BrandDescription: PropTypes.string.isRequired,
   Materials: PropTypes.string.isRequired,
   ImageOptions: PropTypes.array.isRequired,
-  DiscountPrice: PropTypes.number
+  DiscountPrice: PropTypes.number,
+  
 };
 
 export default PdpElement;
