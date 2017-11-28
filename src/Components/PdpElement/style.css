@@ -1,6 +1,6 @@
 @media screen and (max-width: 520px) {
     .PdpElement {
-        margin-top:12.5%;
+        margin-top: 9.5%;
     }
     .slider-list {
         min-height: calc(70vw + 10rem); 
@@ -17,7 +17,7 @@
     .productMainInfo{
         background-color: #FFFFFF;
         position: relative;
-        margin: -8% auto 0 auto;       
+        margin: -3% auto 0 auto;       
         width: 90%;       
     }
     .productMainInfoText {
