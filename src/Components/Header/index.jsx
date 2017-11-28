@@ -54,7 +54,7 @@ class Header extends React.Component {
               className="home-link"
               to="/"
               onClick={() => this.toggleMenu()}>
-              Home
+              Products
             </Link>
           </div>
           <div className="bagLink" style={{ display: "inline-block" }}>
