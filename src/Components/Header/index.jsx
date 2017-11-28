@@ -40,6 +40,9 @@ class Header extends React.Component {
                 <img src = "https://i.imgur.com/zkkUfhc.png" alt = "logo"/>
               </Link>
           </div>  
+          <div className="headerTeamName">
+            SOLENYA
+          </div>
           <div className = "burgerMenu" style={{ display: "inline-block" }}>
             <div className={toggledClass} onClick={() => this.toggleMenu()}>
               <div className="bar1" />
