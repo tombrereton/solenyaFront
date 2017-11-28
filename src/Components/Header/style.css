@@ -2,6 +2,7 @@
 /*below here goes default css for main webpage*/
 header {
   width:100%;
+  min-height: 50px;
   height: 50px;
   position: fixed;
   top: 0;
@@ -15,7 +16,7 @@ header {
   header .burgerMenu {
     cursor: pointer;
     position: absolute;
-    top: 20%;
+    top: 25%;
     right: 1em;
   }
 
