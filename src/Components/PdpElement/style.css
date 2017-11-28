@@ -12,7 +12,7 @@
         visibility: hidden;
     }
     .slider-decorator-2 {
-        bottom:10px !important;
+        top: 88% !important;
     }
     .productMainInfo{
         background-color: #FFFFFF;
@@ -185,4 +185,10 @@
         display: block;
         padding: 8px 10px;
     }
+    .slider-decorator-2 > ul > li >button{
+        font-size: 44px !important;
+        padding: 2px !important;
+        -webkit-text-stroke: 1px #979797;
+    }
+  
 }
