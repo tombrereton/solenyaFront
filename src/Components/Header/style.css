@@ -11,6 +11,17 @@ header {
   z-index: 1;
 }
 
+.closedMenu{
+  display: none;
+}
+
+.headerHolder > .logo > .logoLink > img {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  display: inline-block;
+}
+
 /*below is the mobile css*/
 @media screen and (max-width: 520px) {
   header .burgerMenu {
@@ -20,9 +31,9 @@ header {
     right: 1em;
   }
 
- .logo > img {
-  height: 25px;
-  width: 25px;
+  .headerHolder > .logo > .logoLink > img  {
+  height: 30px;
+  width: 30px;
   margin: 5px;
 }
 
@@ -56,7 +67,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1;
-    top: 40px;
+    top: 50px;
     left: 0;
     background-color: #2d2d2d;
     overflow: hidden;
@@ -95,9 +106,8 @@ header {
     text-align: center;
   }
 
-  
   .logo{
-    margin: 10px;
+    margin: 2% 0% 0% 2%;
   }
   
 }

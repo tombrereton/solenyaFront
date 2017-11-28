@@ -32,7 +32,7 @@ class Header extends React.Component {
     return (
       <header>
         <div className="headerHolder">
-          <div className="logo" style={{ display: "inline-block" }}>
+          <div className="logo">
               <Link className = "logoLink"
               to="/" onClick={() => { this.toggleMenuLogo();
               newrelic.addPageAction("clickToHome")} }
