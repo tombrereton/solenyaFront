@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PdpElement from "../PdpElement";
-import Preloader from "../Preloader";
+import PreloaderContainer from "../PreloaderContainer";
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
 import PropTypes from "prop-types";
 
@@ -28,7 +28,7 @@ class Pdp extends Component {
       return <PdpElement {...this.state.productElement} />;
     }
 
-    return <Preloader />;
+    return <PreloaderContainer />;
   }
 }
 

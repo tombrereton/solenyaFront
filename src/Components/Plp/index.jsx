@@ -3,7 +3,7 @@ import Products from "../Products";
 import getDeviceWidth from "../../GlobalFunctions/GetDeviceWidth";
 import logToNewRelic from "../../GlobalFunctions/LogToNewRelic";
 import fetchDataToJSON from "../../DataAccess/DataFetcher";
-import Preloader from "../Preloader";
+import PreloaderContainer from "../PreloaderContainer";
 import ProductsUnavailable from "../ProductsUnavailable";
 import "./style.css";
 class Plp extends Component {
@@ -28,11 +28,7 @@ class Plp extends Component {
 
   render() {
     if (this.state.productElements.length === 0) {
-      return (
-        <div className="preloadContainer">
-          <Preloader />
-        </div>
-      );
+      return <PreloaderContainer />;
     } else if (
       this.state.productElements === undefined ||
       this.state.productElements[0].ErrorCode ===
