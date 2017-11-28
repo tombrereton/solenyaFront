@@ -1,5 +1,53 @@
+.ProductElement {
+  display: flex;
+  position: relative;
+}
+
 img {
   width: 150px;
+}
+
+.productDiscount,
+.productPrice,
+.productPriceSlashed {
+  font-weight: 700;
+}
+
+.productPriceSlashed {
+  color: #d0021b;
+  text-decoration: line-through;
+}
+
+.productLink {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.productLabel > a {
+  color: black;
+}
+
+.divLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 5%;
+  font-size: 15px;
+  font-family: "futura-pt";
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+
+.productLabelContainer {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  left: 50%;
+  top: 10%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 520px) {
@@ -18,16 +66,6 @@ img {
     width: 53%; 
   }
 
-  .productLabelContainer {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    left: 50%;
-    top: 10%;
-    height: 80%;
-    background: #ffffff;
-  }
-
   .ProductElement:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
@@ -37,43 +75,6 @@ img {
       left: 0%;
       right: 50%;
   } 
-
-  .ProductElement:nth-child(even) > .imageCard {
-  }
-
-  .divLink {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 15%;
-    padding-right: 5%;
-    font-size: 15px;
-    font-family: "futura-pt";
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
-  }
-
-  .productLink {
-    font-weight: 500;
-    text-decoration: none;
-  }
-
-  .productLabel > a {
-    color: black;
-  }
-
-  .productDiscount,
-  .productPrice,
-  .productPriceSlashed {
-    font-weight: 700;
-  }
-
-  .productPriceSlashed {
-    color: #d0021b;
-    text-decoration: line-through;
-  }
-
   .productContainer{
     margin-bottom: 35px;
   }
