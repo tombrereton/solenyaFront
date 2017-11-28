@@ -46,6 +46,19 @@ class Header extends React.Component {
             SOLENYA
             </Link>
           </div>
+
+          <div className = "menuLinks">              
+            <div className = "webHome">
+                <Link className = "webHomeLink"
+                to="/" onClick={()=> newrelic.addPageAction("clickToHome")}>  
+                PRODUCTS
+                </Link>
+            </div>
+            <div className = "webBag">
+              BAG
+            </div>
+          </div>
+
           <div className = "burgerMenu" style={{ display: "inline-block" }}>
             <div className={toggledClass} onClick={() => this.toggleMenu()}>
               <div className="bar1" />

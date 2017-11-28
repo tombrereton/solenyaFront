@@ -41,6 +41,39 @@ header {
 
 }
 
+  .menuLinks{
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-family: "futura-pt";
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .menuLinks > .webHome > a{
+    display: inline-block;
+    position: absolute;
+    right: 90px;
+    font-family: "futura-pt";
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+
+  }
+
+  .menuLinks > .webBag{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+  }
+
 /*below is the mobile css*/
 @media screen and (max-width: 520px) {
   header .burgerMenu {
@@ -133,4 +166,8 @@ header {
     display: none;
   }
   
+  .headerHolder > .menuLinks{
+    display: none;
+  }
+
 }
