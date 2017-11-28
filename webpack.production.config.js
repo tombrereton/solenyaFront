@@ -30,9 +30,12 @@ module.exports = {
     loaders
   },
   plugins: [
+    new webpack.EnvironmentPlugin({
+      PRODUCT_API: "http://team-solenya-rg-dev-product.azurewebsites.net/"
+    }),
     new CopyWebpackPlugin([
       { from: "./src/Config.js", to: "config.js" },
-      { from: "./src/favicon.ico" },
+      { from: "./src/favicon.ico" }
     ]),
     new WebpackCleanupPlugin(),
     new webpack.DefinePlugin({
