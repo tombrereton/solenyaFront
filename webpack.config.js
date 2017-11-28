@@ -48,6 +48,9 @@ module.exports = {
     host: HOST
   },
   plugins: [
+    new webpack.EnvironmentPlugin({
+      PRODUCT_API: "http://team-solenya-rg-dev-product.azurewebsites.net/"
+    }),
     new Dotenv(),
     new CopyWebpackPlugin([
       { from: "./src/config.js" },
