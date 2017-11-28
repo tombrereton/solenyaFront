@@ -1,41 +1,25 @@
 @media screen and (max-width: 520px) {
-    body {
-        margin:0px auto;
-        width: 100%;
-        background-color: #eeeeee;
-    }
-    h4 {
-        margin: 0
-    }
     .PdpElement {
         margin-top:35px;
-        /* margin-bottom: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 100%;
-        background-color: #eeeeee; */
     }
     .slider-list {
         min-height: calc(70vw + 10rem); 
     }
-    .slider-decorator-0{
+    .slider-decorator-0 {
         visibility: hidden;
     }
-    .slider-decorator-1{
+    .slider-decorator-1 {
         visibility: hidden;
     }
-    .slider-decorator-2{
+    .slider-decorator-2 {
         bottom:10px !important;
     }
-
     .productMainInfo{
         background-color: #FFFFFF;
         position: relative;
-        margin-left: 5%;
-        margin-top: -8%;
+        margin: -8% auto 0 auto;       
         width: 90%;       
     }
-
     .productMainInfoText {
         width: 37%;
         padding-top: 5%;
@@ -43,30 +27,25 @@
         flex-direction: column;
         justify-content: center;
     }
-
     .pdpProductName{
         position: relative;
         margin-bottom: 0px;
      }
-
     .pdpProductPrice, .pdpProductDiscount{
         position: relative;
         width: 25%;   
         font-weight: 700;  
     }
-
     .pdpProductDiscount{
         display: inline-block;
         padding-left: 5%;
     }
-
     .pdpProductPriceSlashed {
         display: inline-block;
         color: #d0021b;
         text-decoration: line-through;
         font-weight: 700;      
     }
-
     .pdpVariants {
         display: inline-flex;
         flex-direction: column;
@@ -75,25 +54,21 @@
         padding-right: 5%;
         padding-top: 5%;      
     }
-
     .sizeHeader{
          padding-top: 15%;
     }    
-
     .productMainInfoText, .productExtraInfo, .pdpVariants, .productSize{
         justify-content: center;
         padding-left: 5%;
         font-size: 15px;
         font-family: "futura-pt";
     }
-
     .bagButtonContainer{
         width: 250px;
         margin: auto;    
         top: 20px;
         position: inherit;      
     }
-
     .bagButton {
         width: 250px;
         height: 40px;
@@ -105,7 +80,6 @@
         color: #ffffff;
         letter-spacing: 0.5px;
      }
-
     .productExtraInfo{
         background-color: #FFFFFF;
         margin-top: 40px;
@@ -115,39 +89,32 @@
         padding-bottom: 15%;  
         font-weight: 400;
     }  
-
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-bottom: 2%;
         letter-spacing: 0.5PX;
         padding-top: 10%;
     }
-
     pre {
         background: #f7f7f7;
         padding: 10px 20px;
         border-radius: 2px;
         border: 1px solid #ccc;
-    } 
-    
+    }     
     pre code {
         line-height: 20px;
-    }
-    
+    }    
     .result {
         padding: 8px 0;
-    }
-    
+    }    
     .Dropdown-root {
         position: relative;
         width: 130px;
-        border: solid 0.5px #000000;    
-    }
-    
+        border: solid 1px #2d2d2d;    
+    }    
     .Dropdown-control {
         position: relative;
         overflow: hidden;
         background-color: white;
-        border: 1px solid #ccc;
         border-radius: 2px;
         box-sizing: border-box;
         color: #333;
@@ -156,11 +123,9 @@
         padding: 8px 52px 8px 10px;
         transition: all 200ms ease;
     }
-    
     .Dropdown-control:hover {
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-    }
-    
+    }    
     .Dropdown-arrow {
         border-color: #999 transparent transparent;
         border-style: solid;
@@ -173,16 +138,14 @@
         right: 10px;
         top: 14px;
         width: 0
-    }
-    
+    }    
     .is-open .Dropdown-arrow {
         border-color: transparent transparent #999;
         border-width: 0 5px 5px;
-    }
-    
+    }    
     .Dropdown-menu {
         background-color: white;
-        border: 1px solid #ccc;
+        border: 1px solid #2d2d2d;
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
         box-sizing: border-box;
         margin-top: -1px;
@@ -193,33 +156,28 @@
         width: 100%;
         z-index: 1000;
         -webkit-overflow-scrolling: touch;
-    }
-    
+    }    
     .Dropdown-menu .Dropdown-group > .Dropdown-title {
         padding: 8px 10px;
         color: rgba(51, 51, 51, 1.2);
         font-weight: bold;
         text-transform: capitalize;
-    }
-    
+    }    
     .Dropdown-option {
         box-sizing: border-box;
         color: rgba(51, 51, 51, 0.8);
         cursor: pointer;
         display: block;
         padding: 8px 10px;
-    }
-    
+    }    
     .Dropdown-option:last-child {
         border-bottom-right-radius: 2px;
         border-bottom-left-radius: 2px;
-    }
-    
+    }    
     .Dropdown-option:hover, .Dropdown-option.is-selected {
         background-color: #f2f9fc;
         color: #333;
     }
-    
     .Dropdown-noresults {
         box-sizing: border-box;
         color: #ccc;

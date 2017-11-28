@@ -32,7 +32,7 @@ class Header extends React.Component {
     return (
       <header>
         <div className="headerHolder">
-          <div className="logo" style={{ display: "inline-block" }}>
+          <div className="logo">
               <Link className = "logoLink"
               to="/" onClick={() => { this.toggleMenuLogo();
               newrelic.addPageAction("clickToHome")} }
@@ -40,6 +40,25 @@ class Header extends React.Component {
                 <img src = "https://i.imgur.com/zkkUfhc.png" alt = "logo"/>
               </Link>
           </div>  
+          <div className="headerTeamName">
+            <Link className ="nameLink"
+            to="/" onClick={()=> newrelic.addPageAction("clickToHome")}>           
+            SOLENYA
+            </Link>
+          </div>
+
+          <div className = "menuLinks">              
+            <div className = "webHome">
+                <Link className = "webHomeLink"
+                to="/" onClick={()=> newrelic.addPageAction("clickToHome")}>  
+                PRODUCTS
+                </Link>
+            </div>
+            <div className = "webBag">
+              BAG
+            </div>
+          </div>
+
           <div className = "burgerMenu" style={{ display: "inline-block" }}>
             <div className={toggledClass} onClick={() => this.toggleMenu()}>
               <div className="bar1" />
