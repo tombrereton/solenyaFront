@@ -16,6 +16,14 @@ class Header extends React.Component {
     });
   }
 
+  toggleMenuLogo(){
+    if(this.state.toggled){
+      this.setState({
+        toggled: false
+      });
+    }
+  }
+
   render() {
     const toggled = this.state.toggled;
     const toggledClass = "container" + (toggled ? " change" : "");
@@ -26,7 +34,8 @@ class Header extends React.Component {
         <div className="headerHolder">
           <div className="logo" style={{ display: "inline-block" }}>
               <Link className = "logoLink"
-              to="/" onClick={() => newrelic.addPageAction("clickToHome")}
+              to="/" onClick={() => { this.toggleMenuLogo();
+              newrelic.addPageAction("clickToHome")} }
                >
                 <img src = "https://i.imgur.com/zkkUfhc.png" alt = "logo"/>
               </Link>
