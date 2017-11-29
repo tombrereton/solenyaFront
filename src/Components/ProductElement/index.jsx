@@ -7,7 +7,7 @@ import "./style.css";
 
 const ProductElement = props => {
   return (
-    <div className="ProductElement" style={{ margin: "1em" }}>
+    <div className="ProductElement">
       <div className="imageCard">
         <Link
           id={"productImageId-" + props.ProductId}
