@@ -3,8 +3,11 @@
   position: relative;
 }
 
-img {
-  width: 150px;
+.productContainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  justify-content: center;
 }
 
 .productDiscount,
@@ -44,25 +47,59 @@ img {
   display: flex;
   position: absolute;
   justify-content: center;
-  left: 50%;
   top: 10%;
-  height: 80%;
   background: rgba(255, 255, 255, 0.5);
 }
 
+.imageCard {
+  position: relative;
+  display: flex;    
+}
+
+@media screen and (min-width: 520px) {
+  .ProductElement {
+    width: auto;
+  }
+
+  img {
+    width: 60%;
+  }
+  
+  .productLabelContainer{
+    left: 55%;
+    height: 50%;
+    margin-top: 10%;
+  }
+
+}
+
+
+@media screen and (min-width: 520px) and (max-width: 1635px){
+
+  .ProductElement:nth-child(-n+2) {
+    display: flex;
+    flex-direction: row-reverse;
+    }
+
+  .ProductElement:nth-child(-n+2) > .productLabelContainer {
+      left: 0%;
+      right: 45%;
+  } 
+
+
+}
+
+
 @media screen and (max-width: 520px) {
   .ProductElement {
-    display: flex;
-    position: relative;
+    width: auto;
   }
 
   img {
     width: 100%;
   }
 
-  .imageCard {
-    position: relative;
-    display: flex;    
+  .imageCard {  
     width: 53%; 
   }
 
@@ -73,10 +110,15 @@ img {
 
   .ProductElement:nth-child(even) > .productLabelContainer {
       left: 0%;
-      right: 50%;
+      right: 45%;
   } 
+
   .productContainer{
     margin-bottom: 35px;
   }
 
+  .productLabelContainer {
+    left: 45%;
+    height: 80%;
+ }
 }
