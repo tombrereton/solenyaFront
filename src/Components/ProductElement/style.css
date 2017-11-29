@@ -1,31 +1,132 @@
-img {
-  width: 150px;
+.ProductElement {
+  /* display: flex; */
+  position: relative;
+  margin: 1.5em;
 }
 
-@media screen and (max-width: 520px) {
+.productContainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.productDiscount,
+.productPrice,
+.productPriceSlashed {
+  font-weight: 700;
+}
+
+.productPriceSlashed {
+  color: #d0021b;
+  text-decoration: line-through;
+}
+
+.productLink {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.productLabel > a {
+  color: black;
+}
+
+.divLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 5%;
+  font-size: 15px;
+  font-family: "futura-pt";
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+
+.productLabelContainer {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 10%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.imageCard {
+  position: relative;
+  display: flex;    
+}
+
+@media screen and (min-width: 1122px) {
   .ProductElement {
+    width: auto;
+  }
+
+  img {
+    width: 60%;
+  }
+  
+  .productLabelContainer{
+    left: 55%;
+    height: 50%;
+    margin-top: 10%;
+  }
+
+}
+
+@media screen and (min-width: 1635px) {
+
+  .ProductElement:nth-child(6n+4) > .imageCard > a,
+  .ProductElement:nth-child(6n+5) > .imageCard > a,
+  .ProductElement:nth-child(6n+6) > .imageCard > a{
     display: flex;
-    position: relative;
+    flex-direction: row-reverse;
+    height: 400px;
+    }
+
+  .ProductElement:nth-child(6n+4)  >  .productLabelContainer,
+  .ProductElement:nth-child(6n+5)  >  .productLabelContainer,
+  .ProductElement:nth-child(6n+6)  >  .productLabelContainer
+   {
+      left: 0%;
+      right: 45%;
+      width: 230px;
+  } 
+}
+
+
+@media screen and (min-width: 1122px) and (max-width: 1635px){
+
+  .ProductElement:nth-child(4n+3) > .imageCard > a,
+  .ProductElement:nth-child(4n+4) > .imageCard > a  {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 400px;
+    }
+
+  .ProductElement:nth-child(4n+3)  >  .productLabelContainer,
+  .ProductElement:nth-child(4n+4)  >  .productLabelContainer
+   {
+      left: 0%;
+      right: 45%;
+      width: 230px;
+  } 
+
+
+}
+
+
+@media screen and (max-width: 1121px){
+  .ProductElement {
+    width: auto;
   }
 
   img {
     width: 100%;
   }
 
-  .imageCard {
-    position: relative;
-    display: flex;    
+  .imageCard {  
     width: 53%; 
-  }
-
-  .productLabelContainer {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    left: 50%;
-    top: 10%;
-    height: 80%;
-    background: #ffffff;
   }
 
   .ProductElement:nth-child(even) {
@@ -35,47 +136,16 @@ img {
 
   .ProductElement:nth-child(even) > .productLabelContainer {
       left: 0%;
-      right: 50%;
+      right: 45%;
   } 
-
-  .ProductElement:nth-child(even) > .imageCard {
-  }
-
-  .divLink {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 15%;
-    padding-right: 5%;
-    font-size: 15px;
-    font-family: "futura-pt";
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
-  }
-
-  .productLink {
-    font-weight: 500;
-    text-decoration: none;
-  }
-
-  .productLabel > a {
-    color: black;
-  }
-
-  .productDiscount,
-  .productPrice,
-  .productPriceSlashed {
-    font-weight: 700;
-  }
-
-  .productPriceSlashed {
-    color: #d0021b;
-    text-decoration: line-through;
-  }
 
   .productContainer{
     margin-bottom: 35px;
   }
+
+  .productLabelContainer {
+    left: 45%;
+    height: 80%;
+ }
 
 }
