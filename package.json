@@ -80,7 +80,7 @@
   "jest": {
     "verbose": true,
     "bail": true,
-    "collectCoverage": true,
+    "collectCoverage": false,
     "collectCoverageFrom": [
       "**/*.js",
       "**/*.jsx",

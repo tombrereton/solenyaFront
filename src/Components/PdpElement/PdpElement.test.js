@@ -3,7 +3,8 @@ import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-15";
 import PdpElement from "./";
 import TestData from "../../TestData/ProductApiPdpDataTest.json";
-import { getColours, getImages } from "./functions";
+import pdpTestData from "../../TestData/pdpTestData.json";
+import { getColours, getImages, imageSwitcher } from "./functions";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -304,6 +305,13 @@ describe("PdpElement", () => {
       />
     );
     const wrapper = shallow(card);
+    expect(wrapper.find("button").exists()).toBe(true);
+  });
+
+  it("has colour in dropdown which matches selected", () => {
+
+    expect(imageSwitcher).toBe(pdpTestData);
+    
     expect(wrapper.find("button").exists()).toBe(true);
   });
 });
