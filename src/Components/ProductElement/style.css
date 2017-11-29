@@ -1,5 +1,5 @@
 .ProductElement {
-  display: flex;
+  /* display: flex; */
   position: relative;
 }
 
@@ -73,17 +73,42 @@
 
 }
 
+@media screen and (min-width: 1635px) {
+
+  .ProductElement:nth-child(6n+4) > .imageCard > a,
+  .ProductElement:nth-child(6n+5) > .imageCard > a,
+  .ProductElement:nth-child(6n+6) > .imageCard > a{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 400px;
+    }
+
+  .ProductElement:nth-child(6n+4)  >  .productLabelContainer,
+  .ProductElement:nth-child(6n+5)  >  .productLabelContainer,
+  .ProductElement:nth-child(6n+6)  >  .productLabelContainer
+   {
+      left: 0%;
+      right: 45%;
+      width: 230px;
+  } 
+}
+
 
 @media screen and (min-width: 520px) and (max-width: 1635px){
 
-  .ProductElement:nth-child(-n+2) {
+  .ProductElement:nth-child(4n+3) > .imageCard > a,
+  .ProductElement:nth-child(4n+4) > .imageCard > a  {
     display: flex;
     flex-direction: row-reverse;
+    height: 400px;
     }
 
-  .ProductElement:nth-child(-n+2) > .productLabelContainer {
+  .ProductElement:nth-child(4n+3)  >  .productLabelContainer,
+  .ProductElement:nth-child(4n+4)  >  .productLabelContainer
+   {
       left: 0%;
       right: 45%;
+      width: 230px;
   } 
 
 
