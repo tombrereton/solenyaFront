@@ -14,13 +14,16 @@ export function getDropdownValue(className) {
   return document.getElementsByClassName(className)[0].innerText.replace(/\s/g,'');
 }
 
-export function imageSwitcher(colour) {
-  return object;
-}
+// export function imageSwitcher(colour) {
+//   return object;
+// }
 
 export function getImages(imageOptions, colour) {
+  console.log("Image options:" ,imageOptions);
+  console.log("Image Colours:" ,colour);
   const result = imageOptions.find(element => {
     return element.Colour === colour;
   });
+  console.log("The Results: ", result);
   return result.ImageList;
 }

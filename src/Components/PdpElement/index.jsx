@@ -8,29 +8,33 @@ import logToNewRelic from "../../GlobalFunctions/LogToNewRelic";
 //import Pdp from "../Pdp";
 var Carousel = require("nuka-carousel");
 class PdpElement extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       imagePaths: [],
       colours: [],
-      defaultOption: null
+      defaultOption: getColours(props.ImageOptions)[0]
     };
   }
   componentDidMount() {
     let iOptions = this.props.ImageOptions;
-    let iColour = "Grey";
-    // let iColour = this.props.colours[0];
+    let iColour = getDropdownValue("colourSelector");
+    console.log("Options are: ", iOptions);
+    console.log("This Val BE: " , iColour);
+//   const imagePaths = getImages(props.ImageOptions, selectedColor);
+  
+    this.setState({ colours: getColours(iOptions) });
+    let theColours = getColours(iOptions);
+    console.log("the colours are :" , theColours)
+   
+    this.setState({ defaultOption: iColour });
+    console.log("default O:" , this.defaultOption);
+    this.setState({ imagePaths: getImages(iOptions, iColour) });
+    console.log("VAlue:", this.state.colours);
+    console.log("Options are:", iOptions);
+    console.log("Colours are:", iColour);
 
-    this.setState({colours : getColours(this.props.ImageOptions)});
-    this.setState({imagePaths:getImages(iOptions, iColour)});
-    this.setState({defaultOption : iColour});
-    
-    console.log("VAlue:" , this.state.colours )
-    console.log("Options are:" , iOptions);
-    console.log("Colours are:",iColour);
-    
-    //const getSelected = getSelected(value);
 
     let deviceWidth = getDeviceWidth();
     logToNewRelic(
@@ -42,20 +46,6 @@ class PdpElement extends Component {
         deviceWidth
     );
   }
-  componentWillReceiveProps(nextProps){
-    let iOptions = nextProps.ImageOptions;
-    let iColour = "Grey";
-    // let iColour = this.props.colours[0];
-
-    this.setState({colours : getColours(nextProps.ImageOptions)});
-    this.setState({imagePaths:getImages(iOptions, iColour)});
-    this.setState({defaultOption : iColour});
-    
-    console.log("VAlue:" , this.state.colours )
-    console.log("Options are:" , iOptions);
-    console.log("Colours are:",iColour);
-  }
-
   render() {
     return (
       <div className="PdpElement">
@@ -108,7 +98,7 @@ class PdpElement extends Component {
                 <Dropdown
                   className="colourSelector"
                   options={this.state.colours}
-                  //onChange={}
+                  //onChange={getDropdownValue("colourSelector")}
                   value={this.state.defaultOption}
                 />
               )}
@@ -155,7 +145,9 @@ class PdpElement extends Component {
 
 // const PdpElement = props => {
 //   const colours = getColours(props.ImageOptions);
-//   const imagePaths = getImages(props.ImageOptions, colours[0]);
+//   const selectedColor = getDropdownValue("colourSelector");
+//   console.log("This Val BE: " , selectedColor);
+//   const imagePaths = getImages(props.ImageOptions, selectedColor);
 //   const defaultOption = colours[0];
 //   //const getSelected = getSelected(value);
 

@@ -312,6 +312,6 @@ describe("PdpElement", () => {
 
     expect(imageSwitcher).toBe(pdpTestData);
     
-    expect(wrapper.find("button").exists()).toBe(true);
+    
   });
 });
