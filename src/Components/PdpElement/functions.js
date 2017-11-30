@@ -19,11 +19,8 @@ export function getDropdownValue(className) {
 // }
 
 export function getImages(imageOptions, colour) {
-  console.log("Image options:" ,imageOptions);
-  console.log("Image Colours:" ,colour);
   const result = imageOptions.find(element => {
     return element.Colour === colour;
   });
-  console.log("The Results: ", result);
   return result.ImageList;
 }

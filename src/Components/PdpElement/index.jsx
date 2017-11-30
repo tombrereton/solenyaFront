@@ -13,28 +13,11 @@ class PdpElement extends Component {
 
     this.state = {
       imagePaths: [],
-      colours: [],
-      defaultOption: getColours(props.ImageOptions)[0]
+      colours: getColours(props.ImageOptions),
+      currentColour: getColours(props.ImageOptions)[0]
     };
   }
   componentDidMount() {
-    let iOptions = this.props.ImageOptions;
-    let iColour = getDropdownValue("colourSelector");
-    console.log("Options are: ", iOptions);
-    console.log("This Val BE: " , iColour);
-//   const imagePaths = getImages(props.ImageOptions, selectedColor);
-  
-    this.setState({ colours: getColours(iOptions) });
-    let theColours = getColours(iOptions);
-    console.log("the colours are :" , theColours)
-   
-    this.setState({ defaultOption: iColour });
-    console.log("default O:" , this.defaultOption);
-    this.setState({ imagePaths: getImages(iOptions, iColour) });
-    console.log("VAlue:", this.state.colours);
-    console.log("Options are:", iOptions);
-    console.log("Colours are:", iColour);
-
 
     let deviceWidth = getDeviceWidth();
     logToNewRelic(
@@ -46,12 +29,20 @@ class PdpElement extends Component {
         deviceWidth
     );
   }
+
+  onColourChange(e) {
+    console.log("event fired: ", e.value);
+    this.setState({ currentColour: e.value });
+    
+  }
+
   render() {
+    const images = getImages( this.props.ImageOptions, this.state.currentColour);
     return (
       <div className="PdpElement">
         <div className="imageCarousel">
           <Carousel>
-            {this.state.imagePaths.map((element, index) => {
+            {images.map((element, index) => {
               return (
                 <img
                   id={"img" + index}
@@ -97,9 +88,9 @@ class PdpElement extends Component {
               ) : (
                 <Dropdown
                   className="colourSelector"
-                  options={this.state.colours}
-                  //onChange={getDropdownValue("colourSelector")}
-                  value={this.state.defaultOption}
+                  options={getColours(this.props.ImageOptions)}
+                  value={this.state.currentColour}
+                  onChange={(event) => this.onColourChange(event)}
                 />
               )}
             </div>
