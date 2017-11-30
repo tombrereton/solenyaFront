@@ -1,0 +1,72 @@
+[
+    {
+    "ProductId": 3,
+    "ProductName": "Adidas Originals Trefoil Hoodie",
+    "SplashImgUrl": "https://i.imgur.com/vxfTdPz.jpg",
+    "Price": 5000,
+    "DiscountPrice": null,
+    "Variants": [
+    {
+    "VariantId": 13
+    },
+    {
+    "VariantId": 14
+    },
+    {
+    "VariantId": 15
+    },
+    {
+    "VariantId": 16
+    },
+    {
+    "VariantId": 17
+    },
+    {
+    "VariantId": 18
+    },
+    {
+    "VariantId": 19
+    },
+    {
+    "VariantId": 20
+    },
+    {
+    "VariantId": 21
+    },
+    {
+    "VariantId": 22
+    },
+    {
+    "VariantId": 23
+    },
+    {
+    "VariantId": 24
+    }
+    ],
+    "ImageOptions": [
+    {
+    "Colour": "Grey",
+    "ImageList": [
+    "https://i.imgur.com/vxfTdPz.jpg",
+    "https://i.imgur.com/Pm66fCS.jpg",
+    "https://i.imgur.com/0wjsATF.jpg",
+    "https://i.imgur.com/tI2n4lF.jpg"
+    ]
+    },
+    {
+    "Colour": "Black",
+    "ImageList": [
+    "https://i.imgur.com/fOslYDO.jpg",
+    "https://i.imgur.com/ChyfUeg.jpg",
+    "https://i.imgur.com/rAhgewy.jpg",
+    "https://i.imgur.com/L6RuD5k.jpg"
+    ]
+    }
+    ],
+    "ProductDescription": "Hoodie by adidas Originals, Supplier code: BS2229, Soft-touch sweat, Drawstring hood, Raglan sleeves, Over-the-head style, Pouch pockets, Ribbed trims, Regular fit - true to size, Machine wash, Our model wears a size Medium and is 6'1”/185.5 cm tall",
+    "ProductBrand": "Addidas Originals",
+    "BrandDescription": "With a brand history stretching back over 60 years, adidas Originals draw inspiration from street culture and retro styles to provide fresh vintage inspired menswear. The adidas Originals range incorporates everything from the brands most iconic trainers to new vintage inspired clothes.",
+    "Materials": "BFabric 1: 70% Cotton, 30% Polyester, Fabric 2: 97% Cotton, 3% Elastane, Lining: 100% Cotton.",
+    "Gender": "Men"
+    }
+]

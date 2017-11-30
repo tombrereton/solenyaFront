@@ -1,20 +1,26 @@
 export function getColours(imageOptions) {
-  let colours = [];
+  // let colours = [];
 
-  for (let i = 0; i < imageOptions.length; i++) {
-    colours.push(imageOptions[i]["Colour"]);
-  }
+  // for (let i = 0; i < imageOptions.length; i++) {
+  //   colours.push(imageOptions[i]["Colour"]);
+  // }
 
-  return colours;
+  return imageOptions.map(element => {
+    return element["Colour"];
+  });
 }
 
-export function getImages(imageOptions) {
-  let images = [];
+export function getDropdownValue(className) {
+  return document.getElementsByClassName(className)[0].innerText.replace(/\s/g,'');
+}
 
-  for (let i = 0; i < imageOptions.length; i++) {
-    for (let j = 0; j < imageOptions[i]["ImageList"].length; j++) {
-      images.push(imageOptions[i]["ImageList"][j]);
-    }
-  }
-  return images;
+// export function imageSwitcher(colour) {
+//   return object;
+// }
+
+export function getImages(imageOptions, colour) {
+  const result = imageOptions.find(element => {
+    return element.Colour === colour;
+  });
+  return result.ImageList;
 }

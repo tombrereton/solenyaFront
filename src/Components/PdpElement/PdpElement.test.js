@@ -3,7 +3,8 @@ import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-15";
 import PdpElement from "./";
 import TestData from "../../TestData/ProductApiPdpDataTest.json";
-import { getColours, getImages } from "./functions";
+import pdpTestData from "../../TestData/pdpTestData.json";
+import { getColours, getImages, imageSwitcher } from "./functions";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -82,34 +83,6 @@ describe("PdpElement", () => {
       expect(discountPrice.text()).toEqual("£12.00");
     
   });
-
-  it("each img url of the products is not empty", () => {
-    const card = (
-      <PdpElement
-        ProductId={dataElem.ProductId}
-        ProductName={dataElem.ProductName}
-        Price={dataElem.Price}
-        SplashImgUrl={"foo"}
-        DiscountPrice={dataElem.DiscountPrice}
-        ImageOptions={dataElem.ImageOptions}
-        ProductDescription={dataElem.ProductDescription}
-        ProductBrand={dataElem.ProductBrand}
-        BrandDescription={dataElem.BrandDescription}
-        Materials={dataElem.Materials}
-      />
-    );
-    const wrapper = shallow(card);
-    const img1 = wrapper.find("#img1");
-    const img2 = wrapper.find("#img2");
-    const img3 = wrapper.find("#img3");
-    const img4 = wrapper.find("#img4");
-    const imagePaths = getImages(dataElem.ImageOptions);
-    expect(img1.prop("src")).toEqual(imagePaths[0]);
-    expect(img2.prop("src")).toEqual(imagePaths[1]);
-    expect(img3.prop("src")).toEqual(imagePaths[2]);
-    expect(img4.prop("src")).toEqual(imagePaths[3]);
-  });
-
   it("requires a name prop", () => {
     expect(() =>
       shallow(
@@ -243,7 +216,7 @@ describe("PdpElement", () => {
     expect(carousel.find("img").exists()).toBe(true);
   });
 
-  it("has one colour options", () => {
+  it("has one colour option", () => {
     const card = (
       <PdpElement
         ProductId={dataElem.ProductId}
@@ -259,8 +232,10 @@ describe("PdpElement", () => {
     );
     const wrapper = shallow(card);
     let colours = getColours(dataElem.ImageOptions);
+    console.log("colours length: ", colours.length);
     if (colours.length === 1) {
       const singleColour = wrapper.find(".productColourValue");
+      console.log("this value: ", singleColour);
       expect(colours[0]).toEqual(singleColour.text());
     }
   });
@@ -306,4 +281,11 @@ describe("PdpElement", () => {
     const wrapper = shallow(card);
     expect(wrapper.find("button").exists()).toBe(true);
   });
+
+  // it("has colour in dropdown which matches selected", () => {
+
+  //   expect(imageSwitcher).toBe(pdpTestData);
+    
+    
+  // });
 });
