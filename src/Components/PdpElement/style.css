@@ -1,32 +1,107 @@
-@media screen and (max-width: 520px) {
-    .PdpElement {
-        margin-top: 9.5%;
+.PdpElement{
+    position: relative;
+    margin-top: 3em;
+}
+.slider-decorator-0 {
+    visibility: hidden;
+}
+.slider-decorator-1 {
+    visibility: hidden;
+}
+.productMainInfo{
+    background-color: #FFFFFF;
+    position: relative;
+    margin: -3% auto 0 auto;       
+    width: 90%;       
+}
+.productMainInfoText {
+    width: 37%;
+    padding-top: 5%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+}
+.productMainInfoText, .productExtraInfo, .pdpVariants, .productSize{
+    justify-content: center;
+    padding-left: 5%;
+    font-size: 15px;
+    font-family: "futura-pt";
+}
+.bagButtonContainer{
+    width: 250px;
+    margin: auto;    
+    top: 20px;
+    position: inherit;      
+}
+.bagButton {
+    width: 250px;
+    height: 40px;
+    background-color: #00aa5b;
+    border: none;
+    font-family: "futura-pt"; 
+    font-weight: 600;
+    font-size: 94%;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+ }
+ .productExtraInfo{
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%; 
+    padding-bottom: 15%;  
+    font-weight: 400;
+}  
+.prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
+    padding-bottom: 2%;
+    letter-spacing: 0.5PX;
+}
+@media screen and (min-width: 1122px) {
+
     }
+@media screen and (min-width: 1635px) {
+
+    }
+@media screen and (min-width: 1123px) and (max-width: 1634px){
+    .productExtraInfo{  
+        padding-right: 3%; 
+        padding-bottom: 5%;               
+    }  
+    .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
+        padding-top: 3%;
+    } 
+}
+@media screen and (min-width: 521px) and (max-width: 1121px){
+    .productExtraInfo{  
+        padding-right: 3%; 
+        padding-bottom: 5%;               
+    }  
+    .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
+        padding-top: 3%;
+    }   
+}
+@media screen and (max-width: 520px){
     .slider-list {
         min-height: calc(70vw + 10rem); 
     }
-    .slider-decorator-0 {
-        visibility: hidden;
-    }
-    .slider-decorator-1 {
-        visibility: hidden;
-    }
+    
     .slider-decorator-2 {
         top: 88% !important;
     }
-    .productMainInfo{
+    /* .productMainInfo{
         background-color: #FFFFFF;
         position: relative;
         margin: -3% auto 0 auto;       
         width: 90%;       
-    }
-    .productMainInfoText {
+    } */
+    /* .productMainInfoText {
         width: 37%;
         padding-top: 5%;
         display: inline-block;
         flex-direction: column;
         justify-content: center;
-    }
+    } */
     .pdpProductName{
         position: relative;
         margin-bottom: 0px;
@@ -57,13 +132,13 @@
     .sizeHeader{
          padding-top: 15%;
     }    
-    .productMainInfoText, .productExtraInfo, .pdpVariants, .productSize{
+    /* .productMainInfoText, .productExtraInfo, .pdpVariants, .productSize{
         justify-content: center;
         padding-left: 5%;
         font-size: 15px;
         font-family: "futura-pt";
-    }
-    .bagButtonContainer{
+    } */
+    /* .bagButtonContainer{
         width: 250px;
         margin: auto;    
         top: 20px;
@@ -79,116 +154,14 @@
         font-size: 94%;
         color: #ffffff;
         letter-spacing: 0.5px;
-     }
-    .productExtraInfo{
-        background-color: #FFFFFF;
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
+     } */
+     .productExtraInfo{  
         padding-right: 5%; 
-        padding-bottom: 15%;  
-        font-weight: 400;
+        padding-bottom: 15%;       
     }  
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
-        padding-bottom: 2%;
-        letter-spacing: 0.5PX;
         padding-top: 10%;
-    }
-    pre {
-        background: #f7f7f7;
-        padding: 10px 20px;
-        border-radius: 2px;
-        border: 1px solid #ccc;
-    }     
-    pre code {
-        line-height: 20px;
-    }    
-    .result {
-        padding: 8px 0;
-    }    
-    .Dropdown-root {
-        position: relative;
-        width: 130px;
-        border: solid 1px #2d2d2d;    
-    }    
-    .Dropdown-control {
-        position: relative;
-        overflow: hidden;
-        background-color: white;
-        border-radius: 2px;
-        box-sizing: border-box;
-        color: #333;
-        cursor: default;
-        outline: none;
-        padding: 8px 52px 8px 10px;
-        transition: all 200ms ease;
-    }
-    .Dropdown-control:hover {
-        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-    }    
-    .Dropdown-arrow {
-        border-color: #999 transparent transparent;
-        border-style: solid;
-        border-width: 5px 5px 0;
-        content: ' ';
-        display: block;
-        height: 0;
-        margin-top: -ceil(2.5);
-        position: absolute;
-        right: 10px;
-        top: 14px;
-        width: 0
-    }    
-    .is-open .Dropdown-arrow {
-        border-color: transparent transparent #999;
-        border-width: 0 5px 5px;
-    }    
-    .Dropdown-menu {
-        background-color: white;
-        border: 1px solid #2d2d2d;
-        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-        box-sizing: border-box;
-        margin-top: -1px;
-        max-height: 200px;
-        overflow-y: auto;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        z-index: 1000;
-        -webkit-overflow-scrolling: touch;
-    }    
-    .Dropdown-menu .Dropdown-group > .Dropdown-title {
-        padding: 8px 10px;
-        color: rgba(51, 51, 51, 1.2);
-        font-weight: bold;
-        text-transform: capitalize;
-    }    
-    .Dropdown-option {
-        box-sizing: border-box;
-        color: rgba(51, 51, 51, 0.8);
-        cursor: pointer;
-        display: block;
-        padding: 8px 10px;
-    }    
-    .Dropdown-option:last-child {
-        border-bottom-right-radius: 2px;
-        border-bottom-left-radius: 2px;
-    }    
-    .Dropdown-option:hover, .Dropdown-option.is-selected {
-        background-color: #f2f9fc;
-        color: #333;
-    }
-    .Dropdown-noresults {
-        box-sizing: border-box;
-        color: #ccc;
-        cursor: default;
-        display: block;
-        padding: 8px 10px;
-    }
-    .slider-decorator-2 > ul > li >button{
-        font-size: 44px !important;
-        padding: 2px !important;
-        -webkit-text-stroke: 1px #979797;
-    }
+    } 
+   
   
 }

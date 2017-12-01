@@ -95,7 +95,6 @@
   } 
 }
 
-
 @media screen and (min-width: 1122px) and (max-width: 1635px){
 
   .ProductElement:nth-child(4n+3) > .imageCard > a,
@@ -113,9 +112,7 @@
       width: 230px;
   } 
 
-
 }
-
 
 @media screen and (max-width: 1121px){
   .ProductElement {
