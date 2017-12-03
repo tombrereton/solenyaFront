@@ -69,13 +69,13 @@
         padding-bottom: 5%;               
     }  
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
-        padding-top: 3%;
+        padding-top: 2%;
     } 
 }
 @media screen and (min-width: 521px) and (max-width: 1121px){
     .productExtraInfo{  
         padding-right: 3%; 
-        padding-bottom: 5%;               
+        padding-bottom: 8%;               
     }  
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-top: 3%;
@@ -89,19 +89,6 @@
     .slider-decorator-2 {
         top: 88% !important;
     }
-    /* .productMainInfo{
-        background-color: #FFFFFF;
-        position: relative;
-        margin: -3% auto 0 auto;       
-        width: 90%;       
-    } */
-    /* .productMainInfoText {
-        width: 37%;
-        padding-top: 5%;
-        display: inline-block;
-        flex-direction: column;
-        justify-content: center;
-    } */
     .pdpProductName{
         position: relative;
         margin-bottom: 0px;
@@ -132,29 +119,7 @@
     .sizeHeader{
          padding-top: 15%;
     }    
-    /* .productMainInfoText, .productExtraInfo, .pdpVariants, .productSize{
-        justify-content: center;
-        padding-left: 5%;
-        font-size: 15px;
-        font-family: "futura-pt";
-    } */
-    /* .bagButtonContainer{
-        width: 250px;
-        margin: auto;    
-        top: 20px;
-        position: inherit;      
-    }
-    .bagButton {
-        width: 250px;
-        height: 40px;
-        background-color: #00aa5b;
-        border: none;
-        font-family: "futura-pt"; 
-        font-weight: 600;
-        font-size: 94%;
-        color: #ffffff;
-        letter-spacing: 0.5px;
-     } */
+
      .productExtraInfo{  
         padding-right: 5%; 
         padding-bottom: 15%;       
