@@ -14,7 +14,8 @@ class PdpElement extends Component {
     this.state = {
       imagePaths: [],
       colours: getColours(props.ImageOptions),
-      currentColour: getColours(props.ImageOptions)[0]
+      currentColour: getColours(props.ImageOptions)[0],
+      mixins: [Carousel.ControllerMixin]
     };
   }
   componentDidMount() {
@@ -35,11 +36,12 @@ class PdpElement extends Component {
   }
 
   render() {
+
     const images = getImages(this.props.ImageOptions, this.state.currentColour);
     return (
       <div className="PdpElement">
         <div className="imageCarousel">
-          <Carousel>
+          <Carousel edgeEasing="easeOutCirc">
             {images.map((element, index) => {
               return (
                 <img
@@ -53,6 +55,21 @@ class PdpElement extends Component {
             })}
           </Carousel>
         </div>
+        <div className ="webImageCarousel">
+        <Carousel  slidesToShow={3} slidesToScroll={3} edgeEasing="easeOutCirc" >
+            {images.map((element, index) => {
+              return (
+                <img
+                  id={"img" + index}
+                  width="150"
+                  src={element}
+                  alt={this.props.ProductName}
+                  key={index}
+                />
+              );
+            })}
+          </Carousel>
+          </div>
 
         <div className="productMainInfo">
           <div className="productMainInfoText">
