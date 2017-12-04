@@ -136,6 +136,78 @@
     .imageCarousel{
         display: none;
      }
+
+     .slider-decorator-0{
+        left: 1% !important;
+        }  
+        .slider-decorator-0 > button{
+                position: absolute;
+                left: -100%;
+                padding: 10px;
+                visibility: visible !important;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 100px;
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                content: '\25C5';
+                font-family: SSAir;
+                font-size: 0;
+                }
+        .slider-decorator-0 > button::after { 
+                content: "<";
+                font-size: 20px;
+            }
+        
+        .slider-decorator-1 {
+        right: 1% !important;
+        }
+        .slider-decorator-1 > button {
+            position: absolute;
+            right: -100%;
+            padding: 10px;
+            visibility: visible !important;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 100px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            content: '\25BB';
+            font-family: SSAir;
+            font-size: 0;
+            }
+    
+        .slider-decorator-1 > button::after { 
+                content: ">";
+                font-size: 20px;          
+        }
+                 
+        .slider-decorator-2{
+            visibility: hidden;
+        }
+
+        .pdpProductPrice, .pdpProductDiscount{
+            position: relative;
+            width: 25%;   
+            font-weight: 700;  
+        }
+
+        .pdpProductPriceSlashed {
+            display: inline-block;
+            color: #d0021b;
+            text-decoration: line-through;
+            font-weight: 700;      
+        }
+
+        .Dropdown-root{
+            width: 85%;
+        }
+
+        .productExtraInfo {
+            padding-right: 3%;
+            padding-bottom: 2%;
+            font-size: 20px;
+        }
     }
 
 @media screen and (min-width: 1635px) {
@@ -151,13 +223,31 @@
     .imageCarousel{
         display: none;
     }
+
+    .productMainInfo {
+        position: relative;
+        margin: -4% auto 0 auto;
+        width: 45%;
+    }
+
+    .productMainInfoText {
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .pdpVariants {
+        display: inline-flex;
+        flex-direction: column;
+        vertical-align: top;
+        width: 36%;
+        padding-top: 5%;
+    }
+    .productExtraInfo {
+        margin: 4% 9% 7% 9%;
+    }
 }
 
-@media screen and (min-width: 1123px) and (max-width: 1634px){
-    .productExtraInfo{  
-        padding-right: 3%; 
-        padding-bottom: 5%;               
-    }  
+@media screen and (min-width: 1123px) and (max-width: 1634px){  
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-top: 2%;
     } 
@@ -170,58 +260,7 @@
         margin: -1.5% auto 0 auto;
         width: 45%;
     }
-       .slider-decorator-0{
-        left: 1% !important;
-       }
 
-        
-    .slider-decorator-0 > button{
-            position: absolute;
-            left: -100%;
-            padding: 10px;
-            visibility: visible !important;
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 100px;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            content: '\25C5';
-            font-family: SSAir;
-            font-size: 0;
-            }
-    .slider-decorator-0 > button::after { 
-            content: "<";
-            font-size: 20px;
-        }
-    
-    .slider-decorator-1 {
-    right: 1% !important;
-    }
-    .slider-decorator-1 > button {
-        position: absolute;
-        right: -100%;
-        padding: 10px;
-        visibility: visible !important;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 100px;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        content: '\25BB';
-        font-family: SSAir;
-        font-size: 0;
-        }
-
-    .slider-decorator-1 > button::after { 
-            content: ">";
-            font-size: 20px;
-            
-    }
-             
-    .slider-decorator-2{
-        visibility: hidden;
-    }
-   
     .pdpVariants {
         display: inline-flex;
         flex-direction: column;
@@ -230,28 +269,11 @@
         padding-top: 5%;
         padding-left: 20%;
     }
-    .pdpProductPrice, .pdpProductDiscount{
-        position: relative;
-        width: 25%;   
-        font-weight: 700;  
-    }
     .productMainInfoText{
         font-size: 20px;
     }
     .productExtraInfo {
-        padding-right: 3%;
-        padding-bottom: 2%;
         margin: 5% 13% 7% 13%;
-        font-size: 16px;
-    }
-    .pdpProductPriceSlashed {
-        display: inline-block;
-        color: #d0021b;
-        text-decoration: line-through;
-        font-weight: 700;      
-    }
-    .Dropdown-root{
-        width: 85%;
     }
 }
 

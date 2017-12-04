@@ -15,9 +15,10 @@ class PdpElement extends Component {
       imagePaths: [],
       colours: getColours(props.ImageOptions),
       currentColour: getColours(props.ImageOptions)[0],
-      mixins: [Carousel.ControllerMixin]
+      mixins: [Carousel.ControllerMixin],
     };
   }
+
   componentDidMount() {
     let deviceWidth = getDeviceWidth();
     logToNewRelic(
@@ -38,6 +39,7 @@ class PdpElement extends Component {
   render() {
 
     const images = getImages(this.props.ImageOptions, this.state.currentColour);
+
     return (
       <div className="PdpElement">
         <div className="imageCarousel">
@@ -147,6 +149,7 @@ class PdpElement extends Component {
       </div>
     );
   }
+  
 }
 
 // const PdpElement = props => {
