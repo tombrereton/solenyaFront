@@ -133,7 +133,8 @@
 }
 
 @media screen and (min-width: 1122px) {
-    .imageCarousel{
+
+    .imageCarousel, .tabletImageCarousel{
         display: none;
      }
 
@@ -220,10 +221,6 @@
         padding-top: 2%;
         letter-spacing: 0.5PX;
     }
-    .imageCarousel{
-        display: none;
-    }
-
     .productMainInfo {
         position: relative;
         margin: -4% auto 0 auto;
@@ -288,8 +285,11 @@
     .slider-frame{
         height: 40% !important;
     }
-    .imageCarousel{
+    .imageCarousel, .webImageCarousel{
         display: none;
+    }
+    .slider-decorator-0,.slider-decorator-1{
+        visibility: hidden;
     }
 }
 @media screen and (max-width: 520px){

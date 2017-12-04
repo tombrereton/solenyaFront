@@ -57,6 +57,21 @@ class PdpElement extends Component {
             })}
           </Carousel>
         </div>
+        <div className ="tabletImageCarousel">
+        <Carousel  slidesToShow={2} slidesToScroll={2} edgeEasing="easeOutCirc" >
+            {images.map((element, index) => {
+              return (
+                <img
+                  id={"img" + index}
+                  width="150"
+                  src={element}
+                  alt={this.props.ProductName}
+                  key={index}
+                />
+              );
+            })}
+          </Carousel>
+          </div>
         <div className ="webImageCarousel">
         <Carousel  slidesToShow={3} slidesToScroll={3} edgeEasing="easeOutCirc" >
             {images.map((element, index) => {
