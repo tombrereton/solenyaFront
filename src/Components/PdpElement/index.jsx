@@ -19,6 +19,8 @@ class PdpElement extends Component {
     };
   }
 
+
+
   componentDidMount() {
     let deviceWidth = getDeviceWidth();
     logToNewRelic(
@@ -31,30 +33,32 @@ class PdpElement extends Component {
     );
   }
 
+  handleImageLoaded() {
+    window.dispatchEvent(new Event('resize'));
+  }
+
   onColourChange(e) {
     console.log("event fired: ", e.value);
     this.setState({ currentColour: e.value });
   }
 
   render() {
-
     const images = getImages(this.props.ImageOptions, this.state.currentColour);
-
     return (
       <div className="PdpElement">
         <div className="imageCarousel">
           <Carousel edgeEasing="easeOutCirc">
-            {images.map((element, index) => {
-              return (
-                <img
-                  id={"img" + index}
-                  width="150"
-                  src={element}
-                  alt={this.props.ProductName}
-                  key={index}
-                />
-              );
-            })}
+          {images.map((element, index) => {
+      return (
+        <img
+          id={"img" + index}
+          width="150"
+          src={element}
+          alt={this.props.ProductName}
+          key={index}
+        />
+      );
+    })}
           </Carousel>
         </div>
         <div className ="tabletImageCarousel">
@@ -74,17 +78,18 @@ class PdpElement extends Component {
           </div>
         <div className ="webImageCarousel">
         <Carousel  slidesToShow={3} slidesToScroll={3} edgeEasing="easeOutCirc" >
-            {images.map((element, index) => {
-              return (
-                <img
-                  id={"img" + index}
-                  width="150"
-                  src={element}
-                  alt={this.props.ProductName}
-                  key={index}
-                />
-              );
-            })}
+        {images.map((element, index) => {
+          return (
+            <img
+              id={"img" + index}
+              width="150"
+              src={element}
+              alt={this.props.ProductName}
+              key={index}
+              onLoad={this.handleImageLoaded}
+            />
+          );
+        })}
           </Carousel>
           </div>
 
