@@ -3,6 +3,7 @@
     margin-top: 3em;
 }
 
+
 .productMainInfo{
     background-color: #FFFFFF;
     position: relative;
@@ -299,6 +300,10 @@
     
     .slider-decorator-2 {
         top: 88% !important;
+    }
+    
+    .tabletImageCarousel{
+        display: none;
     }
     .pdpProductName{
         position: relative;
