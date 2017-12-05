@@ -8,7 +8,9 @@
     background-color: #FFFFFF;
     position: relative;
 }
-
+.Dropdown-menu{
+    z-index: 1;
+}
 .Dropdown-root {
     position: relative;
     width: 130px;
