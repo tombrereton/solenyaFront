@@ -441,13 +441,14 @@
         -webkit-appearance: none;
         -moz-appearance:    none;
         appearance:         none;
+        z-index: 1;
     }
     .sizeWebSelector{
-        visibility: hidden;
+       display: none;
     }
 
     .colourWebMenu{
-        visibility: hidden;
+        display: none;
     }
 
 }
