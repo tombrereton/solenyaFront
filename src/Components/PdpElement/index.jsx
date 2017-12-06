@@ -126,7 +126,7 @@ class PdpElement extends Component {
             <h4 className="colourName">COLOUR:</h4>
             <div className="colourWebMenu">
               {this.state.colours.length === 1 ? (
-                <div className="productColourValue">{this.state.colours}</div>
+                <div className="productColourValueWeb">{this.state.colours}</div>
               ) : (
                 <Dropdown
                   className="colourWebSelector"
@@ -139,7 +139,7 @@ class PdpElement extends Component {
 
             <div className="colourPhoneMenu">
               {this.state.colours.length === 1 ? (
-                <div className="productColourValue">{this.state.colours}</div>
+                <div className="productColourValuePhone">{this.state.colours}</div>
               ) : (
                
                 <select className = "colourPhoneSelector" onChange={event => this.onColourChangePhone(event)}>  
