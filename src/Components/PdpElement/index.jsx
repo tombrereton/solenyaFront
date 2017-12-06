@@ -37,8 +37,13 @@ class PdpElement extends Component {
     window.dispatchEvent(resizeEvent);
   }
 
-  onColourChange(e) {
-    console.log("event fired: ", e.target.value);
+  onColourChangeWeb(e) {
+    console.log("event fired web: ", e.value);
+    this.setState({ currentColour: e.value });
+  }
+
+  onColourChangePhone(e) {
+    console.log("event fired phone: ", e.target.value);
     this.setState({ currentColour: e.target.value });
   }
 
@@ -119,18 +124,25 @@ class PdpElement extends Component {
           </div>
           <div className="pdpVariants">
             <h4 className="colourName">COLOUR:</h4>
-            <div className="colourMenu">
+            <div className="colourWebMenu">
               {this.state.colours.length === 1 ? (
                 <div className="productColourValue">{this.state.colours}</div>
               ) : (
-                /* <Dropdown
+                <Dropdown
                   className="colourWebSelector"
                   options={getColours(this.props.ImageOptions)}
                   value={this.state.currentColour}
-                  onChange={event => this.onColourChange(event)}
-                /> */
+                  onChange={event => this.onColourChangeWeb(event)}
+                />
+              )}
+            </div>
 
-                <select className = "colourPhoneSelector" onChange={event => this.onColourChange(event)}>  
+            <div className="colourPhoneMenu">
+              {this.state.colours.length === 1 ? (
+                <div className="productColourValue">{this.state.colours}</div>
+              ) : (
+               
+                <select className = "colourPhoneSelector" onChange={event => this.onColourChangePhone(event)}>  
                 
                   {getColours(this.props.ImageOptions).map((colour, index) => {                  
                     return (                     
@@ -144,6 +156,7 @@ class PdpElement extends Component {
 
               )}
             </div>
+
             <h4 className="sizeHeader">SIZE:</h4>
             <Dropdown
               className="sizeWebSelector"

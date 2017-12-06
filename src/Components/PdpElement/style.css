@@ -225,6 +225,9 @@
         .sizePhoneSelector{
             visibility: hidden;
         }
+        .colourPhoneMenu{
+            visibility: hidden;
+        }
     }
 
 @media screen and (min-width: 1635px) {
@@ -262,6 +265,9 @@
     .productExtraInfo {
         margin: 4% 9% 7% 9%;
     }
+    .colourPhoneMenu{
+        visibility: hidden;
+    }
 }
 
 @media screen and (min-width: 1123px) and (max-width: 1634px){  
@@ -295,9 +301,16 @@
     .productExtraInfo {
         margin: 5% 13% 7% 13%;
     }
+    .colourPhoneMenu{
+        visibility: hidden;
+    }
 }
 
 @media screen and (min-width: 521px) and (max-width: 1121px){
+
+    .colourPhoneMenu{
+        visibility: hidden;
+    }
 
     .productExtraInfo{  
         padding-right: 3%; 
@@ -427,6 +440,10 @@
         appearance:         none;
     }
     .sizeWebSelector{
+        visibility: hidden;
+    }
+
+    .colourWebMenu{
         visibility: hidden;
     }
 
