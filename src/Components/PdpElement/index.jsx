@@ -19,8 +19,6 @@ class PdpElement extends Component {
     };
   }
 
-
-
   componentDidMount() {
     let deviceWidth = getDeviceWidth();
     logToNewRelic(
@@ -125,33 +123,42 @@ class PdpElement extends Component {
               {this.state.colours.length === 1 ? (
                 <div className="productColourValue">{this.state.colours}</div>
               ) : (
-                <Dropdown
-                  className="colourSelector"
+                /* <Dropdown
+                  className="colourWebSelector"
                   options={getColours(this.props.ImageOptions)}
                   value={this.state.currentColour}
                   onChange={event => this.onColourChange(event)}
-                />
+                /> */
+
+                <select className = "colourPhoneSelector" onChange={event => this.onColourChange(event)}>  
+                
+                  {getColours(this.props.ImageOptions).map((colour, index) => {                  
+                    return (                     
+                      <option value={colour} key={index}>
+                        {colour}                       
+                        
+                      </option>
+                      
+                    );
+                  })}
+                </select>
+
               )}
             </div>
             <h4 className="sizeHeader">SIZE:</h4>
             <Dropdown
-              className="sizeSelector"
+              className="sizeWebSelector"
               options={["XS", "S", "M", "L", "XL"]}
               value={"XS"}
             />
 
-            <ul className = "sizeList">
-              <li>
-                <select className = "sizeMenu">
+                <select className = "sizePhoneSelector">
                   <option value = "XS"> XS </option>
                   <option value = "S"> S </option>
                   <option value = "M"> M </option>
                   <option value = "L"> L </option>
                   <option value = "XL"> XL </option>
                 </select>
-              </li>
-            </ul>
-
 
           </div>
           <div className="bagButtonContainer">
