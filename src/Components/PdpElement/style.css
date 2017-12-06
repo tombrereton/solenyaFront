@@ -391,11 +391,28 @@
         padding: 2px !important;
         -webkit-text-stroke: 1px #979797;
     }
-
     .Dropdown-menu {
         background-color: white;
     }
     .Dropdown-control {
         background-color: white;
     }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sizeMenu {
+        border: 1;
+        padding: 3px 5px;
+        width: 100%;
+    
+        /* prevent the default small pointer from showing up */
+        -webkit-appearance: none;
+        -moz-appearance:    none;
+        appearance:         none;
+    }
+
 }

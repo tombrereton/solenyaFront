@@ -134,11 +134,25 @@ class PdpElement extends Component {
               )}
             </div>
             <h4 className="sizeHeader">SIZE:</h4>
-            <Dropdown
+            {/* <Dropdown
               className="sizeSelector"
               options={["XS", "S", "M", "L", "XL"]}
               value={"XS"}
-            />
+            /> */}
+
+            <ul>
+              <li>
+                <select className = "sizeMenu">
+                  <option value = "XS"> XS </option>
+                  <option value = "S"> S </option>
+                  <option value = "M"> M </option>
+                  <option value = "L"> L </option>
+                  <option value = "XL"> XL </option>
+                </select>
+              </li>
+            </ul>
+
+
           </div>
           <div className="bagButtonContainer">
             <button className="bagButton" type="button">
@@ -173,117 +187,6 @@ class PdpElement extends Component {
   }
   
 }
-
-// const PdpElement = props => {
-//   const colours = getColours(props.ImageOptions);
-//   const selectedColor = getDropdownValue("colourSelector");
-//   console.log("This Val BE: " , selectedColor);
-//   const imagePaths = getImages(props.ImageOptions, selectedColor);
-//   const defaultOption = colours[0];
-//   //const getSelected = getSelected(value);
-
-//   let deviceWidth = getDeviceWidth();
-//   logToNewRelic(
-//     "Pdp-" +
-//       props.ProductName +
-//       "-" +
-//       props.ProductId +
-//       "-LoadedWithDeviceWidth-" +
-//       deviceWidth
-//   );
-
-//   return (
-//     <div className="PdpElement">
-//       <div className="imageCarousel">
-//         <Carousel>
-//           {imagePaths.map((element, index) => {
-//             return (
-//               <img
-//                 id={"img" + index}
-//                 width="150"
-//                 src={element}
-//                 alt={props.ProductName}
-//                 key={index}
-//               />
-//             );
-//           })}
-//         </Carousel>
-//       </div>
-
-//       <div className="productMainInfo">
-//         <div className="productMainInfoText">
-//           <div className="pdpProductName">
-//             <div className="pdpNameValue">{props.ProductName}</div>
-//           </div>
-//           <div className="pdpPrice">
-//             <div className="pdpDiscountValue">
-//               {props.DiscountPrice === null ? (
-//                 <div className="pdpProductPrice">
-//                   £{(props.Price / 100).toFixed(2)}
-//                 </div>
-//               ) : (
-//                 <div>
-//                   <div className="pdpProductPriceSlashed">
-//                     £{(props.Price / 100).toFixed(2)}
-//                   </div>
-//                   <div className="pdpProductDiscount">
-//                     £{(props.DiscountPrice / 100).toFixed(2)}
-//                   </div>
-//                 </div>
-//               )}
-//             </div>
-//           </div>
-//         </div>
-//         <div className="pdpVariants">
-//           <h4 className="colourName">COLOUR:</h4>
-//           <div className="colourMenu">
-//             {colours.length === 1 ? (
-//               <div className="productColourValue">{colours}</div>
-//             ) : (
-//               <Dropdown
-//                 className="colourSelector"
-//                 options={colours}
-//                 //onChange={}
-//                 value={defaultOption}
-//               />
-//             )}
-//           </div>
-//           <h4 className="sizeHeader">SIZE:</h4>
-//           <Dropdown
-//             className="sizeSelector"
-//             options={["XS", "S", "M", "L", "XL"]}
-//             value={"XS"}
-//           />
-//         </div>
-//         <div className="bagButtonContainer">
-//           <button className="bagButton" type="button">
-//             ADD TO BAG
-//           </button>
-//         </div>
-//       </div>
-//       <div className="productExtraInfo">
-//         <div className="productDescription">
-//           <h4 className="prodDescHeader">PRODUCT DESCRIPTION</h4>
-//           <div className="productDescriptionValue">
-//             {props.ProductDescription}
-//           </div>
-//         </div>
-//         <div className="productBrand">
-//           <h4 className="prodBrandHeader">PRODUCT BRAND</h4>
-//           <div className="productBrandValue">{props.ProductBrand}</div>
-//         </div>
-//         <div className="brandDescription">
-//           <h4 className="brandDescHeader">BRAND DESCRIPTION</h4>
-//           <div className="brandDescriptionValue">{props.BrandDescription}</div>
-//         </div>
-//         <div className="materials">
-//           <h4 className="materialsHeader">MATERIALS</h4>
-//           <div className="materialsValue">{props.Materials}</div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 
 PdpElement.propTypes = {
   ProductId: PropTypes.number.isRequired,
