@@ -223,17 +223,20 @@
         }
 
         .sizePhoneSelector{
-            visibility: hidden;
+            display: none;
         }
         .colourPhoneMenu{
-            visibility: hidden;
+            display: none;
         }
     }
 
 @media screen and (min-width: 1635px) {
 
     .sizePhoneSelector{
-        visibility: hidden;
+        display: none;
+    }
+    .colourPhoneMenu{
+        display: none;
     }
 
     .productExtraInfo{  
@@ -265,16 +268,16 @@
     .productExtraInfo {
         margin: 4% 9% 7% 9%;
     }
-    .colourPhoneMenu{
-        visibility: hidden;
-    }
+   
 }
 
 @media screen and (min-width: 1123px) and (max-width: 1634px){  
     .sizePhoneSelector{
-        visibility: hidden;
+        display: none;
     }
-    
+    .colourPhoneMenu{
+        display: none;
+    }
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-top: 2%;
     } 
@@ -301,17 +304,17 @@
     .productExtraInfo {
         margin: 5% 13% 7% 13%;
     }
-    .colourPhoneMenu{
-        visibility: hidden;
-    }
+   
 }
 
 @media screen and (min-width: 521px) and (max-width: 1121px){
 
-    .colourPhoneMenu{
-        visibility: hidden;
+    .sizePhoneSelector{
+        display: none;
     }
-
+    .colourPhoneMenu{
+        display: none;
+    }
     .productExtraInfo{  
         padding-right: 3%; 
         padding-bottom: 5%;               
