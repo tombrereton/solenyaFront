@@ -221,9 +221,17 @@
             padding-bottom: 2%;
             font-size: 20px;
         }
+
+        .sizeList{
+            visibility: hidden;
+        }
     }
 
 @media screen and (min-width: 1635px) {
+
+    .sizeList{
+        visibility: hidden;
+    }
 
     .productExtraInfo{  
         padding-right: 3%; 
@@ -257,6 +265,10 @@
 }
 
 @media screen and (min-width: 1123px) and (max-width: 1634px){  
+    .sizeList{
+        visibility: hidden;
+    }
+    
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-top: 2%;
     } 
@@ -413,6 +425,9 @@
         -webkit-appearance: none;
         -moz-appearance:    none;
         appearance:         none;
+    }
+    .sizeSelector{
+        visibility: hidden;
     }
 
 }

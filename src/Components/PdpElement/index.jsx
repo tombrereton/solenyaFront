@@ -134,13 +134,13 @@ class PdpElement extends Component {
               )}
             </div>
             <h4 className="sizeHeader">SIZE:</h4>
-            {/* <Dropdown
+            <Dropdown
               className="sizeSelector"
               options={["XS", "S", "M", "L", "XL"]}
               value={"XS"}
-            /> */}
+            />
 
-            <ul>
+            <ul className = "sizeList">
               <li>
                 <select className = "sizeMenu">
                   <option value = "XS"> XS </option>
