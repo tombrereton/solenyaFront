@@ -216,7 +216,7 @@ describe("PdpElement", () => {
     expect(carousel.find("img").exists()).toBe(true);
   });
 
-  it("has one colour option", () => {
+  it("has one colour option for web", () => {
     const card = (
       <PdpElement
         ProductId={dataElem.ProductId}
@@ -234,13 +234,13 @@ describe("PdpElement", () => {
     let colours = getColours(dataElem.ImageOptions);
     console.log("colours length: ", colours.length);
     if (colours.length === 1) {
-      const singleColour = wrapper.find(".productColourValue");
+      const singleColour = wrapper.find(".productColourValueWeb");
       console.log("this value: ", singleColour);
       expect(colours[0]).toEqual(singleColour.text());
     }
   });
 
-  it("has multiple colour options", () => {
+  it("has multiple colour options for web", () => {
     let multipleImageOptions = dataElem.ImageOptions;
     multipleImageOptions.push(dataElem.ImageOptions[0]);
     const card = (
@@ -259,7 +259,55 @@ describe("PdpElement", () => {
     const wrapper = shallow(card);
     let colours = getColours(dataElem.ImageOptions);
     if (colours.length > 1) {
-      const multiColours = wrapper.find(".colourSelector");
+      const multiColours = wrapper.find(".colourWebSelector");
+      expect(multiColours.exists()).toBe(true);
+    }
+  });
+
+  it("has one colour option for phone", () => {
+    const card = (
+      <PdpElement
+        ProductId={dataElem.ProductId}
+        ProductName={dataElem.ProductName}
+        Price={dataElem.Price}
+        DiscountPrice={dataElem.DiscountPrice}
+        ImageOptions={dataElem.ImageOptions}
+        ProductDescription={dataElem.ProductDescription}
+        ProductBrand={dataElem.ProductBrand}
+        BrandDescription={dataElem.BrandDescription}
+        Materials={dataElem.Materials}
+      />
+    );
+    const wrapper = shallow(card);
+    let colours = getColours(dataElem.ImageOptions);
+    console.log("colours length: ", colours.length);
+    if (colours.length === 1) {
+      const singleColour = wrapper.find(".productColourValuePhone");
+      console.log("this value: ", singleColour);
+      expect(colours[0]).toEqual(singleColour.text());
+    }
+  });
+
+  it("has multiple colour options for phone", () => {
+    let multipleImageOptions = dataElem.ImageOptions;
+    multipleImageOptions.push(dataElem.ImageOptions[0]);
+    const card = (
+      <PdpElement
+        ProductId={dataElem.ProductId}
+        ProductName={dataElem.ProductName}
+        Price={dataElem.Price}
+        DiscountPrice={dataElem.DiscountPrice}
+        ImageOptions={multipleImageOptions}
+        ProductDescription={dataElem.ProductDescription}
+        ProductBrand={dataElem.ProductBrand}
+        BrandDescription={dataElem.BrandDescription}
+        Materials={dataElem.Materials}
+      />
+    );
+    const wrapper = shallow(card);
+    let colours = getColours(dataElem.ImageOptions);
+    if (colours.length > 1) {
+      const multiColours = wrapper.find(".colourPhoneSelector");
       expect(multiColours.exists()).toBe(true);
     }
   });
