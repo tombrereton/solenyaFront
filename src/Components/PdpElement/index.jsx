@@ -38,8 +38,8 @@ class PdpElement extends Component {
   }
 
   onColourChange(e) {
-    console.log("event fired: ", e.value);
-    this.setState({ currentColour: e.value });
+    console.log("event fired: ", e.target.value);
+    this.setState({ currentColour: e.target.value });
   }
 
   render() {
@@ -135,8 +135,7 @@ class PdpElement extends Component {
                   {getColours(this.props.ImageOptions).map((colour, index) => {                  
                     return (                     
                       <option value={colour} key={index}>
-                        {colour}                       
-                        
+                        {colour}                                               
                       </option>
                       
                     );
