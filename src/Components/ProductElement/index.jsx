@@ -21,33 +21,35 @@ const ProductElement = props => {
         </Link>
       </div>
 
-      <div className="productLabelContainer">
-        <Link
-          id={"productNameId-" + props.ProductId}
-          to={"products/" + props.ProductId}
-          className="divLink"
-          onClick={() => {
-            Header.toggleMenu();
-            logToNewRelic(props.ProductName + props.ProductId + "-WithName");
-          }}
-        >
-          <div className="productLabel">{props.ProductName}</div>
-          {props.DiscountPrice === null ? (
-            <div className="productPrice">
-              £{(props.Price / 100).toFixed(2)}
-            </div>
-          ) : (
-            <div>
-              <div className="productPriceSlashed">
+      <Link
+        id={"productNameId-" + props.ProductId}
+        to={"products/" + props.ProductId}
+        className="divLink"
+        onClick={() => {
+          Header.toggleMenu();
+          logToNewRelic(props.ProductName + props.ProductId + "-WithName");
+        }}
+      >
+        <div className="productLabelContainer">
+          <div className="centeringContainer">
+            <div className="productLabel">{props.ProductName}</div>
+            {props.DiscountPrice === null ? (
+              <div className="productPrice">
                 £{(props.Price / 100).toFixed(2)}
               </div>
-              <div className="productDiscount">
-                £{(props.DiscountPrice / 100).toFixed(2)}
+            ) : (
+              <div>
+                <div className="productPriceSlashed">
+                  £{(props.Price / 100).toFixed(2)}
+                </div>
+                <div className="productDiscount">
+                  £{(props.DiscountPrice / 100).toFixed(2)}
+                </div>
               </div>
-            </div>
-          )}
-        </Link>
-      </div>
+            )}
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };
