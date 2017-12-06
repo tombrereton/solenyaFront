@@ -23,7 +23,7 @@ header {
 .headerHolder > .logo > .logoLink > img {
   height: 35px;
   width: 35px;
-  margin: 20% 0% 0% 30%;
+  margin: 22% 0% 0% 25%;
   display: inline-block;
 }
 
@@ -86,7 +86,7 @@ header {
   .headerHolder > .logo > .logoLink > img  {
   height: 30px;
   width: 30px;
-  margin: 5px;
+  margin: 9px;
 }
 
 
