@@ -17,9 +17,16 @@ header {
 }
 
 .logo {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   margin-left: 20px;
+  justify-content: center;
 }
+
+.logo img {
+  display: flex;
+}
+
 
 @media screen and (min-width: 520px) {
   .closedMenu,
