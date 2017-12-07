@@ -13,7 +13,8 @@
     "dev": " webpack-dashboard -- webpack-dev-server",
     "test": "SET NODE_ENV=test && jest",
     "ssr": "SET NODE_ENV=production && node ./server.js",
-    "copy": "node ./copyWebconfig.js"
+    "copy": "node ./copyWebconfig.js",
+    "e2e": "nightwatch --config nightwatch.conf.BASIC.js"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,7 @@
     "babel-preset-es2015": "6.22.0",
     "babel-preset-react": "^6.23.0",
     "babel-runtime": "^6.22.0",
+    "chromedriver": "^2.33.2",
     "copy-webpack-plugin": "^4.2.1",
     "css-loader": "0.26.1",
     "dotenv": "^4.0.0",
@@ -63,11 +65,14 @@
     "html-webpack-plugin": "^2.26.0",
     "jest": "^20.0.4",
     "loglevel": "^1.4.1",
+    "nightwatch": "^0.9.19",
     "postcss-loader": "^1.2.2",
     "prop-types": "^15.6.0",
     "react-addons-test-utils": "^15.6.0",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-test-renderer": "^15.6.1",
+    "selenium-download": "^2.0.10",
+    "selenium-server": "^3.8.1",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
     "webpack": "^3.3.0",
