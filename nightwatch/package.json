@@ -1,0 +1,15 @@
+{
+    "name": "tigger-nightwatch",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+    
+    },
+    "scripts": {
+      "e2e": "nightwatch --config nightwatch.conf.BASIC.js"
+    },
+    "devDependencies": {
+      "selenium-download": "^2.0.10"
+    }
+  }
+  
