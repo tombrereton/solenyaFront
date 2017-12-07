@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="5">
+
+  <testsuite name="e2eTest"
+    errors="0" failures="0" hostname="" id="" package="e2eTest" skipped="0"
+    tests="5" time="26.79" timestamp="Thu, 07 Dec 2017 16:19:32 GMT">
+  
+    <testcase name="Solenya Couture renders" classname="e2eTest" time="3.271" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Product image takes to the product details page and back to home with team name link" classname="e2eTest" time="6.097" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Product image takes to the product details page and back to home with product link" classname="e2eTest" time="6.189" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Product image takes to the product details page and back to home with logo link" classname="e2eTest" time="6.120" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Product image takes to the product details page and clicks the carousel" classname="e2eTest" time="5.113" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
