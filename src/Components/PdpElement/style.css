@@ -16,7 +16,7 @@
     width: 130px;
     border: solid 1px #2d2d2d;    
 }    
-.Dropdown-control, .colourPhoneSelector, .sizePhoneSelector {
+.Dropdown-control {
     position: relative;
     overflow: hidden;
     border-radius: 2px;
@@ -26,9 +26,6 @@
     outline: none;
     padding: 8px 52px 8px 10px;
     transition: all 200ms ease;
-}
-.sizePhoneSelector{
-    margin-right: -14%;
 }
 .Dropdown-control:hover {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
@@ -387,9 +384,21 @@
         display: inline-flex;
         flex-direction: column;
         vertical-align: top;
-        width: 36%;
+        width: 40%;
         padding-right: 5%;
         padding-top: 5%;      
+    }
+    .colourPhoneSelector, .sizePhoneSelector{
+        position: relative;
+        overflow: hidden;
+        border-radius: 2px;
+        box-sizing: border-box;
+        color: #333;
+        cursor: default;
+        outline: none;
+        padding: 9% 45% 7% 1%;
+        transition: all 200ms ease;
+        width: 100%;
     }
     .sizeHeader{
          padding-top: 15%;
