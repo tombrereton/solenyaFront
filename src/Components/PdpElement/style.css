@@ -16,7 +16,7 @@
     width: 130px;
     border: solid 1px #2d2d2d;    
 }    
-.Dropdown-control {
+.Dropdown-control, .colourPhoneSelector, .sizePhoneSelector {
     position: relative;
     overflow: hidden;
     border-radius: 2px;
@@ -26,6 +26,9 @@
     outline: none;
     padding: 8px 52px 8px 10px;
     transition: all 200ms ease;
+}
+.sizePhoneSelector{
+    margin-right: -14%;
 }
 .Dropdown-control:hover {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
