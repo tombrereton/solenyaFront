@@ -32,8 +32,8 @@ class PdpElement extends Component {
   }
 
   handleImageLoaded() {
-    var resizeEvent = window.document.createEvent('UIEvents'); 
-    resizeEvent.initUIEvent('resize', true, false, window, 0); 
+    var resizeEvent = window.document.createEvent('UIEvents');
+    resizeEvent.initUIEvent('resize', true, false, window, 0);
     window.dispatchEvent(resizeEvent);
   }
 
@@ -57,7 +57,6 @@ class PdpElement extends Component {
       return (
         <img
           id={"img" + index}
-          width="150"
           src={element}
           alt={this.props.ProductName}
           key={index}
@@ -87,7 +86,6 @@ class PdpElement extends Component {
           return (
             <img
               id={"img" + index}
-              width="150"
               src={element}
               alt={this.props.ProductName}
               key={index}
@@ -141,15 +139,15 @@ class PdpElement extends Component {
               {this.state.colours.length === 1 ? (
                 <div className="productColourValuePhone">{this.state.colours}</div>
               ) : (
-               
-                <select className = "colourPhoneSelector" onChange={event => this.onColourChangePhone(event)}>  
-                
-                  {getColours(this.props.ImageOptions).map((colour, index) => {                  
-                    return (                     
+
+                <select className = "colourPhoneSelector" onChange={event => this.onColourChangePhone(event)}>
+
+                  {getColours(this.props.ImageOptions).map((colour, index) => {
+                    return (
                       <option value={colour} key={index}>
-                        {colour}                                               
+                        {colour}
                       </option>
-                      
+
                     );
                   })}
                 </select>
@@ -204,7 +202,7 @@ class PdpElement extends Component {
       </div>
     );
   }
-  
+
 }
 
 PdpElement.propTypes = {
