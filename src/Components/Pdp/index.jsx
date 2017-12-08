@@ -26,6 +26,7 @@ class Pdp extends Component {
   render() {
     if (this.state.productElement !== null) {
       return <PdpElement {...this.state.productElement} />;
+      
     }
 
     return <PreloaderContainer />;
