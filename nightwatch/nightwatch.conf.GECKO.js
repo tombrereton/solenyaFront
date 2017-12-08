@@ -1,5 +1,6 @@
+
 const seleniumServer = require("selenium-server");
-const edgedriver = require("edgedriver")
+const geckodriver = require("geckodriver");
 
 // we use a nightwatch.conf.js file so we can include comments and helper functions
 module.exports = {
@@ -13,16 +14,24 @@ module.exports = {
     "host": "127.0.0.1",
     "port": 4444, // standard selenium port
     "cli_args": {
-        "webdriver.edge.driver" : edgedriver.path
+      "webdriver.gecko.driver" : geckodriver.path
     }
   },
+  
   "test_settings": {
     "default": {
       "globals": {
         "waitForConditionTimeout": 5000 // sometimes internet is slow so wait.
       },
       "desiredCapabilities": { // use Chrome as the default browser for tests
-        "browserName": "MicrosoftEdge"
+        "browserName": "firefox"
+      }
+    },
+
+    "chrome": {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true // turn off to test progressive enhancement
       }
     }
   }

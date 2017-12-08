@@ -5,11 +5,11 @@
   "dependencies": {},
   "scripts": {
     "e2e-chrome": "nightwatch --config nightwatch.conf.BASIC.js",
-    "e2e-edge": "nightwatch --config nightwatch.conf.EDGE.js"
+    "e2e-edge": "nightwatch --config nightwatch.conf.EDGE.js",
+    "e2e-firefox": "nightwatch --config nightwatch.conf.GECKO.js"
   },
   "devDependencies": {
-    "edgedriver": "^4.15063.0",
-    "nightwatch": "^0.9.19",
+    "geckodriver": "^1.10.0",
     "selenium-download": "^2.0.10"
   }
 }
