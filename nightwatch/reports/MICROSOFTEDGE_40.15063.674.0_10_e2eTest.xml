@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="5">
+
+  <testsuite name="e2eTest"
+    errors="0" failures="1" hostname="" id="" package="e2eTest" skipped="0"
+    tests="5" time="46.39" timestamp="Fri, 08 Dec 2017 09:44:52 GMT">
+  
+    <testcase name="Solenya Couture renders" classname="e2eTest" time="9.000" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Product image takes to the product details page and back to home with team name link" classname="e2eTest" time="8.928" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Product image takes to the product details page and back to home with product link" classname="e2eTest" time="8.914" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Product image takes to the product details page and back to home with logo link" classname="e2eTest" time="8.885" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Product image takes to the product details page and clicks the carousel" classname="e2eTest" time="10.66" assertions="1">  <failure message="Timed out while waiting for element &lt;body&gt; to be present for 5000 milliseconds.">    at Object.Product image takes to the product details page and clicks the carousel (C:\Users\catherine.sanft\Desktop\solenya\solenya-front-client\nightwatch\test\e2e\e2eTest.js:82:10)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
