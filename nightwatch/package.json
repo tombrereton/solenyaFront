@@ -1,16 +1,15 @@
 {
-    "name": "solenya-nightwatch",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-    
-    },
-    "scripts": {
-      "e2e-chrome": "nightwatch --config nightwatch.conf.BASIC.js",
-      "e2e-edge": "nightwatch --config nightwatch.conf.EDGE.js"
-    },
-    "devDependencies": {
-      "selenium-download": "^2.0.10"
-    }
+  "name": "solenya-nightwatch",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "e2e-chrome": "nightwatch --config nightwatch.conf.BASIC.js",
+    "e2e-edge": "nightwatch --config nightwatch.conf.EDGE.js"
+  },
+  "devDependencies": {
+    "edgedriver": "^4.15063.0",
+    "nightwatch": "^0.9.19",
+    "selenium-download": "^2.0.10"
   }
-  
+}
