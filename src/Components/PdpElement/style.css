@@ -399,6 +399,7 @@
         padding: 9% 45% 7% 1%;
         transition: all 200ms ease;
         width: 100%;
+        background-color: white;
     }
     .sizeHeader{
          padding-top: 15%;
