@@ -43,6 +43,7 @@ module.exports = {
         .pause(1000)
         .click('.nameLink')
         .pause(1000)
+        .assert.visible('.productLabelContainer')
         .end()
     },
 
