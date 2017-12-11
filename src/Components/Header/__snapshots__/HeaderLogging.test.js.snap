@@ -20,107 +20,107 @@ ShallowWrapper {
       "children": Array [
         <div
           className="headerHolder"
-        >
+>
           <div
-            className="logo"
+                    className="logo"
           >
-            <Link
-              className="logoLink"
-              onClick={[Function]}
-              replace={false}
-              to="/"
-            >
-              <img
-                alt="logo"
-                src="https://i.imgur.com/zkkUfhc.png"
-              />
-            </Link>
+                    <Link
+                              className="logoLink"
+                              onClick={[Function]}
+                              replace={false}
+                              to="/"
+                    >
+                              <img
+                                        alt="logo"
+                                        src="https://i.imgur.com/zkkUfhc.png"
+                              />
+                    </Link>
           </div>
           <div
-            className="headerTeamName"
+                    className="headerTeamName"
           >
-            <Link
-              className="nameLink"
-              onClick={[Function]}
-              replace={false}
-              to="/"
-            >
-              SOLENYA
-            </Link>
+                    <Link
+                              className="nameLink"
+                              onClick={[Function]}
+                              replace={false}
+                              to="/"
+                    >
+                              SOLENYA
+                    </Link>
           </div>
           <div
-            className="menuLinks"
+                    className="menuLinks"
           >
-            <div
-              className="webHome"
-            >
-              <Link
-                className="webHomeLink"
-                onClick={[Function]}
-                replace={false}
-                to="/"
-              >
-                PRODUCTS
-              </Link>
-            </div>
-            <div
-              className="webBag"
-            >
-              <Link
-                className="bagLink"
-                replace={false}
-                to="#"
-              >
-                BAG
-              </Link>
-            </div>
+                    <div
+                              className="webHome"
+                    >
+                              <Link
+                                        className="webHomeLink"
+                                        onClick={[Function]}
+                                        replace={false}
+                                        to="/"
+                              >
+                                        PRODUCTS
+                              </Link>
+                    </div>
+                    <div
+                              className="webBag"
+                    >
+                              <Link
+                                        className="bagLink"
+                                        replace={false}
+                                        to="#"
+                              >
+                                        BAG
+                              </Link>
+                    </div>
           </div>
           <div
-            className="burgerMenu"
+                    className="burgerMenu"
           >
-            <div
-              className="burgerContainer"
-              onClick={[Function]}
-            >
-              <div
-                className="bar1"
-              />
-              <div
-                className="bar2"
-              />
-              <div
-                className="bar3"
-              />
-            </div>
+                    <div
+                              className="burgerContainer"
+                              onClick={[Function]}
+                    >
+                              <div
+                                        className="bar1"
+                              />
+                              <div
+                                        className="bar2"
+                              />
+                              <div
+                                        className="bar3"
+                              />
+                    </div>
           </div>
-        </div>,
+</div>,
         <div
           className="closedMenu"
-        >
+>
           <div
-            className="homeLink"
+                    className="homeLink"
           >
-            <Link
-              className="home-link"
-              onClick={[Function]}
-              replace={false}
-              to="/"
-            >
-              Products
-            </Link>
+                    <Link
+                              className="home-link"
+                              onClick={[Function]}
+                              replace={false}
+                              to="/"
+                    >
+                              Products
+                    </Link>
           </div>
           <div
-            className="bagLink"
+                    className="bagLink"
           >
-            <Link
-              className="bag-link"
-              replace={false}
-              to="#"
-            >
-              Bag
-            </Link>
+                    <Link
+                              className="bag-link"
+                              replace={false}
+                              to="#"
+                    >
+                              Bag
+                    </Link>
           </div>
-        </div>,
+</div>,
       ],
     },
     "ref": null,
@@ -133,76 +133,76 @@ ShallowWrapper {
           "children": Array [
             <div
               className="logo"
-            >
+>
               <Link
-                className="logoLink"
-                onClick={[Function]}
-                replace={false}
-                to="/"
+                            className="logoLink"
+                            onClick={[Function]}
+                            replace={false}
+                            to="/"
               >
-                <img
-                  alt="logo"
-                  src="https://i.imgur.com/zkkUfhc.png"
-                />
+                            <img
+                                          alt="logo"
+                                          src="https://i.imgur.com/zkkUfhc.png"
+                            />
               </Link>
-            </div>,
+</div>,
             <div
               className="headerTeamName"
-            >
+>
               <Link
-                className="nameLink"
-                onClick={[Function]}
-                replace={false}
-                to="/"
+                            className="nameLink"
+                            onClick={[Function]}
+                            replace={false}
+                            to="/"
               >
-                SOLENYA
+                            SOLENYA
               </Link>
-            </div>,
+</div>,
             <div
               className="menuLinks"
-            >
+>
               <div
-                className="webHome"
+                            className="webHome"
               >
-                <Link
-                  className="webHomeLink"
-                  onClick={[Function]}
-                  replace={false}
-                  to="/"
-                >
-                  PRODUCTS
-                </Link>
+                            <Link
+                                          className="webHomeLink"
+                                          onClick={[Function]}
+                                          replace={false}
+                                          to="/"
+                            >
+                                          PRODUCTS
+                            </Link>
               </div>
               <div
-                className="webBag"
+                            className="webBag"
               >
-                <Link
-                  className="bagLink"
-                  replace={false}
-                  to="#"
-                >
-                  BAG
-                </Link>
+                            <Link
+                                          className="bagLink"
+                                          replace={false}
+                                          to="#"
+                            >
+                                          BAG
+                            </Link>
               </div>
-            </div>,
+</div>,
             <div
               className="burgerMenu"
-            >
+>
               <div
-                className="burgerContainer"
-                onClick={[Function]}
+                            className="burgerContainer"
+                            onClick={[Function]}
               >
-                <div
-                  className="bar1"
-                />
-                <div
-                  className="bar2"
-                />
-                <div
-                  className="bar3"
-                />
+                            <div
+                                          className="bar1"
+                            />
+                            <div
+                                          className="bar2"
+                            />
+                            <div
+                                          className="bar3"
+                            />
               </div>
-            </div>,
+</div>,
           ],
           "className": "headerHolder",
         },
@@ -218,12 +218,12 @@ ShallowWrapper {
                 onClick={[Function]}
                 replace={false}
                 to="/"
-              >
+>
                 <img
-                  alt="logo"
-                  src="https://i.imgur.com/zkkUfhc.png"
+                                alt="logo"
+                                src="https://i.imgur.com/zkkUfhc.png"
                 />
-              </Link>,
+</Link>,
               "className": "logo",
             },
             "ref": null,
@@ -235,7 +235,7 @@ ShallowWrapper {
                 "children": <img
                   alt="logo"
                   src="https://i.imgur.com/zkkUfhc.png"
-                />,
+/>,
                 "className": "logoLink",
                 "onClick": [Function],
                 "replace": false,
@@ -268,9 +268,9 @@ ShallowWrapper {
                 onClick={[Function]}
                 replace={false}
                 to="/"
-              >
+>
                 SOLENYA
-              </Link>,
+</Link>,
               "className": "headerTeamName",
             },
             "ref": null,
@@ -299,27 +299,27 @@ ShallowWrapper {
               "children": Array [
                 <div
                   className="webHome"
-                >
+>
                   <Link
-                    className="webHomeLink"
-                    onClick={[Function]}
-                    replace={false}
-                    to="/"
+                                    className="webHomeLink"
+                                    onClick={[Function]}
+                                    replace={false}
+                                    to="/"
                   >
-                    PRODUCTS
+                                    PRODUCTS
                   </Link>
-                </div>,
+</div>,
                 <div
                   className="webBag"
-                >
+>
                   <Link
-                    className="bagLink"
-                    replace={false}
-                    to="#"
+                                    className="bagLink"
+                                    replace={false}
+                                    to="#"
                   >
-                    BAG
+                                    BAG
                   </Link>
-                </div>,
+</div>,
               ],
               "className": "menuLinks",
             },
@@ -335,9 +335,9 @@ ShallowWrapper {
                     onClick={[Function]}
                     replace={false}
                     to="/"
-                  >
+>
                     PRODUCTS
-                  </Link>,
+</Link>,
                   "className": "webHome",
                 },
                 "ref": null,
@@ -367,9 +367,9 @@ ShallowWrapper {
                     className="bagLink"
                     replace={false}
                     to="#"
-                  >
+>
                     BAG
-                  </Link>,
+</Link>,
                   "className": "webBag",
                 },
                 "ref": null,
@@ -400,17 +400,17 @@ ShallowWrapper {
               "children": <div
                 className="burgerContainer"
                 onClick={[Function]}
-              >
+>
                 <div
-                  className="bar1"
+                                className="bar1"
                 />
                 <div
-                  className="bar2"
+                                className="bar2"
                 />
                 <div
-                  className="bar3"
+                                className="bar3"
                 />
-              </div>,
+</div>,
               "className": "burgerMenu",
             },
             "ref": null,
@@ -422,13 +422,13 @@ ShallowWrapper {
                 "children": Array [
                   <div
                     className="bar1"
-                  />,
+/>,
                   <div
                     className="bar2"
-                  />,
+/>,
                   <div
                     className="bar3"
-                  />,
+/>,
                 ],
                 "className": "burgerContainer",
                 "onClick": [Function],
@@ -484,27 +484,27 @@ ShallowWrapper {
           "children": Array [
             <div
               className="homeLink"
-            >
+>
               <Link
-                className="home-link"
-                onClick={[Function]}
-                replace={false}
-                to="/"
+                            className="home-link"
+                            onClick={[Function]}
+                            replace={false}
+                            to="/"
               >
-                Products
+                            Products
               </Link>
-            </div>,
+</div>,
             <div
               className="bagLink"
-            >
+>
               <Link
-                className="bag-link"
-                replace={false}
-                to="#"
+                            className="bag-link"
+                            replace={false}
+                            to="#"
               >
-                Bag
+                            Bag
               </Link>
-            </div>,
+</div>,
           ],
           "className": "closedMenu",
         },
@@ -520,9 +520,9 @@ ShallowWrapper {
                 onClick={[Function]}
                 replace={false}
                 to="/"
-              >
+>
                 Products
-              </Link>,
+</Link>,
               "className": "homeLink",
             },
             "ref": null,
@@ -552,9 +552,9 @@ ShallowWrapper {
                 className="bag-link"
                 replace={false}
                 to="#"
-              >
+>
                 Bag
-              </Link>,
+</Link>,
               "className": "bagLink",
             },
             "ref": null,
@@ -589,107 +589,107 @@ ShallowWrapper {
         "children": Array [
           <div
             className="headerHolder"
-          >
+>
             <div
-              className="logo"
+                        className="logo"
             >
-              <Link
-                className="logoLink"
-                onClick={[Function]}
-                replace={false}
-                to="/"
-              >
-                <img
-                  alt="logo"
-                  src="https://i.imgur.com/zkkUfhc.png"
-                />
-              </Link>
+                        <Link
+                                    className="logoLink"
+                                    onClick={[Function]}
+                                    replace={false}
+                                    to="/"
+                        >
+                                    <img
+                                                alt="logo"
+                                                src="https://i.imgur.com/zkkUfhc.png"
+                                    />
+                        </Link>
             </div>
             <div
-              className="headerTeamName"
+                        className="headerTeamName"
             >
-              <Link
-                className="nameLink"
-                onClick={[Function]}
-                replace={false}
-                to="/"
-              >
-                SOLENYA
-              </Link>
+                        <Link
+                                    className="nameLink"
+                                    onClick={[Function]}
+                                    replace={false}
+                                    to="/"
+                        >
+                                    SOLENYA
+                        </Link>
             </div>
             <div
-              className="menuLinks"
+                        className="menuLinks"
             >
-              <div
-                className="webHome"
-              >
-                <Link
-                  className="webHomeLink"
-                  onClick={[Function]}
-                  replace={false}
-                  to="/"
-                >
-                  PRODUCTS
-                </Link>
-              </div>
-              <div
-                className="webBag"
-              >
-                <Link
-                  className="bagLink"
-                  replace={false}
-                  to="#"
-                >
-                  BAG
-                </Link>
-              </div>
+                        <div
+                                    className="webHome"
+                        >
+                                    <Link
+                                                className="webHomeLink"
+                                                onClick={[Function]}
+                                                replace={false}
+                                                to="/"
+                                    >
+                                                PRODUCTS
+                                    </Link>
+                        </div>
+                        <div
+                                    className="webBag"
+                        >
+                                    <Link
+                                                className="bagLink"
+                                                replace={false}
+                                                to="#"
+                                    >
+                                                BAG
+                                    </Link>
+                        </div>
             </div>
             <div
-              className="burgerMenu"
+                        className="burgerMenu"
             >
-              <div
-                className="burgerContainer"
-                onClick={[Function]}
-              >
-                <div
-                  className="bar1"
-                />
-                <div
-                  className="bar2"
-                />
-                <div
-                  className="bar3"
-                />
-              </div>
+                        <div
+                                    className="burgerContainer"
+                                    onClick={[Function]}
+                        >
+                                    <div
+                                                className="bar1"
+                                    />
+                                    <div
+                                                className="bar2"
+                                    />
+                                    <div
+                                                className="bar3"
+                                    />
+                        </div>
             </div>
-          </div>,
+</div>,
           <div
             className="closedMenu"
-          >
+>
             <div
-              className="homeLink"
+                        className="homeLink"
             >
-              <Link
-                className="home-link"
-                onClick={[Function]}
-                replace={false}
-                to="/"
-              >
-                Products
-              </Link>
+                        <Link
+                                    className="home-link"
+                                    onClick={[Function]}
+                                    replace={false}
+                                    to="/"
+                        >
+                                    Products
+                        </Link>
             </div>
             <div
-              className="bagLink"
+                        className="bagLink"
             >
-              <Link
-                className="bag-link"
-                replace={false}
-                to="#"
-              >
-                Bag
-              </Link>
+                        <Link
+                                    className="bag-link"
+                                    replace={false}
+                                    to="#"
+                        >
+                                    Bag
+                        </Link>
             </div>
-          </div>,
+</div>,
         ],
       },
       "ref": null,
@@ -702,76 +702,76 @@ ShallowWrapper {
             "children": Array [
               <div
                 className="logo"
-              >
+>
                 <Link
-                  className="logoLink"
-                  onClick={[Function]}
-                  replace={false}
-                  to="/"
+                                className="logoLink"
+                                onClick={[Function]}
+                                replace={false}
+                                to="/"
                 >
-                  <img
-                    alt="logo"
-                    src="https://i.imgur.com/zkkUfhc.png"
-                  />
+                                <img
+                                                alt="logo"
+                                                src="https://i.imgur.com/zkkUfhc.png"
+                                />
                 </Link>
-              </div>,
+</div>,
               <div
                 className="headerTeamName"
-              >
+>
                 <Link
-                  className="nameLink"
-                  onClick={[Function]}
-                  replace={false}
-                  to="/"
+                                className="nameLink"
+                                onClick={[Function]}
+                                replace={false}
+                                to="/"
                 >
-                  SOLENYA
+                                SOLENYA
                 </Link>
-              </div>,
+</div>,
               <div
                 className="menuLinks"
-              >
+>
                 <div
-                  className="webHome"
+                                className="webHome"
                 >
-                  <Link
-                    className="webHomeLink"
-                    onClick={[Function]}
-                    replace={false}
-                    to="/"
-                  >
-                    PRODUCTS
-                  </Link>
+                                <Link
+                                                className="webHomeLink"
+                                                onClick={[Function]}
+                                                replace={false}
+                                                to="/"
+                                >
+                                                PRODUCTS
+                                </Link>
                 </div>
                 <div
-                  className="webBag"
+                                className="webBag"
                 >
-                  <Link
-                    className="bagLink"
-                    replace={false}
-                    to="#"
-                  >
-                    BAG
-                  </Link>
+                                <Link
+                                                className="bagLink"
+                                                replace={false}
+                                                to="#"
+                                >
+                                                BAG
+                                </Link>
                 </div>
-              </div>,
+</div>,
               <div
                 className="burgerMenu"
-              >
+>
                 <div
-                  className="burgerContainer"
-                  onClick={[Function]}
+                                className="burgerContainer"
+                                onClick={[Function]}
                 >
-                  <div
-                    className="bar1"
-                  />
-                  <div
-                    className="bar2"
-                  />
-                  <div
-                    className="bar3"
-                  />
+                                <div
+                                                className="bar1"
+                                />
+                                <div
+                                                className="bar2"
+                                />
+                                <div
+                                                className="bar3"
+                                />
                 </div>
-              </div>,
+</div>,
             ],
             "className": "headerHolder",
           },
@@ -787,12 +787,12 @@ ShallowWrapper {
                   onClick={[Function]}
                   replace={false}
                   to="/"
-                >
+>
                   <img
-                    alt="logo"
-                    src="https://i.imgur.com/zkkUfhc.png"
+                                    alt="logo"
+                                    src="https://i.imgur.com/zkkUfhc.png"
                   />
-                </Link>,
+</Link>,
                 "className": "logo",
               },
               "ref": null,
@@ -804,7 +804,7 @@ ShallowWrapper {
                   "children": <img
                     alt="logo"
                     src="https://i.imgur.com/zkkUfhc.png"
-                  />,
+/>,
                   "className": "logoLink",
                   "onClick": [Function],
                   "replace": false,
@@ -837,9 +837,9 @@ ShallowWrapper {
                   onClick={[Function]}
                   replace={false}
                   to="/"
-                >
+>
                   SOLENYA
-                </Link>,
+</Link>,
                 "className": "headerTeamName",
               },
               "ref": null,
@@ -868,27 +868,27 @@ ShallowWrapper {
                 "children": Array [
                   <div
                     className="webHome"
-                  >
+>
                     <Link
-                      className="webHomeLink"
-                      onClick={[Function]}
-                      replace={false}
-                      to="/"
+                                        className="webHomeLink"
+                                        onClick={[Function]}
+                                        replace={false}
+                                        to="/"
                     >
-                      PRODUCTS
+                                        PRODUCTS
                     </Link>
-                  </div>,
+</div>,
                   <div
                     className="webBag"
-                  >
+>
                     <Link
-                      className="bagLink"
-                      replace={false}
-                      to="#"
+                                        className="bagLink"
+                                        replace={false}
+                                        to="#"
                     >
-                      BAG
+                                        BAG
                     </Link>
-                  </div>,
+</div>,
                 ],
                 "className": "menuLinks",
               },
@@ -904,9 +904,9 @@ ShallowWrapper {
                       onClick={[Function]}
                       replace={false}
                       to="/"
-                    >
+>
                       PRODUCTS
-                    </Link>,
+</Link>,
                     "className": "webHome",
                   },
                   "ref": null,
@@ -936,9 +936,9 @@ ShallowWrapper {
                       className="bagLink"
                       replace={false}
                       to="#"
-                    >
+>
                       BAG
-                    </Link>,
+</Link>,
                     "className": "webBag",
                   },
                   "ref": null,
@@ -969,17 +969,17 @@ ShallowWrapper {
                 "children": <div
                   className="burgerContainer"
                   onClick={[Function]}
-                >
+>
                   <div
-                    className="bar1"
+                                    className="bar1"
                   />
                   <div
-                    className="bar2"
+                                    className="bar2"
                   />
                   <div
-                    className="bar3"
+                                    className="bar3"
                   />
-                </div>,
+</div>,
                 "className": "burgerMenu",
               },
               "ref": null,
@@ -991,13 +991,13 @@ ShallowWrapper {
                   "children": Array [
                     <div
                       className="bar1"
-                    />,
+/>,
                     <div
                       className="bar2"
-                    />,
+/>,
                     <div
                       className="bar3"
-                    />,
+/>,
                   ],
                   "className": "burgerContainer",
                   "onClick": [Function],
@@ -1053,27 +1053,27 @@ ShallowWrapper {
             "children": Array [
               <div
                 className="homeLink"
-              >
+>
                 <Link
-                  className="home-link"
-                  onClick={[Function]}
-                  replace={false}
-                  to="/"
+                                className="home-link"
+                                onClick={[Function]}
+                                replace={false}
+                                to="/"
                 >
-                  Products
+                                Products
                 </Link>
-              </div>,
+</div>,
               <div
                 className="bagLink"
-              >
+>
                 <Link
-                  className="bag-link"
-                  replace={false}
-                  to="#"
+                                className="bag-link"
+                                replace={false}
+                                to="#"
                 >
-                  Bag
+                                Bag
                 </Link>
-              </div>,
+</div>,
             ],
             "className": "closedMenu",
           },
@@ -1089,9 +1089,9 @@ ShallowWrapper {
                   onClick={[Function]}
                   replace={false}
                   to="/"
-                >
+>
                   Products
-                </Link>,
+</Link>,
                 "className": "homeLink",
               },
               "ref": null,
@@ -1121,9 +1121,9 @@ ShallowWrapper {
                   className="bag-link"
                   replace={false}
                   to="#"
-                >
+>
                   Bag
-                </Link>,
+</Link>,
                 "className": "bagLink",
               },
               "ref": null,
