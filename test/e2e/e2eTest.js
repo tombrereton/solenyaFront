@@ -30,7 +30,7 @@ module.exports = {
             .end()
     },
     
-    'Product image takes to the product details page and back to home with team name link': function(browser) {
+    'Product image takes to the product details page and back to home with team name link (Web)': function(browser) {
         browser
         .url(config[envName].endPoint)
         .waitForElementVisible('body')
@@ -47,7 +47,7 @@ module.exports = {
         .end()
     },
 
-    'Product image takes to the product details page and back to home with product link': function(browser) {
+    'Product image takes to the product details page and back to home with product link (Web)': function(browser) {
         browser
         .url(config[envName].endPoint)
         .waitForElementVisible('body')
@@ -62,7 +62,7 @@ module.exports = {
         .pause(1000)
         .end()
     },
-    'Product image takes to the product details page and back to home with logo link': function(browser) {
+    'Product image takes to the product details page and back to home with logo link (Web)': function(browser) {
         browser
         .url(config[envName].endPoint)
         .waitForElementVisible('body')
