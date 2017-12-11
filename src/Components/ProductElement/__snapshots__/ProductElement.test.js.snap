@@ -10,7 +10,7 @@ ShallowWrapper {
     ProductId={123}
     ProductName="Warehouse Side Split Roll Neck Jumper"
     SplashImgUrl="./static/media/prod1-img1.jpg"
-  />,
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -26,46 +26,46 @@ ShallowWrapper {
       "children": Array [
         <div
           className="imageCard"
-        >
+>
           <Link
-            id="productImageId-123"
-            onClick={[Function]}
-            replace={false}
-            to="products/123"
+                    id="productImageId-123"
+                    onClick={[Function]}
+                    replace={false}
+                    to="products/123"
           >
-            <img
-              alt="Warehouse Side Split Roll Neck Jumper"
-              src="./static/media/prod1-img1.jpg"
-            />
+                    <img
+                              alt="Warehouse Side Split Roll Neck Jumper"
+                              src="./static/media/prod1-img1.jpg"
+                    />
           </Link>
-        </div>,
+</div>,
         <Link
           className="divLink"
           id="productNameId-123"
           onClick={[Function]}
           replace={false}
           to="products/123"
-        >
+>
           <div
-            className="productLabelContainer"
+                    className="productLabelContainer"
           >
-            <div
-              className="centeringContainer"
-            >
-              <div
-                className="productLabel"
-              >
-                Warehouse Side Split Roll Neck Jumper
-              </div>
-              <div
-                className="productPrice"
-              >
-                £
-                46.00
-              </div>
-            </div>
+                    <div
+                              className="centeringContainer"
+                    >
+                              <div
+                                        className="productLabel"
+                              >
+                                        Warehouse Side Split Roll Neck Jumper
+                              </div>
+                              <div
+                                        className="productPrice"
+                              >
+                                        £
+                                        46.00
+                              </div>
+                    </div>
           </div>
-        </Link>,
+</Link>,
       ],
       "className": "ProductElement",
     },
@@ -81,12 +81,12 @@ ShallowWrapper {
             onClick={[Function]}
             replace={false}
             to="products/123"
-          >
+>
             <img
-              alt="Warehouse Side Split Roll Neck Jumper"
-              src="./static/media/prod1-img1.jpg"
+                        alt="Warehouse Side Split Roll Neck Jumper"
+                        src="./static/media/prod1-img1.jpg"
             />
-          </Link>,
+</Link>,
           "className": "imageCard",
         },
         "ref": null,
@@ -98,7 +98,7 @@ ShallowWrapper {
             "children": <img
               alt="Warehouse Side Split Roll Neck Jumper"
               src="./static/media/prod1-img1.jpg"
-            />,
+/>,
             "id": "productImageId-123",
             "onClick": [Function],
             "replace": false,
@@ -128,23 +128,23 @@ ShallowWrapper {
         "props": Object {
           "children": <div
             className="productLabelContainer"
-          >
+>
             <div
-              className="centeringContainer"
+                        className="centeringContainer"
             >
-              <div
-                className="productLabel"
-              >
-                Warehouse Side Split Roll Neck Jumper
-              </div>
-              <div
-                className="productPrice"
-              >
-                £
-                46.00
-              </div>
+                        <div
+                                    className="productLabel"
+                        >
+                                    Warehouse Side Split Roll Neck Jumper
+                        </div>
+                        <div
+                                    className="productPrice"
+                        >
+                                    £
+                                    46.00
+                        </div>
             </div>
-          </div>,
+</div>,
           "className": "divLink",
           "id": "productNameId-123",
           "onClick": [Function],
@@ -159,19 +159,19 @@ ShallowWrapper {
           "props": Object {
             "children": <div
               className="centeringContainer"
-            >
+>
               <div
-                className="productLabel"
+                            className="productLabel"
               >
-                Warehouse Side Split Roll Neck Jumper
+                            Warehouse Side Split Roll Neck Jumper
               </div>
               <div
-                className="productPrice"
+                            className="productPrice"
               >
-                £
-                46.00
+                            £
+                            46.00
               </div>
-            </div>,
+</div>,
             "className": "productLabelContainer",
           },
           "ref": null,
@@ -183,15 +183,15 @@ ShallowWrapper {
               "children": Array [
                 <div
                   className="productLabel"
-                >
+>
                   Warehouse Side Split Roll Neck Jumper
-                </div>,
+</div>,
                 <div
                   className="productPrice"
-                >
+>
                   £
                   46.00
-                </div>,
+</div>,
               ],
               "className": "centeringContainer",
             },
@@ -246,46 +246,46 @@ ShallowWrapper {
         "children": Array [
           <div
             className="imageCard"
-          >
+>
             <Link
-              id="productImageId-123"
-              onClick={[Function]}
-              replace={false}
-              to="products/123"
+                        id="productImageId-123"
+                        onClick={[Function]}
+                        replace={false}
+                        to="products/123"
             >
-              <img
-                alt="Warehouse Side Split Roll Neck Jumper"
-                src="./static/media/prod1-img1.jpg"
-              />
+                        <img
+                                    alt="Warehouse Side Split Roll Neck Jumper"
+                                    src="./static/media/prod1-img1.jpg"
+                        />
             </Link>
-          </div>,
+</div>,
           <Link
             className="divLink"
             id="productNameId-123"
             onClick={[Function]}
             replace={false}
             to="products/123"
-          >
+>
             <div
-              className="productLabelContainer"
+                        className="productLabelContainer"
             >
-              <div
-                className="centeringContainer"
-              >
-                <div
-                  className="productLabel"
-                >
-                  Warehouse Side Split Roll Neck Jumper
-                </div>
-                <div
-                  className="productPrice"
-                >
-                  £
-                  46.00
-                </div>
-              </div>
+                        <div
+                                    className="centeringContainer"
+                        >
+                                    <div
+                                                className="productLabel"
+                                    >
+                                                Warehouse Side Split Roll Neck Jumper
+                                    </div>
+                                    <div
+                                                className="productPrice"
+                                    >
+                                                £
+                                                46.00
+                                    </div>
+                        </div>
             </div>
-          </Link>,
+</Link>,
         ],
         "className": "ProductElement",
       },
@@ -301,12 +301,12 @@ ShallowWrapper {
               onClick={[Function]}
               replace={false}
               to="products/123"
-            >
+>
               <img
-                alt="Warehouse Side Split Roll Neck Jumper"
-                src="./static/media/prod1-img1.jpg"
+                            alt="Warehouse Side Split Roll Neck Jumper"
+                            src="./static/media/prod1-img1.jpg"
               />
-            </Link>,
+</Link>,
             "className": "imageCard",
           },
           "ref": null,
@@ -318,7 +318,7 @@ ShallowWrapper {
               "children": <img
                 alt="Warehouse Side Split Roll Neck Jumper"
                 src="./static/media/prod1-img1.jpg"
-              />,
+/>,
               "id": "productImageId-123",
               "onClick": [Function],
               "replace": false,
@@ -348,23 +348,23 @@ ShallowWrapper {
           "props": Object {
             "children": <div
               className="productLabelContainer"
-            >
+>
               <div
-                className="centeringContainer"
+                            className="centeringContainer"
               >
-                <div
-                  className="productLabel"
-                >
-                  Warehouse Side Split Roll Neck Jumper
-                </div>
-                <div
-                  className="productPrice"
-                >
-                  £
-                  46.00
-                </div>
+                            <div
+                                          className="productLabel"
+                            >
+                                          Warehouse Side Split Roll Neck Jumper
+                            </div>
+                            <div
+                                          className="productPrice"
+                            >
+                                          £
+                                          46.00
+                            </div>
               </div>
-            </div>,
+</div>,
             "className": "divLink",
             "id": "productNameId-123",
             "onClick": [Function],
@@ -379,19 +379,19 @@ ShallowWrapper {
             "props": Object {
               "children": <div
                 className="centeringContainer"
-              >
+>
                 <div
-                  className="productLabel"
+                                className="productLabel"
                 >
-                  Warehouse Side Split Roll Neck Jumper
+                                Warehouse Side Split Roll Neck Jumper
                 </div>
                 <div
-                  className="productPrice"
+                                className="productPrice"
                 >
-                  £
-                  46.00
+                                £
+                                46.00
                 </div>
-              </div>,
+</div>,
               "className": "productLabelContainer",
             },
             "ref": null,
@@ -403,15 +403,15 @@ ShallowWrapper {
                 "children": Array [
                   <div
                     className="productLabel"
-                  >
+>
                     Warehouse Side Split Roll Neck Jumper
-                  </div>,
+</div>,
                   <div
                     className="productPrice"
-                  >
+>
                     £
                     46.00
-                  </div>,
+</div>,
                 ],
                 "className": "centeringContainer",
               },
