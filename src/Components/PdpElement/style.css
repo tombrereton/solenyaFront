@@ -490,18 +490,23 @@
         margin: 0;
         padding: 0;
     }
+
+    .colourPhoneSelector, .sizePhoneSelector{
+        background-color: white;
+    }
     
     .sizeMenu {
         border: 1;
         padding: 3px 5px;
         width: 100%;
-    
+            
         /* prevent the default small pointer from showing up */
         -webkit-appearance: none;
-        -moz-appearance:    none;
-        appearance:         none;
+        -moz-appearance: none;
+        appearance: none;
         z-index: 1;
     }
+
     .sizeWebSelector{
        display: none;
     }
