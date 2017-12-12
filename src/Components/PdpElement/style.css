@@ -232,13 +232,28 @@
 
 @media screen and (min-width: 1635px) {
 
+    .slider-decorator-1 > button {
+        display: none;
+        }
+    
+    .slider-decorator-1 > button::after { 
+        display: none;        
+    }
+
+    .slider-decorator-0 > button {
+        display: none;
+        }
+    
+    .slider-decorator-0 > button::after { 
+        display: none;        
+    }
+
     .sizePhoneSelector{
         display: none;
     }
     .colourPhoneMenu{
         display: none;
     }
-
 
     .productExtraInfo{  
         padding-right: 3%; 
@@ -284,7 +299,7 @@
         padding-top: 2%;
     } 
 
-    .imageCarousel, .webImageCarousel{
+    .imageCarousel, .tabletImageCarousel, .webImageCarousel{
         display: none;
     }
 
