@@ -151,6 +151,7 @@
     letter-spacing: 0.5PX;
 }
 
+
 @media screen and (min-width: 1122px) {
 
     .imageCarousel, .tabletImageCarousel{
@@ -169,7 +170,7 @@
     .slider-decorator-0 > button{
         position: absolute;
         left: -100%;
-        padding: 10px;
+        padding: 7px !important;
         visibility: visible !important;
         width: 2.5rem;
         height: 2.5rem;
@@ -181,7 +182,7 @@
     }
 
     .slider-decorator-0 > button::after { 
-        content: "<";
+        content: "🥒";
         font-size: 20px;
     }
     
@@ -192,7 +193,7 @@
     .slider-decorator-1 > button {
         position: absolute;
         right: -100%;
-        padding: 10px;
+        padding: 7px !important;
         visibility: visible !important;
         width: 2.5rem;
         height: 2.5rem;
@@ -204,13 +205,14 @@
         }
     
         .slider-decorator-1 > button::after { 
-            content: ">";
+            content: "🥒";
             font-size: 20px;          
         }
                  
         .slider-decorator-2{
             visibility: hidden;
         }
+        
 
         .Dropdown-root{
             width: 85%;
@@ -281,7 +283,7 @@
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-top: 2%;
     } 
-
+ 
     .imageCarousel{
         display: none;
     }
@@ -307,7 +309,7 @@
    
 }
 
-@media screen and (min-width: 521px) and (max-width: 1121px){
+@media screen and (min-width: 521px) and (max-width: 1122px){
 
     .sizePhoneSelector{
         display: none;
@@ -319,7 +321,22 @@
         padding-right: 3%; 
         padding-bottom: 5%;               
     }  
-
+    .slider-decorator-2 {
+        top: 85% !important;
+    }
+    .slider-decorator-2 > ul > li >button{
+        /* font-size: 44px !important; */
+        font-size: 0px !important;
+        padding: 2px !important;
+        -webkit-text-stroke: 1px #979797;
+     
+    }
+    .slider-decorator-2 > ul > li >button::after{
+        font-size: 35px !important;
+        padding: 2px !important;
+        -webkit-text-stroke: 1px #979797;
+        content: "🥒";
+    }
     .productMainInfo {
         margin: -1.5% auto 0 auto;
         width: 65%;
@@ -364,7 +381,7 @@
     }
     
     .slider-decorator-2 {
-        top: 88% !important;
+        top: 90% !important;
     }
     
     .tabletImageCarousel{
@@ -429,9 +446,17 @@
     }
 
     .slider-decorator-2 > ul > li >button{
-        font-size: 44px !important;
+        /* font-size: 44px !important; */
+        font-size: 0px !important;
         padding: 2px !important;
         -webkit-text-stroke: 1px #979797;
+     
+    }
+    .slider-decorator-2 > ul > li >button::after{
+        font-size: 21px !important;
+        padding: 2px !important;
+        -webkit-text-stroke: 1px #979797;
+        content: "🥒";
     }
     .Dropdown-menu {
         background-color: white;
