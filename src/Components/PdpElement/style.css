@@ -3,7 +3,6 @@
     margin-top: 3em;
 }
 
-
 .productMainInfo{
     background-color: #FFFFFF;
     position: relative;
@@ -234,7 +233,7 @@
 
     .slider-decorator-1 > button {
         display: none;
-        }
+    }
     
     .slider-decorator-1 > button::after { 
         display: none;        
