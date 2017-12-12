@@ -299,13 +299,8 @@
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-top: 2%;
     } 
-<<<<<<< HEAD
- 
-    .imageCarousel{
-=======
 
     .imageCarousel, .tabletImageCarousel, .webImageCarousel{
->>>>>>> 113226-resize-carousel
         display: none;
     }
 
