@@ -154,7 +154,7 @@
 
 @media screen and (min-width: 1122px) {
 
-    .imageCarousel, .tabletImageCarousel{
+    .imageCarousel, .tabletImageCarousel, .laptopImageCarousel{
         display: none;
      }
 
@@ -234,6 +234,22 @@
 
 @media screen and (min-width: 1635px) {
 
+    .slider-decorator-1 > button {
+        display: none;
+        }
+    
+    .slider-decorator-1 > button::after { 
+        display: none;        
+    }
+
+    .slider-decorator-0 > button {
+        display: none;
+        }
+    
+    .slider-decorator-0 > button::after { 
+        display: none;        
+    }
+
     .sizePhoneSelector{
         display: none;
     }
@@ -280,12 +296,22 @@
     .colourPhoneMenu{
         display: none;
     }
+
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-top: 2%;
     } 
+<<<<<<< HEAD
  
     .imageCarousel{
+=======
+
+    .imageCarousel, .tabletImageCarousel, .webImageCarousel{
+>>>>>>> 113226-resize-carousel
         display: none;
+    }
+
+    .laptopImageCarousel{
+        display: inherit;
     }
 
     .productMainInfo {
@@ -364,7 +390,7 @@
     .slider-frame{
         height: 40% !important;
     }
-    .imageCarousel, .webImageCarousel{
+    .imageCarousel, .webImageCarousel, .laptopImageCarousel{
         display: none;
     }
     .slider-decorator-0,.slider-decorator-1{
@@ -431,7 +457,7 @@
         padding-top: 10%;
     } 
 
-    .webImageCarousel{
+    .webImageCarousel, .laptopImageCarousel{
         display: none;
     }
     .productMainInfo{
