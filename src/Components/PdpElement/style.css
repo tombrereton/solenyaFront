@@ -371,7 +371,7 @@
         height: 40% !important;
     }
 
-    .imageCarousel, .webImageCarousel{
+    .imageCarousel, .webImageCarousel, .laptopImageCarousel{
         display: none;
     }
 
@@ -434,7 +434,7 @@
         padding-top: 10%;
     } 
 
-    .webImageCarousel, .tabletImageCarousel{
+    .webImageCarousel, .tabletImageCarousel, .laptopImageCarousel{
         display: none;
     }
     .productMainInfo{
