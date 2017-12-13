@@ -221,9 +221,23 @@
             padding-bottom: 2%;
             font-size: 20px;
         }
+
+        .sizePhoneSelector{
+            display: none;
+        }
+        .colourPhoneMenu{
+            display: none;
+        }
     }
 
 @media screen and (min-width: 1635px) {
+
+    .sizePhoneSelector{
+        display: none;
+    }
+    .colourPhoneMenu{
+        display: none;
+    }
 
     .productExtraInfo{  
         padding-right: 3%; 
@@ -254,9 +268,16 @@
     .productExtraInfo {
         margin: 4% 9% 7% 9%;
     }
+   
 }
 
 @media screen and (min-width: 1123px) and (max-width: 1634px){  
+    .sizePhoneSelector{
+        display: none;
+    }
+    .colourPhoneMenu{
+        display: none;
+    }
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-top: 2%;
     } 
@@ -283,10 +304,17 @@
     .productExtraInfo {
         margin: 5% 13% 7% 13%;
     }
+   
 }
 
 @media screen and (min-width: 521px) and (max-width: 1121px){
 
+    .sizePhoneSelector{
+        display: none;
+    }
+    .colourPhoneMenu{
+        display: none;
+    }
     .productExtraInfo{  
         padding-right: 3%; 
         padding-bottom: 5%;               
@@ -356,9 +384,23 @@
         display: inline-flex;
         flex-direction: column;
         vertical-align: top;
-        width: 36%;
+        width: 40%;
         padding-right: 5%;
         padding-top: 5%;      
+    }
+    .colourPhoneSelector, .sizePhoneSelector{
+        position: relative;
+        overflow: hidden;
+        border-radius: 2px;
+        box-sizing: border-box;
+        color: #333;
+        cursor: default;
+        outline: none;
+        padding: 9% 45% 7% 1%;
+        transition: all 200ms ease;
+        width: 100%;
+        background-color: white;
+        font-size: 16px;
     }
     .sizeHeader{
          padding-top: 15%;
@@ -391,11 +433,36 @@
         padding: 2px !important;
         -webkit-text-stroke: 1px #979797;
     }
-
     .Dropdown-menu {
         background-color: white;
     }
     .Dropdown-control {
         background-color: white;
     }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sizeMenu {
+        border: 1;
+        padding: 3px 5px;
+        width: 100%;
+    
+        /* prevent the default small pointer from showing up */
+        -webkit-appearance: none;
+        -moz-appearance:    none;
+        appearance:         none;
+        z-index: 1;
+    }
+    .sizeWebSelector{
+       display: none;
+    }
+
+    .colourWebMenu{
+        display: none;
+    }
+
 }

@@ -19,8 +19,6 @@ class PdpElement extends Component {
     };
   }
 
-
-
   componentDidMount() {
     let deviceWidth = getDeviceWidth();
     logToNewRelic(
@@ -39,9 +37,14 @@ class PdpElement extends Component {
     window.dispatchEvent(resizeEvent);
   }
 
-  onColourChange(e) {
-    console.log("event fired: ", e.value);
+  onColourChangeWeb(e) {
+    console.log("event fired web: ", e.value);
     this.setState({ currentColour: e.value });
+  }
+
+  onColourChangePhone(e) {
+    console.log("event fired phone: ", e.target.value);
+    this.setState({ currentColour: e.target.value });
   }
 
   render() {
@@ -121,24 +124,54 @@ class PdpElement extends Component {
           </div>
           <div className="pdpVariants">
             <h4 className="colourName">COLOUR:</h4>
-            <div className="colourMenu">
+            <div className="colourWebMenu">
               {this.state.colours.length === 1 ? (
-                <div className="productColourValue">{this.state.colours}</div>
+                <div className="productColourValueWeb">{this.state.colours}</div>
               ) : (
                 <Dropdown
-                  className="colourSelector"
+                  className="colourWebSelector"
                   options={getColours(this.props.ImageOptions)}
                   value={this.state.currentColour}
-                  onChange={event => this.onColourChange(event)}
+                  onChange={event => this.onColourChangeWeb(event)}
                 />
               )}
             </div>
+
+            <div className="colourPhoneMenu">
+              {this.state.colours.length === 1 ? (
+                <div className="productColourValuePhone">{this.state.colours}</div>
+              ) : (
+               
+                <select className = "colourPhoneSelector" onChange={event => this.onColourChangePhone(event)}>  
+                
+                  {getColours(this.props.ImageOptions).map((colour, index) => {                  
+                    return (                     
+                      <option value={colour} key={index}>
+                        {colour}                                               
+                      </option>
+                      
+                    );
+                  })}
+                </select>
+
+              )}
+            </div>
+
             <h4 className="sizeHeader">SIZE:</h4>
             <Dropdown
-              className="sizeSelector"
+              className="sizeWebSelector"
               options={["XS", "S", "M", "L", "XL"]}
               value={"XS"}
             />
+
+                <select className = "sizePhoneSelector">
+                  <option value = "XS"> XS </option>
+                  <option value = "S"> S </option>
+                  <option value = "M"> M </option>
+                  <option value = "L"> L </option>
+                  <option value = "XL"> XL </option>
+                </select>
+
           </div>
           <div className="bagButtonContainer">
             <button className="bagButton" type="button">
@@ -173,117 +206,6 @@ class PdpElement extends Component {
   }
   
 }
-
-// const PdpElement = props => {
-//   const colours = getColours(props.ImageOptions);
-//   const selectedColor = getDropdownValue("colourSelector");
-//   console.log("This Val BE: " , selectedColor);
-//   const imagePaths = getImages(props.ImageOptions, selectedColor);
-//   const defaultOption = colours[0];
-//   //const getSelected = getSelected(value);
-
-//   let deviceWidth = getDeviceWidth();
-//   logToNewRelic(
-//     "Pdp-" +
-//       props.ProductName +
-//       "-" +
-//       props.ProductId +
-//       "-LoadedWithDeviceWidth-" +
-//       deviceWidth
-//   );
-
-//   return (
-//     <div className="PdpElement">
-//       <div className="imageCarousel">
-//         <Carousel>
-//           {imagePaths.map((element, index) => {
-//             return (
-//               <img
-//                 id={"img" + index}
-//                 width="150"
-//                 src={element}
-//                 alt={props.ProductName}
-//                 key={index}
-//               />
-//             );
-//           })}
-//         </Carousel>
-//       </div>
-
-//       <div className="productMainInfo">
-//         <div className="productMainInfoText">
-//           <div className="pdpProductName">
-//             <div className="pdpNameValue">{props.ProductName}</div>
-//           </div>
-//           <div className="pdpPrice">
-//             <div className="pdpDiscountValue">
-//               {props.DiscountPrice === null ? (
-//                 <div className="pdpProductPrice">
-//                   £{(props.Price / 100).toFixed(2)}
-//                 </div>
-//               ) : (
-//                 <div>
-//                   <div className="pdpProductPriceSlashed">
-//                     £{(props.Price / 100).toFixed(2)}
-//                   </div>
-//                   <div className="pdpProductDiscount">
-//                     £{(props.DiscountPrice / 100).toFixed(2)}
-//                   </div>
-//                 </div>
-//               )}
-//             </div>
-//           </div>
-//         </div>
-//         <div className="pdpVariants">
-//           <h4 className="colourName">COLOUR:</h4>
-//           <div className="colourMenu">
-//             {colours.length === 1 ? (
-//               <div className="productColourValue">{colours}</div>
-//             ) : (
-//               <Dropdown
-//                 className="colourSelector"
-//                 options={colours}
-//                 //onChange={}
-//                 value={defaultOption}
-//               />
-//             )}
-//           </div>
-//           <h4 className="sizeHeader">SIZE:</h4>
-//           <Dropdown
-//             className="sizeSelector"
-//             options={["XS", "S", "M", "L", "XL"]}
-//             value={"XS"}
-//           />
-//         </div>
-//         <div className="bagButtonContainer">
-//           <button className="bagButton" type="button">
-//             ADD TO BAG
-//           </button>
-//         </div>
-//       </div>
-//       <div className="productExtraInfo">
-//         <div className="productDescription">
-//           <h4 className="prodDescHeader">PRODUCT DESCRIPTION</h4>
-//           <div className="productDescriptionValue">
-//             {props.ProductDescription}
-//           </div>
-//         </div>
-//         <div className="productBrand">
-//           <h4 className="prodBrandHeader">PRODUCT BRAND</h4>
-//           <div className="productBrandValue">{props.ProductBrand}</div>
-//         </div>
-//         <div className="brandDescription">
-//           <h4 className="brandDescHeader">BRAND DESCRIPTION</h4>
-//           <div className="brandDescriptionValue">{props.BrandDescription}</div>
-//         </div>
-//         <div className="materials">
-//           <h4 className="materialsHeader">MATERIALS</h4>
-//           <div className="materialsValue">{props.Materials}</div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 
 PdpElement.propTypes = {
   ProductId: PropTypes.number.isRequired,
