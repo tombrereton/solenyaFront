@@ -176,7 +176,7 @@ class PdpElement extends Component {
             <Dropdown
               className="sizeWebSelector"
               options={["XS", "S", "M", "L", "XL"]}
-              value={"selectSize"}
+              value={"XS"}
             />
                 <select className = "sizePhoneSelector">
                 
