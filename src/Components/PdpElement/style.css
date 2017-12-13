@@ -162,23 +162,31 @@
         width: 45%;
     }
 
-     .slider-decorator-0{
-        left: 1% !important;
-        }  
-
-    .slider-decorator-0 > button{
+    .slider-decorator-0 > button, .slider-decorator-1 > button{
         position: absolute;
+<<<<<<< HEAD
         left: -100%;
         padding: 7px !important;
+=======
+        padding: 10px;
+>>>>>>> 112049-native-dropdowns
         visibility: visible !important;
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 100px;
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
-        content: '\25C5';
         font-size: 0;
     }
+
+    .slider-decorator-0 > button{
+        left: -100%;
+        content: '<';
+    }
+
+    .slider-decorator-0{
+    left: 1% !important;
+    }  
 
     .slider-decorator-0 > button::after { 
         content: "<";
@@ -196,8 +204,8 @@
     }
 
     .slider-decorator-1 > button {
-        position: absolute;
         right: -100%;
+<<<<<<< HEAD
         padding: 7px !important;
         visibility: visible !important;
         width: 2.5rem;
@@ -230,30 +238,39 @@
         .colourPhoneMenu{
             display: none;
         }
-    }
-
-@media screen and (min-width: 1635px) {
-
-    .slider-decorator-1 > button {
-        display: none;
+=======
+        content: '>';
     }
     
     .slider-decorator-1 > button::after { 
-        display: none;        
+        content: ">";
+        font-size: 20px;          
+    }
+                
+    .slider-decorator-2{
+        visibility: hidden;
+>>>>>>> 112049-native-dropdowns
     }
 
-    .slider-decorator-0 > button {
-        display: none;
-        }
-    
-    .slider-decorator-0 > button::after { 
-        display: none;        
+    .Dropdown-root{
+        width: 85%;
     }
 
-    .sizePhoneSelector{
+    .productExtraInfo {
+        padding-right: 3%;
+        padding-bottom: 2%;
+        font-size: 20px;
+    }
+
+    .sizePhoneSelector, .colourPhoneMenu{
         display: none;
     }
-    .colourPhoneMenu{
+
+}
+
+@media screen and (min-width: 1635px) {
+
+    .sizePhoneSelector, .colourPhoneMenu{
         display: none;
     }
 
@@ -290,10 +307,7 @@
 }
 
 @media screen and (min-width: 1123px) and (max-width: 1634px){  
-    .sizePhoneSelector{
-        display: none;
-    }
-    .colourPhoneMenu{
+    .sizePhoneSelector, .colourPhoneMenu{
         display: none;
     }
 
@@ -332,12 +346,27 @@
 
 @media screen and (min-width: 521px) and (max-width: 1122px){
 
-    .sizePhoneSelector{
-        display: none;
+    .colourPhoneSelector, .sizePhoneSelector {
+        background: transparent;
+        -webkit-appearance: none;
+        border: 1.25px solid rgba(51, 51, 51, 0.8);
+        border-radius: 0px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: "futura-pt";
+        color: rgb(51,51,51);
+        width: 100%;
+        padding: 2%;            
     }
-    .colourPhoneMenu{
-        display: none;
+
+    .sizeHeader{
+        padding-top: 9%;
     }
+
+    .sizeWebSelector, .colourWebMenu{
+        display: none;
+     }
+ 
     .productExtraInfo{  
         padding-right: 3%; 
         padding-bottom: 5%;               
@@ -363,8 +392,8 @@
         flex-direction: column;
         vertical-align: top;
         width: 36%;
-        padding-top: 5%;
-        padding-left: 20%;
+        padding-top: 3%;
+        padding-left: 14%;
     }
 
     .productExtraInfo {
@@ -373,23 +402,29 @@
         font-size: 20px;
         margin: 5% 5% 9% 5%;
     }
+    
     .prodDescHeader, .prodBrandHeader, .brandDescHeader, .materialsHeader{
         padding-top: 3%;
     }   
+
     .slider-frame{
         height: 40% !important;
     }
+<<<<<<< HEAD
     .imageCarousel, .webImageCarousel, .laptopImageCarousel{
+=======
+
+    .imageCarousel, .webImageCarousel{
+>>>>>>> 112049-native-dropdowns
         display: none;
     }
+
     .slider-decorator-0,.slider-decorator-1{
         visibility: hidden;
     }
 
-    .Dropdown-root{
-        width: 80%;
-    }
 }
+
 @media screen and (max-width: 520px){
     .slider-list {
         min-height: calc(70vw + 10rem); 
@@ -399,9 +434,6 @@
         top: 90% !important;
     }
     
-    .tabletImageCarousel{
-        display: none;
-    }
     .pdpProductName{
         position: relative;
         margin-bottom: 0px;
@@ -446,26 +478,28 @@
         padding-top: 10%;
     } 
 
+<<<<<<< HEAD
     .webImageCarousel, .laptopImageCarousel{
+=======
+    .webImageCarousel, .tabletImageCarousel{
+>>>>>>> 112049-native-dropdowns
         display: none;
     }
     .productMainInfo{
         width: 90%;
         margin: -3% auto 0 auto;             
     }
-    .slider-decorator-0 {
+    .slider-decorator-0, .slider-decorator-1  {
         visibility: hidden;
     }
-    .slider-decorator-1 {
-        visibility: hidden;
-    }
-
+    
     .slider-decorator-2 > ul > li >button{
         font-size: 44px !important;
         padding: 2px !important;
         -webkit-text-stroke: 1px #979797;
      
     }
+<<<<<<< HEAD
   
     .Dropdown-menu {
         background-color: white;
@@ -474,41 +508,48 @@
         background-color: white;
     }
 
+=======
+   
+>>>>>>> 112049-native-dropdowns
     ul {
         list-style: none;
         margin: 0;
         padding: 0;
     }
  
-    select {
+    .colourPhoneSelector, .sizePhoneSelector {
         background: transparent;
         -webkit-appearance: none;
         border: 1.25px solid rgba(51, 51, 51, 0.8);
-        border-radius: 3px;
+        border-radius: 0px;
         text-transform: uppercase;
         font-weight: 500;
         font-family: "futura-pt";
+        color: rgb(51,51,51);
         width: 100%;
+        padding: 2%;            
     }
+
+    /* .colourPhoneSelector{
+        padding: 2% 28%;
+       
+    }
+
+    .sizePhoneSelector{
+        padding: 2% 38%;
+    } */
 
     .sizeMenu {
         border: 1;
         padding: 3px 5px;
         width: 100%;
-            
-        /* prevent the default small pointer from showing up */
         -webkit-appearance: none;
         -moz-appearance: none;
-        appearance: none;
         z-index: 1;
     }
 
-    .sizeWebSelector{
+    .sizeWebSelector, .colourWebMenu{
        display: none;
-    }
-
-    .colourWebMenu{
-        display: none;
     }
 
 }
