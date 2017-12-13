@@ -164,12 +164,7 @@
 
     .slider-decorator-0 > button, .slider-decorator-1 > button{
         position: absolute;
-<<<<<<< HEAD
-        left: -100%;
-        padding: 7px !important;
-=======
         padding: 10px;
->>>>>>> 112049-native-dropdowns
         visibility: visible !important;
         width: 2.5rem;
         height: 2.5rem;
@@ -205,40 +200,6 @@
 
     .slider-decorator-1 > button {
         right: -100%;
-<<<<<<< HEAD
-        padding: 7px !important;
-        visibility: visible !important;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 100px;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        
-        font-size: 0;
-        }
-     
-        .slider-decorator-2{
-            visibility: hidden;
-        }
-        
-
-        .Dropdown-root{
-            width: 85%;
-        }
-
-        .productExtraInfo {
-            padding-right: 3%;
-            padding-bottom: 2%;
-            font-size: 20px;
-        }
-
-        .sizePhoneSelector{
-            display: none;
-        }
-        .colourPhoneMenu{
-            display: none;
-        }
-=======
         content: '>';
     }
     
@@ -249,7 +210,6 @@
                 
     .slider-decorator-2{
         visibility: hidden;
->>>>>>> 112049-native-dropdowns
     }
 
     .Dropdown-root{
@@ -410,12 +370,8 @@
     .slider-frame{
         height: 40% !important;
     }
-<<<<<<< HEAD
-    .imageCarousel, .webImageCarousel, .laptopImageCarousel{
-=======
 
     .imageCarousel, .webImageCarousel{
->>>>>>> 112049-native-dropdowns
         display: none;
     }
 
@@ -478,11 +434,7 @@
         padding-top: 10%;
     } 
 
-<<<<<<< HEAD
-    .webImageCarousel, .laptopImageCarousel{
-=======
     .webImageCarousel, .tabletImageCarousel{
->>>>>>> 112049-native-dropdowns
         display: none;
     }
     .productMainInfo{
@@ -499,18 +451,7 @@
         -webkit-text-stroke: 1px #979797;
      
     }
-<<<<<<< HEAD
-  
-    .Dropdown-menu {
-        background-color: white;
-    }
-    .Dropdown-control {
-        background-color: white;
-    }
-
-=======
    
->>>>>>> 112049-native-dropdowns
     ul {
         list-style: none;
         margin: 0;
