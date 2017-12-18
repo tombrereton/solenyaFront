@@ -80,8 +80,23 @@ class PdpElement extends Component {
             })}
           </Carousel>
           </div>
-        <div className ="webImageCarousel">
+          <div className ="laptopImageCarousel">
         <Carousel  slidesToShow={3} slidesToScroll={3} edgeEasing="easeOutCirc" >
+            {images.map((element, index) => {
+              return (
+                <img
+                  id={"img" + index}
+                  width="150"
+                  src={element}
+                  alt={this.props.ProductName}
+                  key={index}
+                />
+              );
+            })}
+          </Carousel>
+          </div>
+        <div className ="webImageCarousel">
+        <Carousel  slidesToShow={4} slidesToScroll={4} edgeEasing="easeOutCirc" >
         {images.map((element, index) => {
           return (
             <img
@@ -161,8 +176,8 @@ class PdpElement extends Component {
               options={["XS", "S", "M", "L", "XL"]}
               value={"XS"}
             />
-
                 <select className = "sizePhoneSelector">
+                
                   <option value = "XS"> XS </option>
                   <option value = "S"> S </option>
                   <option value = "M"> M </option>
