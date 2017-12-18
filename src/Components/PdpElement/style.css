@@ -396,7 +396,6 @@
   }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 1123px) and (max-width: 1634px) {
   .sizePhoneSelector {
     display: none;
@@ -434,7 +433,6 @@
     margin: 5% 13% 7% 13%;
   }
 }
-=======
     .sizePhoneSelector{
         display: none;
     }
@@ -452,7 +450,6 @@
         padding-top: 2%;
         letter-spacing: 0.5PX;
     }
->>>>>>> 315f0e18cd50abac9ef0ed99ba01ba7c8073e5fc
 
 @media screen and (min-width: 521px) and (max-width: 1121px) {
   .sizePhoneSelector {
@@ -509,9 +506,9 @@
     width: 80%;
   }
 }
+
 @media screen and (max-width: 520px) {
 
-<<<<<<< HEAD
   .slider-list {
     min-height: calc(70vw + 10rem);
   }
@@ -614,7 +611,8 @@
   .colourWebMenu {
     display: none;
   }
-=======
+}
+
 @media screen and (min-width: 1123px) and (max-width: 1634px){  
     .sizePhoneSelector{
         display: none;
@@ -750,7 +748,6 @@
         visibility: hidden;
     }
 
->>>>>>> 315f0e18cd50abac9ef0ed99ba01ba7c8073e5fc
 }
 
 @media screen and (max-width: 520px){
