@@ -1,4 +1,6 @@
 .PdpElement {
+  align-content: center;
+  justify-content: center;
   position: relative;
   margin-top: 3em;
 }
@@ -74,6 +76,12 @@
 }
 
 @media screen and (min-width: 1122px) {
+  .prodDescHeader,
+  .prodBrandHeader,
+  .brandDescHeader,
+  .materialsHeader {
+    padding-top: 3%;
+  }
   .Dropdown-menu {
     z-index: 1;
   }
@@ -174,14 +182,8 @@
     width: 45%;
   }
 
-  .slider-frame,
-  .slider-list,
-  .slider-slide {
-      max-height: 150px;
-  }
-
   .slider-frame img {
-      size: 100%;
+    size: 100%;
   }
 
   .slider-decorator-0 {
@@ -268,9 +270,7 @@
   .prodBrandHeader,
   .brandDescHeader,
   .materialsHeader {
-    padding-bottom: 2%;
-    padding-top: 2%;
-    letter-spacing: 0.5px;
+    padding-top: 3%;
   }
 
   .productMainInfo {
@@ -305,7 +305,7 @@
   .prodBrandHeader,
   .brandDescHeader,
   .materialsHeader {
-    padding-top: 2%;
+    /* padding-top: 2%; */
   }
 
   .imageCarousel {
@@ -369,7 +369,7 @@
   .prodBrandHeader,
   .brandDescHeader,
   .materialsHeader {
-    padding-top: 3%;
+    /* padding-top: 3%; */
   }
   .slider-frame {
     height: 40% !important;
