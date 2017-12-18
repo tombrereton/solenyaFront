@@ -3,7 +3,9 @@
     margin-top: 3em;
 }
 
-
+.Dropdown-menu{
+    z-index: 1;
+}
 .productMainInfo{
     background-color: #FFFFFF;
     position: relative;
