@@ -22,7 +22,12 @@ module.exports = {
         "waitForConditionTimeout": 5000 // sometimes internet is slow so wait.
       },
       "desiredCapabilities": { // use Chrome as the default browser for tests
-        "browserName": "MicrosoftEdge"
+        "browserName": "MicrosoftEdge",
+        "edgeOptions": {
+        "args": [
+            "window-size=1800,1000"
+         ]
+        }
       }
     }
   }
