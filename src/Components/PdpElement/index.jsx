@@ -5,7 +5,7 @@ import { getColours, getImages } from "./functions.js";
 import "./style.css";
 import getDeviceWidth from "../../GlobalFunctions/GetDeviceWidth";
 import logToNewRelic from "../../GlobalFunctions/LogToNewRelic";
-//import Pdp from "../Pdp";
+
 var Carousel = require("nuka-carousel");
 class PdpElement extends Component {
   constructor(props) {
