@@ -20,7 +20,7 @@ var config = {
 module.exports = {
 
     beforeEach : function (browser) {
-        browser.resizeWindow(1280, 800);
+        browser.resizeWindow(1800, 1000);
       }, 
 
     'Whole E2E Journey (Web)': function(browser){
