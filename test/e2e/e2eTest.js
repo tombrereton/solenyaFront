@@ -98,7 +98,7 @@ module.exports = {
         .pause(1000)
         .end()
     },
-    
+
     'Product image takes to the product details page and clicks the carousel (Web)': function(browser) {
         browser
         .url(config[envName].endPoint)
