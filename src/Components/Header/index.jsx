@@ -1,4 +1,7 @@
 import React from "react";
+/* eslint-disable */
+import { BrowserRouter as Router} from "react-router-dom";
+/* eslint-enable */
 import { Link } from "react-router-dom";
 import "./style.css";
 
