@@ -51,9 +51,7 @@ module.exports = {
       PRODUCT_API: "http://team-solenya-rg-dev-product.azurewebsites.net/"
     }),
     new CopyWebpackPlugin([
-      { from: "./src/config.js" },
       { from: "./src/favicon.ico" },
-      { from: "./src/Config.js", to: "config.js" }
     ]),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.NamedModulesPlugin(),
