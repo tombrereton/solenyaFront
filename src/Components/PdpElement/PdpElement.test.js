@@ -78,7 +78,7 @@ describe("PdpElement", () => {
     );
     const wrapper = shallow(card);
     const discountPrice = wrapper.find(".pdpProductDiscount");
-   
+  
       expect(discountPrice.text()).toEqual("£12.00");
     
   });
@@ -328,11 +328,4 @@ describe("PdpElement", () => {
     const wrapper = shallow(card);
     expect(wrapper.find("button").exists()).toBe(true);
   });
-
-  // it("has colour in dropdown which matches selected", () => {
-
-  //   expect(imageSwitcher).toBe(pdpTestData);
-    
-    
-  // });
 });
