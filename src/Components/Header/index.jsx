@@ -1,5 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+/* eslint-disable */
+import { BrowserRouter as Router} from "react-router-dom";
+/* eslint-enable */
+import { Link } from "react-router-dom";
 import "./style.css";
 
 class Header extends React.Component {

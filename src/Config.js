@@ -1,6 +1,8 @@
+/* eslint-disable*/
 var envName = 'dev';
 
 var config = {
+/* eslint-enable */
   dev: {
     ProductServiceEndpoint:
       "http://team-solenya-rg-dev-product.azurewebsites.net/"

@@ -1,5 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Route, browserHistory } from "react-router-dom";
+/* eslint-disable*/
+import {BrowserRouter as Router} from "react-router-dom";
+/* eslint-enable*/
+import {Route, browserHistory} from "react-router-dom";
 import Plp from "../Plp";
 import Pdp from "../Pdp";
 import "./style.css";
