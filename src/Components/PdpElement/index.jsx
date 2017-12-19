@@ -32,8 +32,8 @@ class PdpElement extends Component {
   }
 
   handleImageLoaded() {
-    var resizeEvent = window.document.createEvent('UIEvents'); 
-    resizeEvent.initUIEvent('resize', true, false, window, 0); 
+    var resizeEvent = window.document.createEvent('UIEvents');
+    resizeEvent.initUIEvent('resize', true, false, window, 0);
     window.dispatchEvent(resizeEvent);
   }
 
@@ -57,7 +57,6 @@ class PdpElement extends Component {
       return (
         <img
           id={"img" + index}
-          width="150"
           src={element}
           alt={this.props.ProductName}
           key={index}
@@ -81,13 +80,27 @@ class PdpElement extends Component {
             })}
           </Carousel>
           </div>
-        <div className ="webImageCarousel">
+          <div className ="laptopImageCarousel">
         <Carousel  slidesToShow={3} slidesToScroll={3} edgeEasing="easeOutCirc" >
+            {images.map((element, index) => {
+              return (
+                <img
+                  id={"img" + index}
+                  width="150"
+                  src={element}
+                  alt={this.props.ProductName}
+                  key={index}
+                />
+              );
+            })}
+          </Carousel>
+          </div>
+        <div className ="webImageCarousel">
+        <Carousel  slidesToShow={4} slidesToScroll={4} edgeEasing="easeOutCirc" >
         {images.map((element, index) => {
           return (
             <img
               id={"img" + index}
-              width="150"
               src={element}
               alt={this.props.ProductName}
               key={index}
@@ -141,15 +154,15 @@ class PdpElement extends Component {
               {this.state.colours.length === 1 ? (
                 <div className="productColourValuePhone">{this.state.colours}</div>
               ) : (
-               
-                <select className = "colourPhoneSelector" onChange={event => this.onColourChangePhone(event)}>  
-                
-                  {getColours(this.props.ImageOptions).map((colour, index) => {                  
-                    return (                     
+
+                <select className = "colourPhoneSelector" onChange={event => this.onColourChangePhone(event)}>
+
+                  {getColours(this.props.ImageOptions).map((colour, index) => {
+                    return (
                       <option value={colour} key={index}>
-                        {colour}                                               
+                        {colour}
                       </option>
-                      
+
                     );
                   })}
                 </select>
@@ -163,8 +176,8 @@ class PdpElement extends Component {
               options={["XS", "S", "M", "L", "XL"]}
               value={"XS"}
             />
-
                 <select className = "sizePhoneSelector">
+                
                   <option value = "XS"> XS </option>
                   <option value = "S"> S </option>
                   <option value = "M"> M </option>
@@ -204,7 +217,7 @@ class PdpElement extends Component {
       </div>
     );
   }
-  
+
 }
 
 PdpElement.propTypes = {
