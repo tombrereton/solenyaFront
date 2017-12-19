@@ -31,7 +31,9 @@ class Plp extends Component {
     if (this.state.productElements.length === 0) {
       return <PreloaderContainer />;
     } else if (
-      typeof this.state.productElements === "undefined" ||
+      /* eslint-disable */
+      this.state.productElements === undefined ||
+      /* eslint-enable */
       this.state.productElements[0].ErrorCode ===
         "CollectionNameDoesNotExist" ||
       this.state.productElements[0].ErrorCode === "CollectionEmpty"
