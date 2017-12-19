@@ -1,6 +1,6 @@
 var config = require('../../nightwatch.conf.BASIC.js');
 
-var envName = 'dev';
+var envName = 'test';
 
 var config = {
     dev: {
@@ -23,13 +23,33 @@ module.exports = {
         browser.resizeWindow(1280, 800);
       }, 
 
-    'Solenya Couture renders': function(browser) {
-         browser
-            .url(config[envName].endPoint)
-            .assert.title("Solenya Couture")
-            .end()
+    'Whole E2E Journey (Web)': function(browser){
+        browser
+        .url(config[envName].endPoint)
+        .waitForElementVisible('body')
+        .assert.title("Solenya Couture")
+        .pause(2000)
+        .waitForElementVisible('.productLabelContainer')
+        .click('.productLabelContainer')
+        .waitForElementVisible('.Dropdown-control')
+        .assert.visible('.Dropdown-control')
+        .waitForElementVisible('.webImageCarousel')
+        .assert.visible('.webImageCarousel')
+        .pause(2000)
+        .getLocationInView('.productExtraInfo')
+        .pause(2000)
+        .click('.Dropdown-control')
+        .pause(2000)
+        .click('.Dropdown-control')
+        .pause(2000)
+        .getLocationInView('.webImageCarousel')
+        .pause(2000)
+        .click('.logoLink')
+        .pause(2000)
+        .assert.visible('.productLabelContainer')
+        .end()
     },
-    
+
     'Product image takes to the product details page and back to home with team name link (Web)': function(browser) {
         browser
         .url(config[envName].endPoint)
@@ -62,6 +82,7 @@ module.exports = {
         .pause(1000)
         .end()
     },
+
     'Product image takes to the product details page and back to home with logo link (Web)': function(browser) {
         browser
         .url(config[envName].endPoint)
@@ -77,7 +98,8 @@ module.exports = {
         .pause(1000)
         .end()
     },
-    'Product image takes to the product details page and clicks the carousel': function(browser) {
+    
+    'Product image takes to the product details page and clicks the carousel (Web)': function(browser) {
         browser
         .url(config[envName].endPoint)
         .waitForElementVisible('body')
