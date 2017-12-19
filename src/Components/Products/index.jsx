@@ -1,5 +1,5 @@
 import React from "react";
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import ProductElement from "../ProductElement";
 import "./style.css";
 
@@ -11,8 +11,8 @@ const Products = props => (
   </div>
 );
 
-// Products.propTypes = {
-// 	productElements: PropTypes.productElements
-// }
+Products.propTypes = {
+  productElements: PropTypes.array
+}
 
 export default Products;

@@ -6,6 +6,7 @@ import fetchDataToJSON from "../../DataAccess/DataFetcher";
 import PreloaderContainer from "../PreloaderContainer";
 import ProductsUnavailable from "../ProductsUnavailable";
 import "./style.css";
+
 class Plp extends Component {
   constructor() {
     super();
@@ -30,7 +31,9 @@ class Plp extends Component {
     if (this.state.productElements.length === 0) {
       return <PreloaderContainer />;
     } else if (
+      /* eslint-disable */
       this.state.productElements === undefined ||
+      /* eslint-enable */
       this.state.productElements[0].ErrorCode ===
         "CollectionNameDoesNotExist" ||
       this.state.productElements[0].ErrorCode === "CollectionEmpty"

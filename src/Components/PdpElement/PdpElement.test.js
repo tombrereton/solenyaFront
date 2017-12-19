@@ -3,8 +3,7 @@ import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-15";
 import PdpElement from "./";
 import TestData from "../../TestData/ProductApiPdpDataTest.json";
-import pdpTestData from "../../TestData/pdpTestData.json";
-import { getColours, getImages, imageSwitcher } from "./functions";
+import { getColours} from "./functions";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -79,7 +78,7 @@ describe("PdpElement", () => {
     );
     const wrapper = shallow(card);
     const discountPrice = wrapper.find(".pdpProductDiscount");
-   
+  
       expect(discountPrice.text()).toEqual("£12.00");
     
   });
@@ -329,11 +328,4 @@ describe("PdpElement", () => {
     const wrapper = shallow(card);
     expect(wrapper.find("button").exists()).toBe(true);
   });
-
-  // it("has colour in dropdown which matches selected", () => {
-
-  //   expect(imageSwitcher).toBe(pdpTestData);
-    
-    
-  // });
 });

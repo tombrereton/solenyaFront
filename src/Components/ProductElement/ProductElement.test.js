@@ -118,17 +118,4 @@ describe("ProductElement", () => {
     const discountPrice = wrapper.find(".productDiscount");
     expect(discountPrice.text()).toEqual("£12.00");
   });
-
-
-  it("Should log the correct name click", () => {
-    const wrapper = shallow(
-      <ProductElement
-        ProductId={dataElem.ProductId}
-        ProductName={dataElem.ProductName}
-        Price={dataElem.Price}
-        SplashImgUrl={dataElem.SplashImgUrl}
-        DiscountPrice={dataElem.DiscountPrice}
-      />
-    );
-  });
 });
